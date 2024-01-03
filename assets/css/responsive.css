@@ -41,7 +41,7 @@
         background: #fff;
         border: solid 1px #f1f1f1;
         border-radius: 4px;
-        top: 100%;
+        top: calc(100% + 14px);
         right: 0;
         min-width: 200px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
