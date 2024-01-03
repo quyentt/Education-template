@@ -1,0 +1,207 @@
+@media (max-width: 1600px) {
+    .head-search-form .form {
+        width: 350px;
+    }
+    .account-group {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1440px) {
+    .function-content-list .item {
+        width: 50%;
+    }
+    .head-search-form .form {
+        width: 250px;
+    }
+    .account-group {
+        margin-left: 0;
+    }
+    .main-menu .item {
+        padding: 0 17px;
+    }
+}
+
+@media (max-width: 1360px) {
+    .modul-list .modul-item {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1200px) {
+    .main-menu {
+        position: relative;
+    }
+    .main-menu ul {
+        position: absolute;
+        flex-direction: column;
+        align-items: baseline;
+        background: #fff;
+        border: solid 1px #f1f1f1;
+        border-radius: 4px;
+        top: 100%;
+        right: 0;
+        min-width: 200px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+        display: none;
+        transition: all 0.3s;
+    }
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: var(--color-daskblue);
+    }
+    .main-menu ul .item {
+        padding: 10px 15px;
+        border-bottom: solid 1px #f1f1f1;
+        width: 100%;
+    }
+    .main-menu ul.show {
+        height: auto;
+        z-index: 9999;
+        display: block;
+    }
+}
+
+@media (max-width: 1080px) {
+    .function-content-list .item {
+        padding: 0 8px;
+        padding-bottom: 30px;
+    }
+    .tab-title {
+        display: none;
+    }
+    .tabs-slider {
+        padding-right: 0;
+    }
+    .today-group .item {
+        width: 50%;
+    }
+    .modul-list .modul-item {
+        width: 33.3333333%;
+    }
+    .function-nav {
+        width: 100%;
+        min-height: auto;
+        justify-content: end;
+        padding-right: 15px;
+        padding-top: 18px;
+        background: transparent;
+    }
+    .tab-list .tab-item a {
+        height: 90px;
+    }
+    .action-function {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+    .action-function .btn {
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 820px) {
+    .tabs-slider {
+        padding-top: 20px;
+    }
+    .head-search-form .form {
+        width: 220px;
+    }
+    .action-group .item {
+        width: 25%;
+    }
+    .modul-list .modul-item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .head-search-form {
+        position: relative;
+        margin-left: auto;
+    }
+    .head-search-form .head-search-box {
+        position: fixed;
+        width: 100%;
+        top: 60px;
+        background: #fff;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+        left: 0;
+        padding: 12px 15px;
+        border: solid 1px #f1f1f1;
+        z-index: 9999;
+        border-radius: 4px;
+        display: none;
+    }
+    .head-search-form .head-search-box .form {
+        width: 100%;
+        margin-left: 0;
+    }
+    .main-menu {
+        margin-left: 40px;
+    }
+    .head-search-toggle {
+        display: block;
+        font-size: 20px;
+    }
+    .head-search-form.show .head-search-box {
+        display: block;
+    }
+    .head-search-form.show .head-search-toggle {
+        display: none;
+    }
+    .action-group .item {
+        width: 33.3333333%;
+    }
+}
+
+@media (max-width: 576px) {
+    .function-content-list .item {
+        width: 100%;
+    }
+    .function-content {
+        padding: 15px;
+    }
+    .account-group {
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        left: 0;
+        bottom: 0;
+        justify-content: space-between;
+        padding: 12px 40px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+    }
+    .account-group .item {
+        margin-left: 0;
+    }
+    .action-group .item {
+        width: 50%;
+    }
+    .today-group .item {
+        width: 100%;
+    }
+    .top-nav,
+    .quick-action,
+    .for-u-today,
+    .modul {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .modul-list .modul-item {
+        width: 100%;
+    }
+    .tabs-slider {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 430px) {
+    .modul-dropdown {
+        width: 100%;
+    }
+}
