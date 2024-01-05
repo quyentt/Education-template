@@ -810,3 +810,8 @@ input:focus-visible {
 .dashboard-card .dropdown .item {
     font-size: 24px;
 }
+
+.dashboard-v2 .dashboard-card .card-body {
+    border: none;
+    border-radius: 10px 10px 0 0;
+}
