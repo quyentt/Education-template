@@ -1,0 +1,52 @@
+.min-w-auto {
+    min-width: auto !important;
+}
+
+
+/* button */
+
+.btn {
+    height: 38px;
+    min-width: 146px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.btn-view {
+    border: 1px solid #6610F2;
+    background: #6610F2;
+    color: #fff;
+}
+
+.btn-edit {
+    border: 1px solid #28A745;
+    background: #28A745;
+    color: #fff;
+}
+
+.btn-delete {
+    border: 1px solid #17A2B8;
+    background: #17A2B8;
+    color: #fff;
+}
+
+.btn-add {
+    border: 1px solid #DC3545;
+    background: #DC3545;
+    color: #fff;
+}
+
+.btn-white {
+    background: #fff;
+    border: 1px solid #E1E1E1;
+    color: var(--color-daskblue);
+}
+
+.btn:hover {
+    background: var(--color-primary);
+    color: #fff;
+}

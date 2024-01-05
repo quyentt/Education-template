@@ -3,6 +3,10 @@ body {
     background: #F5F6F8;
 }
 
+img {
+    max-width: 100%;
+}
+
 .bg-gradient-1 {
     background-image: linear-gradient(to top right, #29C6D5, #4C84FF);
 }
@@ -709,46 +713,6 @@ input:focus-visible {
     flex-direction: column;
 }
 
-.btn {
-    height: 38px;
-    min-width: 146px;
-    border-radius: 6px;
-    font-weight: 500;
-}
-
-.btn i {
-    margin-right: 8px;
-}
-
-.btn-view {
-    border: 1px solid #6610F2;
-    background: #6610F2;
-    color: #fff;
-}
-
-.btn-edit {
-    border: 1px solid #28A745;
-    background: #28A745;
-    color: #fff;
-}
-
-.btn-delete {
-    border: 1px solid #17A2B8;
-    background: #17A2B8;
-    color: #fff;
-}
-
-.btn-add {
-    border: 1px solid #DC3545;
-    background: #DC3545;
-    color: #fff;
-}
-
-.btn:hover {
-    background: var(--color-primary);
-    color: #fff;
-}
-
 .function-nav .btn {
     margin-bottom: 22px;
 }
@@ -772,4 +736,77 @@ input:focus-visible {
 
 .account-group .dropdown-menu {
     margin-top: 14px !important;
+}
+
+.dashboard {
+    padding: 40px 30px;
+}
+
+.dashboard-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -23px;
+    margin-right: -23px;
+}
+
+.dashboard-item {
+    width: 50%;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-bottom: 46px;
+}
+
+.dashboard-card {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 16px 0px rgba(196, 206, 214, 0.25);
+    border: none;
+}
+
+.dashboard-card img {
+    aspect-ratio: 908/512;
+    width: 100%;
+}
+
+.dashboard-card .card-body {
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 4px #fff;
+    padding: 0;
+}
+
+.dashboard-card .card-footer {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 30px;
+}
+
+.dashboard-card .card-footer p {
+    color: var(--color-daskblue);
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    margin-right: 15px;
+}
+
+.dashboard-v2 .dashboard-list {
+    margin-left: -17px;
+    margin-right: -17px;
+}
+
+.dashboard-v2 .dashboard-item {
+    width: 33.3333333%;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-bottom: 34px;
+}
+
+.dashboard-card .dropdown .item {
+    font-size: 24px;
 }
