@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    <div class="header fixed-top">
+        <div class="top-nav ">
+            <div class="head-logo">
+                <a href="index.html">
+                    <img class="logo-icon" src="assets/images/logo/logo-icon.png">
+                    <img class="logo-text" src="assets/images/logo/logo-text.png">
+                </a>
+            </div>
+            <div class="head-search-form">
+                <div class="head-search-toggle">
+                    <i class="fal fa-search"></i>
+                </div>
+                <div class="head-search-box">
+                    <div class="form">
+                        <input type="text" class="search-imput" placeholder="Tìm kiếm thông tin">
+                        <button class="search-btn">
+                            <i class="fal fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-menu">
+                <ul class="list-unstyled">
+                    <li class="item ">
+                        <a class="menu-link" href="index.html">
+                            <i class="fal fa-home"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="item active">
+                        <a class="menu-link" href="dashboard.hhml">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="modul.html">
+                            <span>Modul</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="chucnang-cuaban.html">
+                            <span>Chức năng của bạn</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="tintuc.html">
+                            <span>Tin tức</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fal fa-bars"></i>
+                </div>
+            </div>
+            <div class="account-group">
+                <div class="dropdown ">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <i class="fal fa-circle-check"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item message" data-bs-toggle="dropdown">
+                        <i class="fal fa-messages"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item noti" data-bs-toggle="dropdown">
+                        <i class="fal fa-bell"></i>
+                        <span>9+</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <img src="assets/images/avatar.jpg" class="avatar">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="quick-action">
+        <div class="quick-acction-title pt-40">Theme Option</div>
+    </div>
+    <div class="dashboard-nav-left">
+        <div class="nav-left">
+            <ul class="nav-left-list">
+                <li class="nav-left-item active">
+                    <a href="theme-option-pageInfo.html" class="nav-left-link">
+                        <i class="fa-light fa-circle-info"></i>
+                        <span>Page Info</span>
+                    </a>
+                </li>
+                <li class="nav-left-item">
+                    <a href="theme-option.html" class="nav-left-link">
+                        <i class="fa-light fa-browser"></i>
+                        <span>Theme Option</span>
+                    </a>
+                </li>
+                <li class="nav-left-item">
+                    <a href="company-info.html" class="nav-left-link">
+                        <i class="fa-light fa-building-user"></i>
+                        <span>Company Info</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="dashboard-nav-left-content">
+            <div class="card today-card full-card">
+                <div class="card-header">
+                    <div class="title">
+
+                        <div class="modul-name fs-20 text-dask-blue">
+                            Page info
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="page-info-wrap">
+                        <form action="" class="form">
+                            <div class="logo-upload">
+                                <div class="title">Logo đăng nhập</div>
+                                <div class="image-selector">
+                                    <label class="image-input" for="logo_login">
+                                        <span class="file-prev">
+                                            <i class="fa-light fa-image nofile"></i>
+                                        </span>
+                                    </label>
+                                    <input class="file-input" accept="image/*" type="file" name="" id="logo_login">
+                                </div>
+                            </div>
+                            <div class="logo-upload">
+                                <div class="title">Logo top menu</div>
+                                <div class="image-selector">
+                                    <label class="image-input" for="logo_header">
+                                        <span class="file-prev">
+                                            <i class="fa-light fa-image nofile"></i>
+                                        </span>
+                                    </label>
+                                    <input class="file-input" accept="image/*" type="file" name="" id="logo_header">
+                                </div>
+                            </div>
+                            <div class="logo-upload favicon-upload">
+                                <div class="title">Biểu tượng favicon (32x32)</div>
+                                <div class="image-selector image-selector-sm">
+                                    <label class="image-input" for="favicon">
+                                        <span class="file-prev">
+                                            <i class="fa-light fa-image nofile"></i>
+                                        </span>
+                                    </label>
+                                    <input class="file-input" accept="image/*" type="file" name="" id="favicon">
+                                </div>
+                                <p>Favorite icon, là một hình ảnh hay biểu tượng nhỏ nằm ở đầu mỗi tab trên trình duyệt web</p>
+                            </div>
+                            <div class="slogan-upload">
+                                <div class="title">Slogan/ Atl logo:</div>
+                                <div class="input">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="btn-action-group-left mt-40">
+                                <button class="btn btn-edit">
+                                    <i class="fal fa-floppy-disk"></i>
+                                    <span>Lưu</span>
+                                </button>
+                                <button class="btn btn-outline-secondary ms-20">
+                                    <i class="fal fa-times"></i>
+                                    <span>Hủy</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
+    <script src="assets/swiper-slide/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/customs.js"></script>
+</body>
+
+</html>
