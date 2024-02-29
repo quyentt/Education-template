@@ -316,7 +316,8 @@
     margin-bottom: 50px;
   }
   .theme-option-form .btn-action-group-left .btn {
-    width: auto;
+    min-width: inherit;
+    flex: 1;
   }
   .full-card .card-body {
     padding: 20px;
