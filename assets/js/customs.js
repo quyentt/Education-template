@@ -115,4 +115,6 @@ $(document).ready(function () {
       handleSetColours(picker, text);
     });
   });
+
+  // end
 });

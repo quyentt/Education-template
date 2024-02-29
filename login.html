@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    <div class="page-login">
+        <div class="login-wrap">
+            <div class="login-image-wrap">
+                <div class="login-image">
+                    <img src="assets/images/login-img.png" alt="">
+                </div>
+            </div>
+            <div class="login-title">Đăng nhập</div>
+            <div class="login-welcome">Chào mừng bạn đến với hệ thống giáo dục CMC</div>
+            <form action="" class="login-form">
+                <div class="input-icon">
+                    <input type="text" class="form-control form-control_login" placeholder="Username">
+                    <div class="icon-start">
+                        <i class="fa-light fa-user"></i>
+                    </div>
+                </div>
+                <div class="input-icon">
+                    <input type="password" class="form-control form-control_login form-control_login__password" placeholder="Pasword">
+                    <div class="icon-start">
+                        <i class="fa-light fa-lock"></i>
+                    </div>
+                    <div class="icon-end ">
+                        <i class="fa-light fa-eye change_icon"></i>
+                    </div>
+                </div>
+                <button class="btn btn-login">Đăng nhập</button>
+                <div class="other-action">
+                    <div class="other-action_item">
+                        <label class="checkbox checkbox-outline">
+                            <input type="checkbox">
+                            <span class="checkmark">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span>Ghi nhớ tài khoản</span>
+                        </label>
+                    </div>
+                    <a href="#" class="other-action_item">
+                        <span>Quên mật khẩu</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
+    <script src="assets/swiper-slide/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/customs.js"></script>
+    <script>
+        const passInput = document.querySelector(".form-control_login__password");
+        const passIcon = document.querySelector(".change_icon");
+        passIcon.addEventListener("click", () => {
+            if (passIcon.classList.contains("fa-eye")) {
+                passInput.setAttribute("type", "text");
+                passIcon.classList.toggle("fa-eye");
+                passIcon.classList.toggle("fa-eye-slash");
+            } else {
+                passInput.setAttribute("type", "password");
+                passIcon.classList.toggle("fa-eye");
+                passIcon.classList.toggle("fa-eye-slash");
+            }
+        });
+    </script>
+</body>
+
+</html>

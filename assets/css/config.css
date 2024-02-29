@@ -270,3 +270,7 @@
   width: 100%;
   background: var(--color-border);
 }
+
+.checkbox-outline .checkmark {
+  background: transparent;
+}

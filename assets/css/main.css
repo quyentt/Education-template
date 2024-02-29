@@ -1041,12 +1041,14 @@ input:focus-visible {
 .theme-bg-corlor {
   width: 40%;
   display: flex;
+  padding-right: 15px;
 }
 
 .theme-bg-file {
   width: 30%;
   display: flex;
   justify-content: center;
+  padding: 0 15px;
 }
 
 .theme-option-box .label {
@@ -1077,4 +1079,138 @@ input:focus-visible {
 
 .colour-picker-field__item--text {
   max-width: 175px;
+}
+
+.page-login {
+  background: url("../images/login-bg.png");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.login-wrap {
+  max-width: 368px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.input-icon {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.icon-start {
+  font-size: 20px;
+  position: absolute;
+  left: 25px;
+  color: #fff;
+}
+
+.icon-end {
+  font-size: 25px;
+  position: absolute;
+  right: 25px;
+  color: #fff;
+}
+
+.form-control_login,
+.form-control_login:focus {
+  height: 48px;
+  border-radius: 90px;
+  background: rgba(225, 225, 225, 0.2);
+  border: none;
+  padding: 0 60px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.form-control_login::placeholder {
+  color: #fff;
+}
+
+.login-image {
+  width: 142px;
+  height: 142px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.login-image-wrap {
+  border: dashed 1px #fff;
+  padding: 15px;
+  border-radius: 100%;
+  margin-top: 100px;
+}
+
+.login-title {
+  color: #fff;
+  font-weight: 800;
+  color: #fff;
+  line-height: 43px;
+  font-size: 34px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.login-welcome {
+  line-height: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 28px;
+  margin-top: 8px;
+}
+
+.login-form .input-icon {
+  margin-bottom: 20px;
+}
+
+.btn-login {
+  background: #fff;
+  height: 48px;
+  width: 100%;
+  border-radius: 90px;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+}
+
+.btn-login:hover {
+  background: var(--color-daskblue);
+}
+
+.other-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.other-action_item .checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.other-action_item {
+  color: #fff;
+}
+
+a.other-action_item:hover {
+  text-decoration: underline;
+}
+
+.other-action_item .checkbox .checkmark {
+  margin-right: 8px;
 }
