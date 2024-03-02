@@ -4,6 +4,12 @@
 
 /* button */
 
+a.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn {
   height: 38px;
   min-width: 146px;
