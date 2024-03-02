@@ -326,10 +326,33 @@
     flex: 0 0 auto;
     width: 100%;
   }
+  .input-label-row {
+    flex-direction: column;
+  }
+  .input-label-row .label {
+    width: 100% !important;
+  }
+  .btn-action-group-left {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .btn-action-group-left .btn {
+    min-width: auto;
+    flex: 1;
+  }
 }
 
 @media (max-width: 430px) {
   .modul-dropdown {
     width: 100%;
+  }
+  .slogan-upload {
+    flex-direction: column;
+    align-items: start;
+  }
+  .slogan-upload .input {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 6px;
   }
 }

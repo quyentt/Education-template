@@ -1214,3 +1214,22 @@ a.other-action_item:hover {
 .other-action_item .checkbox .checkmark {
   margin-right: 8px;
 }
+
+.input-label-row {
+  display: flex;
+  width: 100%;
+}
+
+.input-label-row .label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.input-label-row .input {
+  flex: 1;
+}
+
+.company-info-wrap .input-label-row .label {
+  width: 180px;
+}
