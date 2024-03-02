@@ -227,6 +227,38 @@ input:focus-visible {
   padding: 12px;
   width: 192px;
   height: 134px;
+  position: relative;
+}
+
+.action-group .item .pinned {
+  position: absolute;
+  font-size: 20px;
+  /* background: red; */
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 12px;
+  color: #fff;
+}
+
+.action-group .item .pinned .alert {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 9999;
+  color: #222;
+  font-size: 14px;
+  width: 220px;
+  padding: 10px;
+  display: none;
+}
+
+.action-group .item .pinned:hover .alert {
+  display: block;
 }
 
 .action-box {
