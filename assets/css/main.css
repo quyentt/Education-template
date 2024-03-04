@@ -1317,6 +1317,7 @@ a.other-action_item:hover {
 
 .modul-v2 .modul-list .modul-item.modul-show {
   display: flex;
+  width: fit-content;
 }
 
 .modul-item .modul-name {
@@ -1374,37 +1375,20 @@ a.other-action_item:hover {
   width: 100%;
   position: absolute;
   bottom: 0;
-}
-
-.forreign-links .favorite-link {
-  width: 44px;
-  height: 44px;
   background: rgba(0, 0, 0, 0.3);
-  border-radius: 0 44px 0 10px;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
   color: #fff;
-  padding-top: 15px;
-  padding-left: 8px;
-  font-size: 17px;
 }
 
-.forreign-links .favorite-link:hover,
-.forreign-links .feature-all-link:hover {
-  background: #fff;
-  color: var(--color-daskblue);
-}
-
-.forreign-links .feature-all-link:hover svg path {
-  fill: var(--color-daskblue);
-}
-
-.forreign-links .feature-all-link {
-  width: 44px;
-  height: 44px;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 44px 0 10px 0;
+.forreign-links a {
   color: #fff;
-  padding-top: 13px;
-  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.forreign-links a:hover {
+  color: var(--color-yellow);
 }
 
 .feature-list {

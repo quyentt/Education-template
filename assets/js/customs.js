@@ -213,7 +213,8 @@ $(document).ready(function () {
   /*Lấy chiều rộng list modul*/
   const modulListW = modulList.offsetWidth;
   /*Số lượng modul có thể hiển thị trên 1 dòng*/
-  const modulItemPerRow = Math.floor(modulListW / 220);
+  const modulItemPerRow = Math.floor((modulListW - 41) / 220);
+  console.log(modulListW);
   /*Lấy số lượng modul*/
   const modulItemQuantity = modulItem.length;
   /*Hiển thị modul trên 1 dòng, ẩn phần còn lại*/
