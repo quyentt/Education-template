@@ -1,4 +1,10 @@
 @media (max-width: 1600px) {
+  .modul-v2 .modul-list .modul-item {
+    padding: 16px;
+  }
+  .modul-view-more-box {
+    margin-top: 16px;
+  }
   .head-search-form .form {
     width: 250px;
   }
@@ -220,6 +226,9 @@
 }
 
 @media (max-width: 768px) {
+  .modal .feature-item {
+    width: 20%;
+  }
   .head-search-form {
     position: relative;
     margin-left: auto;
@@ -260,6 +269,9 @@
 }
 
 @media (max-width: 576px) {
+  .modal .feature-item {
+    width: 25%;
+  }
   .function-content-list .item {
     width: 100%;
   }

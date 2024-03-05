@@ -231,4 +231,8 @@ $(document).ready(function () {
       modulItem[i].classList.add("modul-show");
     }
   });
+  // modal show test
+  // $(window).on("load", function () {
+  //   $("#modul_category").modal("show");
+  // });
 });

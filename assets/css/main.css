@@ -1381,10 +1381,18 @@ a.other-action_item:hover {
   color: #fff;
 }
 
+.forreign-links:hover {
+  background: #fff;
+}
+
 .forreign-links a {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
+}
+
+.forreign-links:hover a {
+  color: var(--color-daskblue);
 }
 
 .forreign-links a:hover {
@@ -1434,4 +1442,61 @@ a.other-action_item:hover {
 
 .modul-wrap .modul-list {
   flex: 1;
+}
+
+.modal_opacity {
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+
+.modal .feature-list {
+  width: 100%;
+  height: auto;
+  padding-top: 40px;
+  background: none;
+  box-shadow: none;
+}
+
+.modal .feature-item {
+  width: 16.666667%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 0 6px;
+}
+
+.modal_opacity .modal-dialog {
+  max-width: 800px;
+}
+
+.feature-name {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  margin-top: 10px;
+}
+
+.modul-category-title {
+  font-weight: 800;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.modul-category-title i {
+  margin-right: 40px;
+}
+
+.modal_opacity .modal-content {
+  background: transparent;
+  border: none;
 }
