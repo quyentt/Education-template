@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chức năng</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    <div class="header fixed-top">
+        <div class="top-nav ">
+            <div class="head-logo">
+                <a href="index.html">
+                    <img class="logo-icon" src="assets/images/logo/logo-icon.png">
+                    <img class="logo-text" src="assets/images/logo/logo-text.png">
+                </a>
+            </div>
+            <div class="head-search-form">
+                <div class="head-search-toggle">
+                    <i class="fal fa-search"></i>
+                </div>
+                <div class="head-search-box">
+                    <div class="form">
+                        <input type="text" class="search-imput" placeholder="Tìm kiếm thông tin">
+                        <button class="search-btn">
+                            <i class="fal fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-menu">
+                <ul class="list-unstyled">
+                    <li class="item ">
+                        <a class="menu-link" href="index.html">
+                            <i class="fal fa-home"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="dashboard.html">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="modul.html">
+                            <span>Modul</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="chucnang-cuaban.html">
+                            <span>Chức năng của bạn</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="tintuc.html">
+                            <span>Tin tức</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fal fa-bars"></i>
+                </div>
+            </div>
+            <div class="account-group">
+                <div class="dropdown ">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <i class="fal fa-circle-check"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item message" data-bs-toggle="dropdown">
+                        <i class="fal fa-messages"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item noti" data-bs-toggle="dropdown">
+                        <i class="fal fa-bell"></i>
+                        <span>9+</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <img src="assets/images/avatar.jpg" class="avatar">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Chart mt-100">
+        <div class="container">
+            <div style="width: 100%; height: 700px;">
+
+                <canvas id="myChart" width="1000" height="1000"></canvas>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
+    <script src="assets/swiper-slide/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/customs.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+        const label = ['Công nghệ thông tin và truyền thông', 'Công nghệ thông tin và truyền thông', 'Kinh doanh và quản lý', 'Mỹ thuật và thiết kế', 'Mỹ thuật và thiết kế', 'Ngôn ngữ và văn hóa', 'Ngôn ngữ và văn hóa']
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: label,
+                datasets: [{
+                    label: 'Số lớp hành chính Năm học 2022 - 2023',
+                    data: [3, 1, 2, 5, 6, 15, 18],
+                    backgroundColor: [
+                        'rgba(20, 55, 95, .8) '
+                    ],
+                    borderWidth: 1
+                }, {
+                    label: 'Số lớp hành chính Năm học 2023 - 2024',
+                    data: [7, 5, 9, 15, 9, 20, 8],
+                    backgroundColor: [
+                        'rgba(251, 150, 104, .8)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                // indexAxis: 'y',
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        border: {
+                            // color: 'red'
+                        },
+                        grid: {
+                            //color: 'transparent'
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'BIỂU ĐỒ',
+                        padding: {
+                            top: 10,
+                            bottom: 30
+                        },
+                        font: {
+                            size: 30
+                        },
+                        color: 'red',
+                        position: 'top',
+                        align: 'center'
+
+                    },
+                    tooltip: {
+                        yAlign: 'bottom',
+                        backgroundColor: '#fff',
+                        titleColor: '#222',
+                        bodyColor: '#222',
+                        borderColor: 'red',
+                        borderWidth: 1,
+                        padding: 10
+                    },
+                    legend: {
+                        // position: 'right',
+                        // align: 'start'
+                    }
+
+                }
+            },
+
+
+        });
+    </script>
+
+
+
+</body>
+
+</html>
