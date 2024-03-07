@@ -1,19 +1,4 @@
 $(document).ready(function () {
-  var swiper = new Swiper(".label-slider", {
-    spaceBetween: 0,
-    slidesPerView: "auto",
-    freeMode: false,
-    watchSlidesProgress: false,
-    // simulateTouch: false
-  });
-  var swiper2 = new Swiper(".content-slider", {
-    autoHeight: true,
-    spaceBetween: 0,
-    navigation: false,
-    thumbs: {
-      swiper: swiper,
-    },
-  });
   $(".menu-toggle").click(function () {
     $(".main-menu ul").toggleClass("show");
   });
@@ -36,7 +21,52 @@ $(document).ready(function () {
     }
   });
 
-  // upload image vs video
+  // Xử lý box chức năng----------------------------------------
+  const featureItem = document.querySelectorAll(".action-group .item");
+
+  const featureItemMaxHeightArr = [];
+
+  featureItem.forEach((item) => {
+    /* Index swiperJs when click*/
+    const featureLink = item.querySelector(".feature-box");
+
+    featureLink.addEventListener("click", (e) => {
+      //e.preventDefault();
+
+      var itemPosition = featureLink.getAttribute("data-position");
+      console.log(itemPosition);
+      localStorage.setItem("dataPosition", itemPosition);
+    });
+
+    /* Thiết lập chiều cao box chức năng */
+
+    const featureItemHeight = item.clientHeight;
+    featureItemMaxHeightArr.push(featureItemHeight);
+    featureItemMaxHeight = Math.max(...featureItemMaxHeightArr);
+    item.setAttribute("style", "height:" + featureItemMaxHeight + "px");
+  });
+  var dataPosition = localStorage.getItem("dataPosition");
+  console.log(dataPosition);
+  var swiper = new Swiper(".label-slider", {
+    spaceBetween: 0,
+    slidesPerView: "auto",
+    freeMode: false,
+    watchSlidesProgress: false,
+    // simulateTouch: false
+  });
+
+  var swiper2 = new Swiper(".content-slider", {
+    initialSlide: dataPosition,
+    autoHeight: true,
+    spaceBetween: 0,
+    navigation: false,
+    noSwipingClass: "table-responsive",
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+
+  // upload image vs video---------------------------------------------------
   const imgVideoUpload = document.querySelectorAll(".image-selector");
   let videoSrc;
 
@@ -88,12 +118,12 @@ $(document).ready(function () {
     });
   });
 
-  // play video modal
+  // play video modal---------------------------------------------------------
   $("#video_view").on("shown.bs.modal", function (e) {
     $(".video__view").attr("src", videoSrc);
   });
 
-  //   color picker
+  //   color picker---------------------------------------------------------
   const colourPickerFields = document.querySelectorAll(".colour-picker-field");
 
   colourPickerFields.forEach((item) => {
@@ -116,7 +146,7 @@ $(document).ready(function () {
       handleSetColours(picker, text);
     });
   });
-  // ------------select custom ----------
+  // select custom -----------------------------------------------------------
   var x, i, j, l, ll, selElmnt, a, b, c;
   /*Tìm class "custom-select":*/
   x = document.getElementsByClassName("custom-select");
@@ -196,7 +226,7 @@ $(document).ready(function () {
   }
   /*Đóng mục chọn khi click ra ngoài:*/
   document.addEventListener("click", closeAllSelect);
-  // auto
+  //Tự động thay đổi màu sắc box chức năng-------------------------------------
   const featureEle = document.querySelectorAll(" .feature-box");
 
   for (let i = 0; i < featureEle.length; i++) {
@@ -205,32 +235,33 @@ $(document).ready(function () {
     featureEle[i].setAttribute("data-bg", randomNum);
   }
 
-  // show quantity modul on page responsive!
+  // show quantity modul on page responsive!------------------------------------
   const modulList = document.querySelector(".modul-v2 .modul-list");
   const modulItem = document.querySelectorAll(".modul-v2 .modul-item");
+  if (modulList) {
+    /*Lấy chiều rộng list modul*/
+    const modulListW = modulList.offsetWidth;
+    /*Số lượng modul có thể hiển thị trên 1 dòng*/
+    const modulItemPerRow = Math.floor((modulListW - 41) / 220);
 
-  console.log(modulItem[0].offsetWidth);
-  /*Lấy chiều rộng list modul*/
-  const modulListW = modulList.offsetWidth;
-  /*Số lượng modul có thể hiển thị trên 1 dòng*/
-  const modulItemPerRow = Math.floor((modulListW - 41) / 220);
-  console.log(modulListW);
-  /*Lấy số lượng modul*/
-  const modulItemQuantity = modulItem.length;
-  /*Hiển thị modul trên 1 dòng, ẩn phần còn lại*/
-  for (let i = 0; i < modulItemPerRow; i++) {
-    modulItem[i].classList.add("modul-show");
-  }
-  const modulViewMore = document.querySelector(".modul-view-more");
-  if (modulItemQuantity > modulItemPerRow) {
-    modulViewMore.classList.add("show");
-  }
-  modulViewMore.addEventListener("click", () => {
-    modulViewMore.classList.remove("show");
-    for (let i = 0; i <= modulItemQuantity; i++) {
+    /*Lấy số lượng modul*/
+    const modulItemQuantity = modulItem.length;
+    /*Hiển thị modul trên 1 dòng, ẩn phần còn lại*/
+    for (let i = 0; i < modulItemPerRow; i++) {
       modulItem[i].classList.add("modul-show");
     }
-  });
+    const modulViewMore = document.querySelector(".modul-view-more");
+    if (modulItemQuantity > modulItemPerRow) {
+      modulViewMore.classList.add("show");
+    }
+    modulViewMore.addEventListener("click", () => {
+      modulViewMore.classList.remove("show");
+      for (let i = 0; i <= modulItemQuantity; i++) {
+        modulItem[i].classList.add("modul-show");
+      }
+    });
+  }
+
   // modal show test
   // $(window).on("load", function () {
   //   $("#modul_category").modal("show");

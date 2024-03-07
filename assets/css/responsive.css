@@ -154,6 +154,18 @@
 }
 
 @media (max-width: 1080px) {
+  .chart-full .table-wrap,
+  .chart-full .chart-wrap {
+    width: 100%;
+  }
+  .chart-full .chart-wrap {
+    padding-left: 0;
+    margin-top: 40px;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+  }
   .theme-option-box {
     flex-wrap: wrap;
   }

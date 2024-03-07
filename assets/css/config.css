@@ -385,3 +385,31 @@ a.btn {
 .feature-box[data-bg="10"] {
   background-image: linear-gradient(to top right, #19c80f, #63fa87);
 }
+
+/* width */
+
+.min-w-85p {
+  min-width: 85px;
+}
+
+.min-w-185p {
+  min-width: 185px;
+}
+
+.min-w-150p {
+  min-width: 150px;
+}
+
+/* height */
+
+.min-h-42p {
+  min-height: 42px;
+}
+
+.border-left-1 {
+  border-left-width: 1px !important;
+}
+
+.border-top-1 {
+  border-top-width: 1px !important;
+}

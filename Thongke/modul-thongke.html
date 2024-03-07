@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Modul-chitiet</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
 
 </head>
 
@@ -14,8 +14,8 @@
         <div class="top-nav ">
             <div class="head-logo">
                 <a href="index.html">
-                    <img class="logo-icon" src="assets/images/logo/logo-icon.png">
-                    <img class="logo-text" src="assets/images/logo/logo-text.png">
+                    <img class="logo-icon" src="../assets/images/logo/logo-icon.png">
+                    <img class="logo-text" src="../assets/images/logo/logo-text.png">
                 </a>
             </div>
             <div class="head-search-form">
@@ -34,7 +34,7 @@
             </div>
             <div class="main-menu">
                 <ul class="list-unstyled">
-                    <li class="item active">
+                    <li class="item">
                         <a class="menu-link" href="index.html">
                             <i class="fal fa-home"></i>
                             <span>Trang chủ</span>
@@ -45,7 +45,7 @@
                             <span>Dashboard</span>
                         </a>
                     </li>
-                    <li class="item">
+                    <li class="item active">
                         <a class="menu-link" href="modul.html">
                             <span>Modul</span>
                         </a>
@@ -101,204 +101,183 @@
                 </div>
                 <div class="dropdown">
                     <div class="item" data-bs-toggle="dropdown">
-                        <img src="assets/images/avatar.jpg" class="avatar">
+                        <img src="../assets/images/avatar.jpg" class="avatar">
                     </div>
-                    <ul class="dropdown-menu user-action">
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <i class="fa-light fa-user"></i>
-                                <span>Thông tin cá nhân</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <i class="fa-light fa-gear text-green"></i>
-                                <span>Cài đặt</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="theme-option.html">
-                                <i class="fa-light fa-browser text-red"></i>
-                                <span>Theme Option</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <i class="fa-light fa-right-from-bracket"></i>
-                                <span>Đăng xuất</span>
-                            </a>
-                        </li>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="quick-action">
-        <div class="welcome">Chào mừng bạn</div>
-        <div class="quick-acction-title">Quick action</div>
+        <div class="dropdown modul-dropdown">
+            <div class="menu-dropdown-select " data-bs-toggle="dropdown" aria-expanded="true">
+                <i class="fas fa-book-reader modul-icon"></i>
+                <span>Thống kê</span>
+                <i class="fas fa-caret-down dropdown-icon"></i>
+
+            </div>
+            <ul class="dropdown-menu ">
+                <li>
+                    <a class="dropdown-item modul-dropdown-item item-1" href="#">
+                        <i class="fas fa-hospital-user"></i>
+                        <span>Ký túc xá</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item modul-dropdown-item item-2" href="#">
+                        <i class="fas fa-hospital-user"></i>
+                        <span>Ký túc xá</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item modul-dropdown-item item-3" href="#">
+                        <i class="fas fa-hospital-user"></i>
+                        <span>Ký túc xá</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item modul-dropdown-item item-4" href="#">
+                        <i class="fas fa-hospital-user"></i>
+                        <span>Ký túc xá</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item modul-dropdown-item item-5" href="#">
+                        <i class="fas fa-hospital-user"></i>
+                        <span>Ký túc xá</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
         <div class="action-group">
             <div class="item">
                 <div class="pinned">
                     <i class="fa-solid fa-heart"></i>
-                    <div class="alert">Xóa chức năng khỏi trang chủ</div>
+                    <div class="alert">Bỏ yêu thích</div>
                 </div>
-                <a href="chucnang.html" class="action-box feature-box">
-
+                <a href="thongke-chitiet.html" data-position="0" class="action-box feature-box">
                     <div class="icon">
-                        <i class="fas fa-users-gear"></i>
+                        <img src="icon/quymo-nguoihoc.svg" alt="">
                     </div>
                     <div class="feature-name">
-                        Quản ly nhóm tiêu đề dài hơn
+                        Thống kê quy mô người học
                     </div>
                 </a>
             </div>
             <div class="item">
                 <div class="pinned">
                     <i class="fa-solid fa-heart"></i>
-                    <div class="alert">Xóa chức năng khỏi trang chủ</div>
+                    <div class="alert">Bỏ yêu thích</div>
                 </div>
-                <a href="chucnang.html" class="action-box feature-box">
-
+                <a href="thongke-chitiet.html" data-position="1" class="action-box feature-box">
                     <div class="icon">
-                        <img src="assets/images/icons/feature/chalkboard-user 1.png">
+                        <img src="icon/quymo-giangvien.svg" alt="">
                     </div>
                     <div class="feature-name">
-                        Quản ly nhóm
+                        Thống kê quy mô giảng viên
                     </div>
                 </a>
             </div>
             <div class="item">
                 <div class="pinned">
                     <i class="fa-solid fa-heart"></i>
-                    <div class="alert">Xóa chức năng khỏi trang chủ</div>
+                    <div class="alert">Bỏ yêu thích</div>
                 </div>
-                <a href="chucnang.html" class="action-box feature-box">
-
+                <a href="thongke-chitiet.html" data-position="2" class="action-box feature-box">
                     <div class="icon">
-                        <i class="fas fa-users-gear"></i>
+                        <img src="icon/totnghiep.svg" alt="">
                     </div>
                     <div class="feature-name">
-                        Quản ly nhóm
+                        Thống kê tốt nghiệp
                     </div>
                 </a>
             </div>
             <div class="item">
                 <div class="pinned">
                     <i class="fa-solid fa-heart"></i>
-                    <div class="alert">Xóa chức năng khỏi trang chủ</div>
+                    <div class="alert">Bỏ yêu thích</div>
                 </div>
-                <a href="chucnang.html" class="action-box feature-box">
-
+                <a href="thongke-chitiet.html" data-position="3" class="action-box feature-box">
                     <div class="icon">
-                        <i class="fas fa-users-gear"></i>
+                        <img src="icon/dohailong.svg" alt="">
                     </div>
                     <div class="feature-name">
-                        Quản ly nhóm
+                        Thống kê Mức độ hài lòng
                     </div>
                 </a>
             </div>
             <div class="item">
                 <div class="pinned">
                     <i class="fa-solid fa-heart"></i>
-                    <div class="alert">Xóa chức năng khỏi trang chủ</div>
+                    <div class="alert">Bỏ yêu thích</div>
                 </div>
-                <a href="chucnang.html" class="action-box feature-box">
-
+                <a href="thongke-chitiet.html" data-position="4" class="action-box feature-box">
                     <div class="icon">
-                        <i class="fas fa-users-gear"></i>
+                        <img src="icon/tinhhinh-hoctap.svg" alt="">
                     </div>
                     <div class="feature-name">
-                        Quản ly nhóm
+                        Thống kê tình hình học tập
                     </div>
                 </a>
             </div>
             <div class="item">
                 <div class="pinned">
                     <i class="fa-solid fa-heart"></i>
-                    <div class="alert">Xóa chức năng khỏi trang chủ</div>
+                    <div class="alert">Bỏ yêu thích</div>
                 </div>
-                <a href="chucnang.html" class="action-box feature-box">
-
+                <a href="thongke-chitiet.html" data-position="5" class="action-box feature-box">
                     <div class="icon">
-                        <i class="fas fa-users-gear"></i>
+                        <i class="fa-light fa-users-gear"></i>
                     </div>
                     <div class="feature-name">
-                        Quản ly nhóm
+                        Thống kê tình trạng ht hiện tại
                     </div>
                 </a>
             </div>
             <div class="item">
                 <div class="pinned">
                     <i class="fa-solid fa-heart"></i>
-                    <div class="alert">Xóa chức năng khỏi trang chủ</div>
+                    <div class="alert">Bỏ yêu thích</div>
                 </div>
-                <a href="chucnang.html" class="action-box feature-box">
-
+                <a href="thongke-chitiet.html" data-position="6" class="action-box feature-box">
                     <div class="icon">
-                        <i class="fas fa-users-gear"></i>
+                        <img src="icon/thuhocphi.svg" alt="">
                     </div>
                     <div class="feature-name">
-                        Quản ly nhóm
+                        Thống kê tình hình thu học phí
                     </div>
                 </a>
             </div>
             <div class="item">
                 <div class="pinned">
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="alert">Xóa chức năng khỏi trang chủ</div>
+                    <i class="fa-light fa-heart"></i>
+                    <div class="alert">Yêu thích</div>
                 </div>
-                <a href="chucnang.html" class="action-box feature-box">
-
+                <a href="thongke-chitiet.html" data-position="7" class="action-box feature-box">
                     <div class="icon">
-                        <i class="fas fa-users-gear"></i>
+                        <i class="fa-light fa-users-gear"></i>
                     </div>
-                    <div class="feature-name">
-                        Quản ly nhóm
+                    <div class="modul-name">
+                        Thống kê tiến trình học kỳ
                     </div>
                 </a>
             </div>
             <div class="item">
                 <div class="pinned">
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="alert">Xóa chức năng khỏi trang chủ</div>
+                    <i class="fa-light fa-heart"></i>
+                    <div class="alert">Yêu thích</div>
                 </div>
-                <a href="chucnang.html" class="action-box feature-box">
-
+                <a href="thongke-chitiet.html" data-position="8" class="action-box feature-box">
                     <div class="icon">
-                        <i class="fas fa-users-gear"></i>
+                        <i class="fa-light fa-users-gear"></i>
                     </div>
-                    <div class="feature-name">
-                        Quản ly nhóm
-                    </div>
-                </a>
-            </div>
-            <div class="item">
-                <div class="pinned">
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="alert">Xóa chức năng khỏi trang chủ</div>
-                </div>
-                <a href="chucnang.html" class="action-box feature-box">
-
-                    <div class="icon">
-                        <i class="fas fa-users-gear"></i>
-                    </div>
-                    <div class="feature-name">
-                        Quản ly nhóm
-                    </div>
-                </a>
-            </div>
-            <div class="item">
-                <div class="pinned">
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="alert">Xóa chức năng khỏi trang chủ</div>
-                </div>
-                <a href="chucnang.html" class="action-box feature-box">
-
-                    <div class="icon">
-                        <i class="fas fa-users-gear"></i>
-                    </div>
-                    <div class="feature-name">
-                        Quản ly nhóm
+                    <div class="modul-name">
+                        Báo cáo an ninh
                     </div>
                 </a>
             </div>
@@ -316,7 +295,7 @@
                             <div class="icon">
                                 <i class="fas fa-users-gear"></i>
                             </div>
-                            <div class="feature-name">
+                            <div class="modul-name">
                                 Quản ly nhóm
                             </div>
                         </div>
@@ -337,7 +316,7 @@
                     <div class="card-footer">
                         <div class="user-info">
                             <div class="avatar">
-                                <img src="assets/images/avatar.jpg">
+                                <img src="../assets/images/avatar.jpg">
                             </div>
                             <div>
                                 <div class="name">Nguyễn Thị Bích</div>
@@ -356,7 +335,7 @@
                             <div class="icon">
                                 <i class="fas fa-users-gear"></i>
                             </div>
-                            <div class="feature-name">
+                            <div class="modul-name">
                                 Quản ly nhóm
                             </div>
                         </div>
@@ -377,7 +356,7 @@
                     <div class="card-footer">
                         <div class="user-info">
                             <div class="avatar">
-                                <img src="assets/images/avatar.jpg">
+                                <img src="../assets/images/avatar.jpg">
                             </div>
                             <div>
                                 <div class="name">Nguyễn Thị Bích</div>
@@ -396,7 +375,7 @@
                             <div class="icon">
                                 <i class="fas fa-users-gear"></i>
                             </div>
-                            <div class="feature-name">
+                            <div class="modul-name">
                                 Quản ly nhóm
                             </div>
                         </div>
@@ -417,7 +396,7 @@
                     <div class="card-footer">
                         <div class="user-info">
                             <div class="avatar">
-                                <img src="assets/images/avatar.jpg">
+                                <img src="../assets/images/avatar.jpg">
                             </div>
                             <div>
                                 <div class="name">Nguyễn Thị Bích</div>
@@ -434,10 +413,10 @@
     </div>
 
     <!-- JS -->
-    <script src="assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
-    <script src="assets/swiper-slide/swiper-bundle.min.js"></script>
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/customs.js"></script>
+    <script src="../assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
+    <script src="../assets/swiper-slide/swiper-bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/customs.js"></script>
 </body>
 
 </html>

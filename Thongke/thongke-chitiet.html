@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chức năng</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+
+<body>
+    <div class="header fixed-top">
+        <div class="top-nav ">
+            <div class="head-logo">
+                <a href="../index.html">
+                    <img class="logo-icon" src="../assets/images/logo/logo-icon.png">
+                    <img class="logo-text" src="../assets/images/logo/logo-text.png">
+                </a>
+            </div>
+            <div class="head-search-form">
+                <div class="head-search-toggle">
+                    <i class="fal fa-search"></i>
+                </div>
+                <div class="head-search-box">
+                    <div class="form">
+                        <input type="text" class="search-imput" placeholder="Tìm kiếm thông tin">
+                        <button class="search-btn">
+                            <i class="fal fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-menu">
+                <ul class="list-unstyled">
+                    <li class="item ">
+                        <a class="menu-link" href="index.html">
+                            <i class="fal fa-home"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="dashboard.html">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="modul.html">
+                            <span>Modul</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="chucnang-cuaban.html">
+                            <span>Chức năng của bạn</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="tintuc.html">
+                            <span>Tin tức</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fal fa-bars"></i>
+                </div>
+            </div>
+            <div class="account-group">
+                <div class="dropdown ">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <i class="fal fa-circle-check"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item message" data-bs-toggle="dropdown">
+                        <i class="fal fa-messages"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item noti" data-bs-toggle="dropdown">
+                        <i class="fal fa-bell"></i>
+                        <span>9+</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <img src="../assets/images/avatar.jpg" class="avatar">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quick-action tabs-slider">
+        <div class="tab-title">
+            Thống kê
+        </div>
+        <div class="tab-list swiper label-slider auto-width-slider">
+            <div class="swiper-wrapper">
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+
+                        <div class="icon" style="mask-image: url('icon/quymo-nguoihoc.svg')"></div>
+                        <p>Thống kê quy mô người học</p>
+                    </a>
+                </div>
+
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <div class="icon" style="mask-image: url('icon/quymo-giangvien.svg')"></div>
+                        <p>Thống kê quy mô giảng viên</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <div class="icon" style="mask-image: url('icon/totnghiep.svg')"></div>
+                        <p>Thống kê tốt nghiệp</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <div class="icon" style="mask-image: url('icon/dohailong.svg')"></div>
+                        <p>Thống kê mức độ hài lòng</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <div class="icon" style="mask-image: url('icon/tinhhinh-hoctap.svg')"></div>
+                        <p>Thống kê tình hình học tập</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)"><i class="fas fa-users-gear"></i>
+                    <p>Thống kê tình trạng ht hiện tại</p></a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <div class="icon" style="mask-image: url('icon/thuhocphi.svg')"></div>
+                        <p>Thống kê tình hình thu học phí</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)"><i class="fas fa-users-gear"></i>
+                    <p>Thống kê tiến trình học kỳ</p></a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)"><i class="fas fa-users-gear"></i>
+                    <p>Báo cáo an ninh</p></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="swiper content-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="function">
+                    <div class="function-nav">
+                        <div class="action-function">
+                            <button class="btn btn-view">
+                                <i class="fal fa-eye"></i>
+                                <span>Xem</span>
+                            </button>
+                            <button class="btn btn-edit">
+                                <i class="fal fa-edit"></i>
+                                <span>Sửa</span>
+                            </button>
+                            <button class="btn btn-delete">
+                                <i class="fal fa-trash"></i>
+                                <span>Xóa</span>
+                            </button>
+                            <button class="btn btn-add">
+                                <i class="fal fa-plus"></i>
+                                <span>Thêm</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="function-content">
+                        <div class="feature-content">
+                            <div class="card today-card today-card-1 mb-40">
+                                <div class="card-header">
+                                    <div class="title">
+
+                                        <div class="modul-name">
+                                            Quy mô lớp hành chính
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <div class="item" data-bs-toggle="dropdown">
+                                            <i class="fal fa-ellipsis"></i>
+                                        </div>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-full">
+                                        <div class="table-wrap">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center border-top-1" scope="col" rowspan="2">STT</th>
+                                                            <th class="min-w-150p border-top-1" scope="col" rowspan="2">Ngành</th>
+                                                            <th class="min-w-185p border-top-1" scope="col" rowspan="2">Khoa</th>
+                                                            <th class="text-center border-1 py-11" scope="col" colspan="3">Số lớp</th>
+                                                            <th class="text-center border-top-1  py-11" scope="col" colspan="3">Số SV</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="min-w-85p text-center border-1 py-7" scope="col">HK Xuân <br> 2022-23</th>
+                                                            <th class="min-w-85p text-center border-1" scope="col">HK Hạ<br> 2022-23</th>
+                                                            <th class="min-w-85p text-center border-1" scope="col">HK Thu <br>2022-23</th>
+                                                            <th class="min-w-85p text-center border-1" scope="col">HK Xuân <br>2022-23</th>
+                                                            <th class="min-w-85p text-center border-1" scope="col">HK Hạ <br>2022-23</th>
+                                                            <th class="min-w-85p text-center border-left-1" scope="col">HK Thu <br>2022-23</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3"><span class="min-h-42p d-flex align-items-center fw-bold">Tổng cộng</span></td>
+                                                            <td class="border-left-1 text-center"><span class="fw-bold">3</span></td>
+                                                            <td class="text-center"><span class="fw-bold">3</span></td>
+                                                            <td class="text-center"><span class="fw-bold">3</span></td>
+                                                            <td class="border-left-1 text-center"><span class="fw-bold">3</span></td>
+                                                            <td class="text-center"><span class="fw-bold">3</span></td>
+                                                            <td class="text-center"><span class="fw-bold">3</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="chart-wrap">
+                                            <canvas id="QuymoLophanhchinh" width="400" height="300"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- quy mô sinh viên -->
+                            <div class="card today-card today-card-1">
+                                <div class="card-header">
+                                    <div class="title">
+
+                                        <div class="modul-name">
+                                            Quy mô Sinh viên
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <div class="item" data-bs-toggle="dropdown">
+                                            <i class="fal fa-ellipsis"></i>
+                                        </div>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-full">
+                                        <div class="table-wrap">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center border-top-1" scope="col" rowspan="2">STT</th>
+                                                            <th class="min-w-150p border-top-1" scope="col" rowspan="2">Ngành</th>
+                                                            <th class="min-w-185p border-top-1" scope="col" rowspan="2">Khoa</th>
+                                                            <th class="text-center border-1 py-11" scope="col" colspan="3">Số lớp</th>
+                                                            <th class="text-center border-top-1  py-11" scope="col" colspan="3">Số SV</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="min-w-85p text-center border-1 py-7" scope="col">HK Xuân <br> 2022-23</th>
+                                                            <th class="min-w-85p text-center border-1" scope="col">HK Hạ<br> 2022-23</th>
+                                                            <th class="min-w-85p text-center border-1" scope="col">HK Thu <br>2022-23</th>
+                                                            <th class="min-w-85p text-center border-1" scope="col">HK Xuân <br>2022-23</th>
+                                                            <th class="min-w-85p text-center border-1" scope="col">HK Hạ <br>2022-23</th>
+                                                            <th class="min-w-85p text-center border-left-1" scope="col">HK Thu <br>2022-23</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-42p justify-content-center">1</span></td>
+                                                            <td>Công nghệ thông tin</td>
+                                                            <td>Công nghệ thông tin và Truyền thông</td>
+                                                            <td class="border-left-1 text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="text-center">3</td>
+                                                            <td class="border-left-1 text-center">70</td>
+                                                            <td class="text-center">60</td>
+                                                            <td class="text-center">85</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3"><span class="min-h-42p d-flex align-items-center fw-bold">Tổng cộng</span></td>
+                                                            <td class="border-left-1 text-center"><span class="fw-bold">3</span></td>
+                                                            <td class="text-center"><span class="fw-bold">3</span></td>
+                                                            <td class="text-center"><span class="fw-bold">3</span></td>
+                                                            <td class="border-left-1 text-center"><span class="fw-bold">3</span></td>
+                                                            <td class="text-center"><span class="fw-bold">3</span></td>
+                                                            <td class="text-center"><span class="fw-bold">3</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="chart-wrap">
+                                            <canvas id="QuymoSV" width="400" height="300"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                2
+            </div>
+
+
+            <div class="swiper-slide">
+                3
+            </div>
+            <div class="swiper-slide">
+                4
+            </div>
+            <div class="swiper-slide">
+                5
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
+    <script src="../assets/swiper-slide/swiper-bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../assets/js/customs.js"></script>
+    <script>
+        const QuymoLophanhchinh = document.getElementById('QuymoLophanhchinh');
+        const QuymoSV = document.getElementById('QuymoSV');
+        const dotuoi = document.getElementById('dotuoi');
+        const tileGiangvien = document.getElementById('tile_giangvien');
+        const tileHocham = document.getElementById('tile_hocham');
+        const label = ['Công nghệ thông tin và truyền thông', 'Công nghệ thông tin và truyền thông', 'Kinh doanh và quản lý', 'Mỹ thuật và thiết kế', 'Mỹ thuật và thiết kế', 'Ngôn ngữ và văn hóa', 'Ngôn ngữ và văn hóa']
+        new Chart(QuymoLophanhchinh, {
+            type: 'bar',
+            data: {
+                labels: label,
+                datasets: [{
+                    label: 'Số lớp hành chính Năm học 2022 - 2023',
+                    data: [3, 1, 2, 5, 6, 15, 18],
+                    backgroundColor: [
+                        'rgba(25, 107, 35, .8) '
+                    ],
+                    borderColor: [
+                        'rgba(25, 107, 35, 1) '
+                    ],
+                    borderWidth: 1
+                }, {
+                    label: 'Số lớp hành chính Năm học 2023 - 2024',
+                    data: [7, 5, 9, 15, 9, 20, 8],
+                    backgroundColor: [
+                        'rgba(15, 158, 214, .8)'
+                    ],
+                    borderColor: [
+                        'rgba(15, 158, 214, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+
+                // indexAxis: 'y',
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        border: {
+                            // color: 'red'
+                        },
+                        grid: {
+                            //color: 'transparent'
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'QUY MÔ LỚP HÀNH CHÍNH',
+                        padding: {
+                            top: 10,
+                            bottom: 0
+                        },
+                        font: {
+                            size: 20
+                        },
+                        //color: 'red',
+                        position: 'top',
+                        align: 'center'
+
+                    },
+                    tooltip: {
+                        yAlign: 'bottom',
+                        backgroundColor: '#fff',
+                        titleColor: '#222',
+                        bodyColor: '#222',
+                        borderColor: '#cccccc',
+                        borderWidth: 1,
+                        padding: 15
+                    },
+                    legend: {
+                        // position: 'right',
+                        // align: 'start'
+
+                        labels: {
+                            padding: 10,
+                            // color: 'red',
+                            boxWidth: 15,
+                            boxHeight: 15,
+                            useBorderRadius: true,
+                            borderRadius: 3
+
+
+                        }
+
+                    }
+
+                }
+            },
+
+
+        });
+        /*** Quy mô sinh viên**/
+        new Chart(QuymoSV, {
+            type: 'bar',
+            data: {
+                labels: label,
+                datasets: [{
+                    label: 'Số lớp hành chính Năm học 2022 - 2023',
+                    data: [50, 30, 45, 25, 50, 15, 70],
+                    backgroundColor: [
+                        'rgba(25, 107, 35, .8) '
+                    ],
+                    borderColor: [
+                        'rgba(25, 107, 35, 1) '
+                    ],
+                    borderWidth: 1,
+                    datalabels: {
+                        // color: 'blue',
+                        anchor: 'end',
+                        align: 'top',
+                        offset: 10,
+                        rotation: -90,
+                        font: {
+                            size: '16',
+                            weight: '500'
+                        }
+                    }
+                }, {
+                    label: 'Số lớp hành chính Năm học 2023 - 2024',
+                    data: [375, 250, 200, 150, 200, 100, 150],
+                    backgroundColor: [
+                        'rgba(15, 158, 214, .8)'
+                    ],
+                    borderColor: [
+                        'rgba(15, 158, 214, 1)'
+                    ],
+                    borderWidth: 1,
+                    datalabels: {
+                        // color: 'blue',
+                        anchor: 'end',
+                        align: 'top',
+                        offset: 10,
+                        rotation: -90,
+                        font: {
+                            size: '16',
+                            weight: '500'
+                        }
+                    }
+                }]
+            },
+            plugins: [ChartDataLabels],
+            options: {
+                maintainAspectRatio: false,
+                // indexAxis: 'y',
+                scales: {
+                    y: {
+                        //display: false,
+                        beginAtZero: true,
+                        border: {
+                            // color: 'red'
+                        },
+                        grid: {
+                            color: 'transparent'
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'QUY MÔ SINH VIÊN',
+                        padding: {
+                            top: 10,
+                            bottom: 0
+                        },
+                        font: {
+                            size: 20
+                        },
+                        //color: 'red',
+                        position: 'top',
+                        align: 'center'
+
+                    },
+                    tooltip: {
+                        yAlign: 'bottom',
+                        backgroundColor: '#fff',
+                        titleColor: '#222',
+                        bodyColor: '#222',
+                        borderColor: '#cccccc',
+                        borderWidth: 1,
+                        padding: 15
+                    },
+                    legend: {
+                        // position: 'right',
+                        // align: 'start'
+
+                        labels: {
+                            padding: 10,
+                            // color: 'red',
+                            boxWidth: 15,
+                            boxHeight: 15,
+                            useBorderRadius: true,
+                            borderRadius: 3
+
+
+                        }
+
+                    }
+
+                }
+            },
+
+
+        });
+        /** Tỉ lệ độ tuổi **/
+        new Chart(dotuoi, {
+            type: 'doughnut',
+            data: {
+                labels: ['25 - 30', '30 - 35', '35 - 40', '40 - 50'],
+                datasets: [{
+                    label: 'Số sinh viên',
+                    data: [50, 30, 45, 25],
+                    backgroundColor: [
+                        'RGB(20,96,130)',
+                        'rgb(237,115,115)',
+                        'rgb(28,111,111)',
+                        'rgb(17,162,162)'
+                    ],
+                    borderColor: [
+                        'RGB(20,96,130)',
+                        'rgb(237,115,115)',
+                        'rgb(28,111,111)',
+                        'rgb(17,162,162)'
+                    ],
+                    borderWidth: 1,
+                    datalabels: {
+                        color: '#fff',
+                        // backgroundColor: 'red',
+                        font: {
+                            size: '16',
+                            weight: '500'
+                        },
+                        formatter: ((value, dotuoi) => {
+
+                            const totalSum = dotuoi.dataset.data.reduce((accumumator, currentValue) => {
+                                return accumumator + currentValue
+                            }, 0);
+                            const percent = value / totalSum * 100;
+                            return `${percent.toFixed(0)}%`;
+
+                        }),
+
+                    }
+                }]
+            },
+            plugins: [ChartDataLabels],
+            options: {
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'TỈ LỆ ĐỘ TUỔI',
+                        padding: {
+                            top: 10,
+                            bottom: 0
+                        },
+                        font: {
+                            size: 20
+                        },
+                        //color: 'red',
+                        position: 'top',
+                        align: 'center'
+
+                    },
+                    tooltip: {
+                        yAlign: 'bottom',
+                        backgroundColor: '#fff',
+                        titleColor: '#222',
+                        bodyColor: '#222',
+                        borderColor: '#cccccc',
+                        borderWidth: 1,
+                        padding: 15
+                    },
+                    legend: {
+                        position: 'right',
+                        // align: 'start'
+
+                        labels: {
+                            padding: 30,
+                            // color: 'red',
+                            boxWidth: 15,
+                            boxHeight: 15,
+                            useBorderRadius: true,
+                            borderRadius: 3,
+                            font: {
+                                size: 16
+                            }
+
+
+                        }
+
+                    }
+
+                }
+            },
+
+
+        });
+        /** Tỉ lệ học hàm **/
+        new Chart(tileHocham, {
+            type: 'pie',
+            data: {
+                labels: ['Thạc sĩ', 'Tiến sĩ', 'Phó giáo sư', 'Giáo sư'],
+                datasets: [{
+                    label: 'Số lượng',
+                    data: [100, 30, 35, 25],
+                    backgroundColor: [
+                        '#146082',
+                        '#ed7333',
+                        '#1c6f29',
+                        '#10a1d7'
+                    ],
+                    borderColor: [
+                        '#146082',
+                        '#ed7333',
+                        '#1c6f29',
+                        '#10a1d7'
+                    ],
+                    borderWidth: 1,
+                    datalabels: {
+                        color: '#fff',
+                        // backgroundColor: 'red',
+                        font: {
+                            size: '16',
+                            weight: '500'
+                        },
+                        formatter: ((value, dotuoi) => {
+
+                            const totalSum = dotuoi.dataset.data.reduce((accumumator, currentValue) => {
+                                return accumumator + currentValue
+                            }, 0);
+                            const percent = value / totalSum * 100;
+                            return `${percent.toFixed(0)}%`;
+
+                        }),
+
+                    }
+                }]
+            },
+            plugins: [ChartDataLabels],
+            options: {
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'TỈ LỆ HỌC HÀM HỌC VỊ',
+                        padding: {
+                            top: 10,
+                            bottom: 0
+                        },
+                        font: {
+                            size: 20
+                        },
+                        //color: 'red',
+                        position: 'top',
+                        align: 'center'
+
+                    },
+                    tooltip: {
+                        yAlign: 'bottom',
+                        backgroundColor: '#fff',
+                        titleColor: '#222',
+                        bodyColor: '#222',
+                        borderColor: '#cccccc',
+                        borderWidth: 1,
+                        padding: 15
+                    },
+                    legend: {
+                        position: 'right',
+                        // align: 'start'
+
+                        labels: {
+                            padding: 30,
+                            // color: 'red',
+                            boxWidth: 15,
+                            boxHeight: 15,
+                            useBorderRadius: true,
+                            borderRadius: 3,
+                            font: {
+                                size: 16
+                            }
+
+
+                        }
+
+                    }
+
+                }
+            },
+
+
+        });
+        /*** Tỉ lệ giảng viên cơ hữu và thỉnh giảng**/
+        new Chart(tileGiangvien, {
+            type: 'bar',
+            data: {
+                labels: label,
+                datasets: [{
+                    label: 'Thỉnh giảng',
+                    data: [510, 310, 245, 225, 150, 150, 70],
+                    backgroundColor: [
+                        '#2d6b8c'
+                    ],
+                    borderColor: [
+                        '#2d6b8c '
+                    ],
+                    borderWidth: 1,
+                    datalabels: {
+                        color: 'white',
+
+                        font: {
+                            size: '16',
+                            weight: '500'
+                        }
+                    }
+                }, {
+                    label: 'Cơ hữu',
+                    data: [375, 250, 200, 150, 200, 100, 150],
+                    backgroundColor: [
+                        '#e5621c'
+                    ],
+                    borderColor: [
+                        '#e5621c'
+                    ],
+                    borderWidth: 1,
+                    datalabels: {
+                        color: 'white',
+
+                        font: {
+                            size: '16',
+                            weight: '500'
+                        }
+                    }
+                }]
+            },
+            plugins: [ChartDataLabels],
+            options: {
+                // indexAxis: 'y',
+                scales: {
+                    y: {
+                        stacked: true,
+
+                        beginAtZero: true,
+                        border: {
+                            // color: 'red'
+                        },
+                        grid: {
+
+                            display: false,
+                        }
+                    },
+                    x: {
+                        stacked: true
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'TỈ LỆ GIẢNG VIÊN CƠ HỮU VÀ THỈNH GIẢNG',
+                        padding: {
+                            top: 10,
+                            bottom: 0
+                        },
+                        font: {
+                            size: 30
+                        },
+                        //color: 'red',
+                        position: 'top',
+                        align: 'center'
+
+                    },
+                    tooltip: {
+                        yAlign: 'bottom',
+                        backgroundColor: '#fff',
+                        titleColor: '#222',
+                        bodyColor: '#222',
+                        borderColor: '#cccccc',
+                        borderWidth: 1,
+                        padding: 15
+                    },
+                    legend: {
+                        // position: 'right',
+                        // align: 'start'
+
+                        labels: {
+                            padding: 30,
+                            // color: 'red',
+                            boxWidth: 15,
+                            boxHeight: 15,
+                            useBorderRadius: true,
+                            borderRadius: 3
+
+
+                        }
+
+                    }
+
+                }
+            },
+
+
+        });
+    </script>
+
+</body>
+
+</html>
