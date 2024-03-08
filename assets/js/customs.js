@@ -23,7 +23,8 @@ $(document).ready(function () {
 
   // Xử lý box chức năng----------------------------------------
   const featureItem = document.querySelectorAll(".action-group .item");
-
+  const featureItem2 = document.querySelector(".feature-item");
+  console.log(featureItem2);
   const featureItemMaxHeightArr = [];
 
   featureItem.forEach((item) => {

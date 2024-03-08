@@ -402,6 +402,10 @@ a.btn {
 
 /* height */
 
+.min-h-28p {
+  min-height: 28px;
+}
+
 .min-h-42p {
   min-height: 42px;
 }
