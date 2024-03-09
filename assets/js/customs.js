@@ -23,9 +23,22 @@ $(document).ready(function () {
 
   // Xử lý box chức năng----------------------------------------
   const featureItem = document.querySelectorAll(".action-group .item");
-  const featureItem2 = document.querySelector(".feature-item");
-  console.log(featureItem2);
+  const featureItem2 = document.querySelectorAll(".feature-list .feature-item");
+
   const featureItemMaxHeightArr = [];
+  featureItem2.forEach((item) => {
+    const featureLink = item.querySelector(".feature-box");
+    featureLink.addEventListener("click", (e) => {
+      //e.preventDefault();
+
+      var itemPosition = featureLink.getAttribute("data-position");
+      if (!itemPosition) {
+        itemPosition = 0;
+      }
+      console.log(itemPosition);
+      localStorage.setItem("dataPosition", itemPosition);
+    });
+  });
 
   featureItem.forEach((item) => {
     /* Index swiperJs when click*/
@@ -35,6 +48,9 @@ $(document).ready(function () {
       //e.preventDefault();
 
       var itemPosition = featureLink.getAttribute("data-position");
+      if (!itemPosition) {
+        itemPosition = 0;
+      }
       console.log(itemPosition);
       localStorage.setItem("dataPosition", itemPosition);
     });
@@ -61,9 +77,25 @@ $(document).ready(function () {
     autoHeight: true,
     spaceBetween: 0,
     navigation: false,
-    noSwipingClass: "table-responsive",
+    noSwipingClass: ["no-swiper"],
     thumbs: {
       swiper: swiper,
+    },
+  });
+  var swiperInwiper = new Swiper(".tab-header-nav", {
+    spaceBetween: 0,
+    slidesPerView: "auto",
+    freeMode: false,
+    watchSlidesProgress: false,
+  });
+  var swiperInwiper2 = new Swiper(".swiper-tab-content", {
+    initialSlide: dataPosition,
+    autoHeight: true,
+    spaceBetween: 0,
+    navigation: false,
+    noSwipingClass: ["no-swiper"],
+    thumbs: {
+      swiper: swiperInwiper,
     },
   });
 
@@ -262,6 +294,34 @@ $(document).ready(function () {
       }
     });
   }
+  // myTab-------------------------------------------------------------------------------
+  const myTabLink = document.querySelectorAll(".myTab-header-link");
+  const myTabItem = document.querySelectorAll(".myTab-item");
+  myTabLink.forEach((el) => {
+    el.addEventListener("click", showMyTab);
+  });
+
+  function showMyTab(el) {
+    const btn = el.currentTarget;
+    const dataTarget = btn.getAttribute("data-myTab");
+    myTabItem.forEach((el) => {
+      el.classList.remove("show");
+    });
+    myTabLink.forEach((el) => {
+      el.classList.remove("active");
+    });
+    document.querySelector("#" + dataTarget).classList.add("show");
+    btn.classList.add("active");
+  }
+  //responsive tab header--------------------------
+
+  const myTabHeader = document.querySelectorAll(".myTab-header");
+  myTabHeader.forEach((el) => {
+    const myTabHeaderHeight = el.offsetHeight;
+    if (myTabHeaderHeight > 60) {
+      el.classList.add("myTab-header-res");
+    }
+  });
 
   // modal show test
   // $(window).on("load", function () {

@@ -22,26 +22,32 @@ a.btn {
 }
 
 .btn-view {
-  border: 1px solid #6610f2;
-  background: #6610f2;
+  border: 1px solid var(--color-view);
+  background: var(--color-view);
   color: #fff;
 }
 
 .btn-edit {
-  border: 1px solid #28a745;
-  background: #28a745;
+  border: 1px solid var(--color-edit);
+  background: var(--color-edit);
   color: #fff;
 }
 
 .btn-delete {
-  border: 1px solid #17a2b8;
-  background: #17a2b8;
+  border: 1px solid var(--color-delete);
+  background: var(--color-delete);
   color: #fff;
 }
 
 .btn-add {
-  border: 1px solid #dc3545;
-  background: #dc3545;
+  border: 1px solid var(--color-add);
+  background: var(--color-add);
+  color: #fff;
+}
+
+.btn-add-2 {
+  border: 1px solid var(--color-add-2);
+  background: var(--color-add-2);
   color: #fff;
 }
 
@@ -49,6 +55,10 @@ a.btn {
   background: #fff;
   border: 1px solid #e1e1e1;
   color: var(--color-daskblue);
+}
+
+.btn-opacity {
+  opacity: 0.5;
 }
 
 .btn:hover {
@@ -392,12 +402,20 @@ a.btn {
   min-width: 85px;
 }
 
-.min-w-185p {
-  min-width: 185px;
+.min-w-100p {
+  min-width: 100px;
+}
+
+.min-w-110p {
+  min-width: 110px;
 }
 
 .min-w-150p {
   min-width: 150px;
+}
+
+.min-w-185p {
+  min-width: 185px;
 }
 
 /* height */

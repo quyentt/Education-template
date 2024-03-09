@@ -154,6 +154,12 @@
 }
 
 @media (max-width: 1080px) {
+  .filter-item {
+    width: 40%;
+  }
+  .filter-item:last-child {
+    width: 20%;
+  }
   .chart-full .table-wrap,
   .chart-full .chart-wrap {
     width: 100%;
@@ -281,6 +287,20 @@
 }
 
 @media (max-width: 576px) {
+  .filter-item {
+    width: 100%;
+    justify-content: end;
+  }
+  .filter-item:last-child {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 15px;
+  }
+  .filter-item .input-label-left {
+    margin: 0;
+  }
   .modal .feature-item {
     width: 25%;
   }
