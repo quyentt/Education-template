@@ -125,6 +125,9 @@
                     <canvas class="mt-100" id="tile_hocham" width="400" height="400"></canvas>
                 </div>
                 <canvas id="tile_giangvien" width="800" height="400"></canvas>
+                <div class="my-100">
+                    <canvas id="other" width="800" height="400"></canvas>
+                </div>
             </div>
         </div>
     </div>
@@ -593,6 +596,122 @@
                     title: {
                         display: true,
                         text: 'TỈ LỆ GIẢNG VIÊN CƠ HỮU VÀ THỈNH GIẢNG',
+                        padding: {
+                            top: 10,
+                            bottom: 0
+                        },
+                        font: {
+                            size: 30
+                        },
+                        //color: 'red',
+                        position: 'top',
+                        align: 'center'
+
+                    },
+                    tooltip: {
+                        yAlign: 'bottom',
+                        backgroundColor: '#fff',
+                        titleColor: '#222',
+                        bodyColor: '#222',
+                        borderColor: '#cccccc',
+                        borderWidth: 1,
+                        padding: 15
+                    },
+                    legend: {
+                        // position: 'right',
+                        // align: 'start'
+
+                        labels: {
+                            padding: 30,
+                            // color: 'red',
+                            boxWidth: 15,
+                            boxHeight: 15,
+                            useBorderRadius: true,
+                            borderRadius: 3
+
+
+                        }
+
+                    }
+
+                }
+            },
+
+
+        });
+
+        //thống kê khác
+        new Chart(other, {
+            type: 'bar',
+            data: {
+                labels: ['3/3', '4/3', '5/3', '6/3', '7/3', '8/3', '9/3'],
+                datasets: [{
+                    label: 'Cuộc chát tự xử lý',
+                    data: [30, 21, 40, 14, 25, 28, 47],
+                    backgroundColor: [
+                        '#8C52FF'
+                    ],
+                    borderColor: [
+                        '#8C52FF '
+                    ],
+                    borderWidth: 1,
+                    barPercentage: 1,
+                    categoryPercentage: 0.5,
+                    datalabels: {
+                        color: 'white',
+
+                        font: {
+                            size: '16',
+                            weight: '500'
+                        }
+                    }
+                }, {
+                    label: 'Cuộc chát đã chuyển sang bộ phận khác',
+                    data: [4, 5, 8, 15, 11, 15, 9],
+                    backgroundColor: [
+                        '#e5621c'
+                    ],
+                    borderColor: [
+                        '#e5621c'
+                    ],
+                    borderWidth: 1,
+                    barPercentage: 1,
+                    categoryPercentage: 0.5,
+
+                    datalabels: {
+                        color: 'white',
+
+                        font: {
+                            size: '16',
+                            weight: '500'
+                        }
+                    }
+                }]
+            },
+            plugins: [ChartDataLabels],
+            options: {
+                // indexAxis: 'y',
+                scales: {
+                    y: {
+                        stacked: true,
+
+                        beginAtZero: true,
+                        border: {
+                            // color: 'red'
+                        },
+                        grid: {
+
+                            display: false,
+                        }
+                    },
+                    x: {
+                        stacked: true
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Thống kê 7 ngày gần nhất',
                         padding: {
                             top: 10,
                             bottom: 0

@@ -45,9 +45,9 @@ a.btn {
   color: #fff;
 }
 
-.btn-add-2 {
-  border: 1px solid var(--color-add-2);
-  background: var(--color-add-2);
+.btn-save {
+  border: 1px solid var(--color-save);
+  background: var(--color-save);
   color: #fff;
 }
 
@@ -61,9 +61,16 @@ a.btn {
   opacity: 0.5;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus-visible {
   background: var(--color-primary);
   color: #fff;
+}
+
+.btn-sm {
+  height: 28px;
+  font-size: 14px;
+  padding: 0 15px;
 }
 
 .text-daskblue {
@@ -246,6 +253,10 @@ a.btn {
   box-shadow: none;
 }
 
+.form-control-sm {
+  height: 28px;
+}
+
 .checkbox .checkmark {
   background: #fff;
   width: 16px;
@@ -398,6 +409,14 @@ a.btn {
 
 /* width */
 
+.min-w-60p {
+  min-width: 60px;
+}
+
+.min-w-70p {
+  min-width: 70px;
+}
+
 .min-w-85p {
   min-width: 85px;
 }
@@ -410,12 +429,24 @@ a.btn {
   min-width: 110px;
 }
 
+.min-w-120p {
+  min-width: 120px;
+}
+
+.min-w-130p {
+  min-width: 130px;
+}
+
 .min-w-150p {
   min-width: 150px;
 }
 
 .min-w-185p {
   min-width: 185px;
+}
+
+.w-80p {
+  width: 80px;
 }
 
 /* height */
@@ -434,4 +465,45 @@ a.btn {
 
 .border-top-1 {
   border-top-width: 1px !important;
+}
+
+.modal-header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.modal-header-wrap .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-daskblue);
+}
+
+.modal-header-wrap .btn {
+  width: 30px;
+  height: 30px;
+  min-width: auto;
+  font-size: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-header-wrap .btn i {
+  margin: 0;
+}
+
+.modal-header-wrap .btn:hover {
+  color: #fff;
+}
+
+.modal-680 {
+  max-width: 680px !important;
+}
+
+.modal-1140 {
+  max-width: 1140px !important;
 }

@@ -295,24 +295,44 @@ $(document).ready(function () {
     });
   }
   // myTab-------------------------------------------------------------------------------
-  const myTabLink = document.querySelectorAll(".myTab-header-link");
-  const myTabItem = document.querySelectorAll(".myTab-item");
-  myTabLink.forEach((el) => {
-    el.addEventListener("click", showMyTab);
+
+  const myFunctionWrap = document.querySelectorAll(".function");
+  myFunctionWrap.forEach((funcEle) => {
+    const myTabLink = funcEle.querySelectorAll(".myTab-header-link");
+    const myTabItem = funcEle.querySelectorAll(".myTab-item");
+    const leftNav = funcEle.querySelector(".function-nav");
+    const featureActionActive = funcEle.querySelector(
+      ".feature-action-group-first"
+    );
+    if (featureActionActive) {
+      leftNav.innerHTML = featureActionActive.innerHTML;
+    }
+
+    myTabLink.forEach((el) => {
+      el.addEventListener("click", showMyTab);
+    });
+
+    function showMyTab(el) {
+      const btn = el.currentTarget;
+      const dataTarget = btn.getAttribute("data-myTab");
+      myTabItem.forEach((el) => {
+        el.classList.remove("show");
+      });
+      myTabLink.forEach((el) => {
+        el.classList.remove("active");
+      });
+      const myTabItemshow = document.querySelector("#" + dataTarget);
+      myTabItemshow.classList.add("show");
+      btn.classList.add("active");
+
+      const featureAction = myTabItemshow.querySelector(
+        ".feature-action-group "
+      ).innerHTML;
+
+      leftNav.innerHTML = featureAction;
+    }
   });
 
-  function showMyTab(el) {
-    const btn = el.currentTarget;
-    const dataTarget = btn.getAttribute("data-myTab");
-    myTabItem.forEach((el) => {
-      el.classList.remove("show");
-    });
-    myTabLink.forEach((el) => {
-      el.classList.remove("active");
-    });
-    document.querySelector("#" + dataTarget).classList.add("show");
-    btn.classList.add("active");
-  }
   //responsive tab header--------------------------
 
   const myTabHeader = document.querySelectorAll(".myTab-header");
@@ -323,8 +343,8 @@ $(document).ready(function () {
     }
   });
 
-  // modal show test
-  // $(window).on("load", function () {
-  //   $("#modul_category").modal("show");
-  // });
+  //modal show test
+  $(window).on("load", function () {
+    $("#themDeTai").modal("show");
+  });
 });
