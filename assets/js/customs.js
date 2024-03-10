@@ -345,6 +345,6 @@ $(document).ready(function () {
 
   //modal show test
   $(window).on("load", function () {
-    // $("#themDeTai").modal("show");
+    $("#themDeTai").modal("show");
   });
 });

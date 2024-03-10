@@ -71,6 +71,7 @@ a.btn {
   height: 28px;
   font-size: 14px;
   padding: 0 15px;
+  border-radius: 4px;
 }
 
 .text-daskblue {
@@ -255,6 +256,7 @@ a.btn {
 
 .form-control-sm {
   height: 28px;
+  min-height: 28px;
 }
 
 .checkbox .checkmark {
@@ -506,4 +508,8 @@ a.btn {
 
 .modal-1140 {
   max-width: 1140px !important;
+}
+
+.modal-1200 {
+  max-width: 1200px !important;
 }
