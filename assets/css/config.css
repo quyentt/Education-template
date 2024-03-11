@@ -306,7 +306,23 @@ a.btn {
 
 .custom-select {
   position: relative;
-  font-family: Arial;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-style: 500px;
+  color: #222222;
+}
+
+.custom-select i {
+  font-size: 13px;
+  position: absolute;
+  right: 10px;
+  color: var(--color-border);
+  transition: all 0.3s;
+}
+
+.custom-select i.icon-toggle {
+  transform: rotate(180deg);
 }
 
 /* custom select */
@@ -315,52 +331,57 @@ a.btn {
   display: none;
 }
 
-.select-selected {
-  background-color: DodgerBlue;
-}
-
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
-
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #fff transparent;
   top: 7px;
 }
 
-.select-items div,
 .select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-  user-select: none;
+  border: solid 1px;
+  height: 38px;
+  border-radius: 4px;
+  border-color: var(--color-border);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.select-items div {
+  height: 38px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
 }
 
 .select-items {
   position: absolute;
-  background-color: DodgerBlue;
-  top: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+  top: calc(100% + 4px);
   left: 0;
   right: 0;
   z-index: 99;
+  border-radius: 4px;
+  overflow: hidden;
+  border: solid 1px var(--color-border);
 }
 
 .select-hide {
   display: none;
 }
 
-.select-items div:hover,
-.same-as-selected {
+.select-items div:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.select-items .same-as-selected,
+.select-items .same-as-selected:hover {
+  background-color: var(--color-main);
+  color: #fff;
 }
 
 /* feature box */

@@ -190,7 +190,8 @@ $(document).ready(function () {
     /*Tạo DIV đóng vai trò là mục chọn:*/
     a = document.createElement("DIV");
     a.setAttribute("class", "select-selected");
-    a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+    a.innerHTML =
+      "<span>" + selElmnt.options[selElmnt.selectedIndex].innerHTML + "</span>";
     x[i].appendChild(a);
     /* Tạo DIV chứa danh sách option*/
     b = document.createElement("DIV");
@@ -198,6 +199,7 @@ $(document).ready(function () {
     for (j = 1; j < ll; j++) {
       /*Tạo DIV chứa 1 option*/
       c = document.createElement("DIV");
+
       c.innerHTML = selElmnt.options[j].innerHTML;
       c.addEventListener("click", function (e) {
         /*Cập nhật  "selected" khi click*/
@@ -229,6 +231,7 @@ $(document).ready(function () {
       closeAllSelect(this);
       this.nextSibling.classList.toggle("select-hide");
       this.classList.toggle("select-arrow-active");
+      this.previousElementSibling.classList.toggle("icon-toggle");
     });
   }
 
@@ -242,6 +245,7 @@ $(document).ready(function () {
       arrNo = [];
     x = document.getElementsByClassName("select-items");
     y = document.getElementsByClassName("select-selected");
+
     xl = x.length;
     yl = y.length;
     for (i = 0; i < yl; i++) {
@@ -259,6 +263,13 @@ $(document).ready(function () {
   }
   /*Đóng mục chọn khi click ra ngoài:*/
   document.addEventListener("click", closeAllSelect);
+  document.addEventListener("click", () => {
+    let it = document.querySelector(".icon-toggle");
+    if (it) {
+      it.classList.remove("icon-toggle");
+    }
+  });
+
   //Tự động thay đổi màu sắc box chức năng-------------------------------------
   const featureEle = document.querySelectorAll(" .feature-box");
 
