@@ -204,6 +204,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="myTab-content">
+                                        <!-- Tạo kế hoạch -->
                                         <div class="myTab-item show" id="taokehoach">
                                             <div class="filter-sm mb-20">
                                                 <div class="filter-item">
@@ -673,20 +674,674 @@
                                         <div class="myTab-item" id="canboquanly">
                                             <!--Nhóm button xử lý tác vụ sẽ được inner sang trái -->
                                             <div class="feature-action-group d-none ">
+                                                <div class="action-function">
+                                                    <button class="btn btn-add" data-bs-toggle="modal" data-bs-target="#themCanBoQuanLy">
+                                                        <i class="fal fa-plus"></i>
+                                                        <span>Thêm </span>
+                                                    </button>
+                                                    <button class="btn btn-delete btn-opacity">
+                                                        <i class="fal fa-trash-alt"></i>
+                                                        <span>Xóa</span>
+                                                    </button>
+                                                </div>
+                                            </div>
 
+                                            <div class="table-responsive fs-14 no-swiper">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center border-top-1" scope="col">STT</th>
+                                                            <th class="min-w-110p border-top-1" scope="col">Mã số</th>
+                                                            <th class="min-w-130p border-top-1" scope="col">Họ đệm</th>
+                                                            <th class="min-w-85p border-top-1 py-11" scope="col">Tên</th>
+                                                            <th class="min-w-185p border-top-1  py-11" scope="col">Đơn vị</th>
+                                                            <th class="min-w-110p border-top-1  py-11" scope="col">Số điện thoại</th>
+                                                            <th class="min-w-185p border-top-1  py-11" scope="col">Email</th>
+                                                            <th class="text-center border-top-1  py-11" scope="col">
+                                                                <div class="d-flex align-items-center">
+                                                                    <span>Chọn</span>
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                        <input type="checkbox" >
+                                                                        <span class="checkmark">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>Maso_123456</td>
+                                                            <td>Trần Văn</td>
+                                                            <td>Quỳnh</td>
+                                                            <td>Hành chính sự nghiệp</td>
+                                                            <td>0901000112</td>
+                                                            <td>tranvanquynh123@gmail.com</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                <input type="checkbox" >
+                                                                <span class="checkmark">
+                                                                    <i class="fa-solid fa-check"></i>
+                                                                </span>
+                                                            </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>Maso_123456</td>
+                                                            <td>Trần Văn</td>
+                                                            <td>Quỳnh</td>
+                                                            <td>Hành chính sự nghiệp</td>
+                                                            <td>0901000112</td>
+                                                            <td>tranvanquynh123@gmail.com</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                <input type="checkbox" >
+                                                                <span class="checkmark">
+                                                                    <i class="fa-solid fa-check"></i>
+                                                                </span>
+                                                            </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>Maso_123456</td>
+                                                            <td>Trần Văn</td>
+                                                            <td>Quỳnh</td>
+                                                            <td>Hành chính sự nghiệp</td>
+                                                            <td>0901000112</td>
+                                                            <td>tranvanquynh123@gmail.com</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                <input type="checkbox" >
+                                                                <span class="checkmark">
+                                                                    <i class="fa-solid fa-check"></i>
+                                                                </span>
+                                                            </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>Maso_123456</td>
+                                                            <td>Trần Văn</td>
+                                                            <td>Quỳnh</td>
+                                                            <td>Hành chính sự nghiệp</td>
+                                                            <td>0901000112</td>
+                                                            <td>tranvanquynh123@gmail.com</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                <input type="checkbox" >
+                                                                <span class="checkmark">
+                                                                    <i class="fa-solid fa-check"></i>
+                                                                </span>
+                                                            </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>Maso_123456</td>
+                                                            <td>Trần Hoàng Văn</td>
+                                                            <td>Thái Tuấn</td>
+                                                            <td>Hành chính sự nghiệp</td>
+                                                            <td>0901000112</td>
+                                                            <td>tranvanquynh123@gmail.com</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                <input type="checkbox" >
+                                                                <span class="checkmark">
+                                                                    <i class="fa-solid fa-check"></i>
+                                                                </span>
+                                                            </label>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                         <!-- đề tài -->
                                         <div class="myTab-item" id="detai">
-                                            detai
+                                            <!--Nhóm button xử lý tác vụ sẽ được inner sang trái -->
+                                            <div class="feature-action-group d-none ">
+                                                <div class="action-function">
+                                                    <button class="btn btn-edit btn-opacity">
+                                                        <i class="fal fa-plus"></i>
+                                                        <span>sửa </span>
+                                                    </button>
+                                                    <button class="btn btn-delete btn-opacity">
+                                                        <i class="fal fa-trash-alt"></i>
+                                                        <span>Xóa</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="mb-10 fw-bold">Đề tài đề xuất trong đợt</div>
+                                            <div class="table-responsive fs-14 no-swiper ">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center border-top-1" scope="col">STT</th>
+                                                            <th class="min-w-85p border-top-1" scope="col">Mã số</th>
+                                                            <th class="min-w-185p border-top-1" scope="col">Tên đề tài tiếng việt</th>
+                                                            <th class="min-w-185p border-top-1" scope="col">Tên đề tài tiếng Anh</th>
+                                                            <th class="min-w-100p border-top-1 py-11" scope="col">Người nhập</th>
+                                                            <th class="min-w-85p border-top-1  py-11" scope="col">Ngày nhập</th>
+                                                            <th class="text-center min-w-100p border-top-1  py-11" scope="col">Đã sử dụng</th>
+                                                            <th class="text-center w-80p border-top-1  py-11" scope="col">
+                                                                <div class="d-flex align-items-center">
+                                                                    <span>Chọn</span>
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                        <input type="checkbox">
+                                                                        <span class="checkmark">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </th>
+
+                                                        </tr>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>MSS-V01</td>
+                                                            <td>Đề tài đồ án tốt nghiệp 2022</td>
+                                                            <td>Graduation project topic 2022</td>
+                                                            <td>Hoàng Văn Khuyến</td>
+                                                            <td>20/04/2023</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>MSS-V01</td>
+                                                            <td>Đề tài đồ án tốt nghiệp 2022</td>
+                                                            <td>Graduation project topic 2022</td>
+                                                            <td>Hoàng Văn Khuyến</td>
+                                                            <td>20/04/2023</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="mb-10 mt-30 fw-bold">Đề tài đã có trong hệ thống</div>
+                                            <div class="table-responsive fs-14 no-swiper ">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center border-top-1" scope="col">STT</th>
+                                                            <th class="min-w-85p border-top-1" scope="col">Mã số</th>
+                                                            <th class="min-w-185p border-top-1" scope="col">Tên đề tài tiếng việt</th>
+                                                            <th class="min-w-185p border-top-1" scope="col">Tên đề tài tiếng Anh</th>
+                                                            <th class="min-w-100p border-top-1 py-11" scope="col">Người nhập</th>
+                                                            <th class="min-w-85p border-top-1  py-11" scope="col">Ngày nhập</th>
+                                                            <th class="text-center min-w-100p border-top-1  py-11" scope="col">Đã sử dụng</th>
+                                                            <th class="text-center w-80p  border-top-1  py-11" scope="col">
+                                                                <div class="d-flex align-items-center">
+                                                                    <span>Chọn</span>
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                        <input type="checkbox">
+                                                                        <span class="checkmark">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </th>
+
+                                                        </tr>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>MSS-V01</td>
+                                                            <td>Đề tài đồ án tốt nghiệp 2022</td>
+                                                            <td>Graduation project topic 2022</td>
+                                                            <td>Hoàng Văn Khuyến</td>
+                                                            <td>20/04/2023</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>MSS-V01</td>
+                                                            <td>Đề tài đồ án tốt nghiệp 2022</td>
+                                                            <td>Graduation project topic 2022</td>
+                                                            <td>Hoàng Văn Khuyến</td>
+                                                            <td>20/04/2023</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>MSS-V01</td>
+                                                            <td>Đề tài đồ án tốt nghiệp 2022</td>
+                                                            <td>Graduation project topic 2022</td>
+                                                            <td>Hoàng Văn Khuyến</td>
+                                                            <td>20/04/2023</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>MSS-V01</td>
+                                                            <td>Đề tài đồ án tốt nghiệp 2022</td>
+                                                            <td>Graduation project topic 2022</td>
+                                                            <td>Hoàng Văn Khuyến</td>
+                                                            <td>20/04/2023</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>MSS-V01</td>
+                                                            <td>Đề tài đồ án tốt nghiệp 2022</td>
+                                                            <td>Graduation project topic 2022</td>
+                                                            <td>Hoàng Văn Khuyến</td>
+                                                            <td>20/04/2023</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>MSS-V01</td>
+                                                            <td>Đề tài đồ án tốt nghiệp 2022</td>
+                                                            <td>Graduation project topic 2022</td>
+                                                            <td>Hoàng Văn Khuyến</td>
+                                                            <td>20/04/2023</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>MSS-V01</td>
+                                                            <td>Đề tài đồ án tốt nghiệp 2022</td>
+                                                            <td>Graduation project topic 2022</td>
+                                                            <td>Hoàng Văn Khuyến</td>
+                                                            <td>20/04/2023</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>MSS-V01</td>
+                                                            <td>Đề tài đồ án tốt nghiệp 2022</td>
+                                                            <td>Graduation project topic 2022</td>
+                                                            <td>Hoàng Văn Khuyến</td>
+                                                            <td>20/04/2023</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>MSS-V01</td>
+                                                            <td>Đề tài đồ án tốt nghiệp 2022</td>
+                                                            <td>Graduation project topic 2022</td>
+                                                            <td>Hoàng Văn Khuyến</td>
+                                                            <td>20/04/2023</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                    <input type="checkbox">
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="my-paging mt-20">
+                                                <div class="my-paging_static">
+                                                    1 đến 10 trong 1210 dữ liệu
+                                                </div>
+                                                <div class="my-paging_quantity">
+                                                    <span>Hiển thị</span>
+                                                    <div class="input-wrap">
+                                                        <select name="" id="" class="form-select">
+                                                            <option value="">10</option>
+                                                            <option value="">10</option>
+                                                            <option value="">10</option>
+                                                            <option value="">10</option>
+                                                        </select>
+                                                        <i class="fa-light fa-chevron-down icon-end"></i>
+                                                    </div>
+                                                </div>
+                                                <ul class="my-paging_wrap">
+                                                    <li><a href=""><i class="fa-light fa-chevron-left"></i></a></li>
+                                                    <li><a class="active" href="">1</a></li>
+                                                    <li><a href="">2</a></li>
+                                                    <li><a href="">3</a></li>
+                                                    <li><a href="">4</a></li>
+                                                    <li><a href="">5</a></li>
+                                                    <li><a href="">...</a></li>
+                                                    <li><a href="">101</a></li>
+                                                    <li><a href="">102</a></li>
+                                                    <li><a href="">103</a></li>
+                                                    <li><a href="">104</a></li>
+                                                    <li><a href="">105</a></li>
+                                                    <li><a href=""><i class="fa-light fa-chevron-right"></i></a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                         <!-- học phần  -->
                                         <div class="myTab-item" id="hocphan">
-                                            hocphan
+                                            <!--Nhóm button xử lý tác vụ sẽ được inner sang trái -->
+                                            <div class="feature-action-group d-none ">
+                                                <div class="action-function">
+                                                    <button class="btn btn-add" data-bs-toggle="modal" data-bs-target="#themHocPhan">
+                                                        <i class="fal fa-plus"></i>
+                                                        <span>Thêm </span>
+                                                    </button>
+                                                    <button class="btn btn-delete btn-opacity">
+                                                        <i class="fal fa-trash-alt"></i>
+                                                        <span>Xóa</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="table-responsive fs-14 no-swiper">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center border-top-1" scope="col">STT</th>
+                                                            <th class="min-w-110p border-top-1" scope="col">Mã số</th>
+                                                            <th class="min-w-85p border-top-1 py-11" scope="col">Tên</th>
+                                                            <th class="text-center min-w-85p border-top-1 py-11" scope="col">Số tín</th>
+                                                            <th class="min-w-185p border-top-1  py-11" scope="col">Đơn vị</th>
+                                                            <th class="text-center w-80p border-top-1  py-11" scope="col">
+                                                                <div class="d-flex align-items-center">
+                                                                    <span>Chọn</span>
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                        <input type="checkbox" >
+                                                                        <span class="checkmark">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>Maso_123456</td>
+                                                            <td>Trần Văn Quỳnh</td>
+                                                            <td class="text-center">4</td>
+                                                            <td>Hành chính sự nghiệp</td>
+                                                            <td class="text-center">
+                                                                <label class="checkbox checkbox-green ms-5">
+                                                                <input type="checkbox" >
+                                                                <span class="checkmark">
+                                                                    <i class="fa-solid fa-check"></i>
+                                                                </span>
+                                                            </label>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                         <!-- người học -->
                                         <div class="myTab-item" id="nguoihoc">
-                                            nguoihoc
+                                            <!--Nhóm button xử lý tác vụ sẽ được inner sang trái -->
+                                            <div class="feature-action-group d-none feature-action-group-first">
+                                                <div class="action-function">
+                                                    <button class="btn btn-add" data-bs-toggle="modal" data-bs-target="#themNguoiHoc">
+                                                        <i class="fal fa-plus"></i>
+                                                        <span>Thêm </span>
+                                                    </button>
+                                                    <button class="btn btn-delete btn-opacity">
+                                                        <i class="fal fa-trash-alt"></i>
+                                                        <span>Xóa</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="table-wrap">
+                                                <div class="table-responsive fs-14 no-swiper">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="text-center border-top-1" scope="col">STT</th>
+                                                                <th class="min-w-85p border-top-1" scope="col">Mã số</th>
+                                                                <th class="min-w-100p border-top-1" scope="col">Họ đệm</th>
+                                                                <th class="min-w-85p border-top-1" scope="col">Tên</th>
+                                                                <th class="min-w-100p border-top-1 py-11" scope="col">Lớp</th>
+                                                                <th class="min-w-110p border-top-1  py-11" scope="col">Chương trình </th>
+                                                                <th class="min-w-110p border-top-1  py-11" scope="col">Khóa học </th>
+                                                                <th class="min-w-85p border-top-1  py-11" scope="col">Hệ đào tạo </th>
+                                                                <th class="min-w-100p border-top-1  py-11" scope="col">Học phần đã đăng ký </th>
+                                                                <th class="min-w-110p border-top-1  py-11" scope="col">Đã giao đề tài </th>
+                                                                <th class="min-w-110p border-top-1  py-11" scope="col">Đã có QĐ giao đề tài</th>
+                                                                <th class="min-w-110p border-top-1  py-11" scope="col">Đã có QĐ bảo vệ </th>
+                                                                <th class="text-center w-80p border-top-1  py-11" scope="col">
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span>Chọn</span>
+                                                                        <label class="checkbox checkbox-green ms-5">
+                                                                            <input type="checkbox">
+                                                                            <span class="checkmark">
+                                                                                <i class="fa-solid fa-check"></i>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                <td>MSSV01</td>
+                                                                <td>Nguyễn Văn</td>
+                                                                <td>Khánh</td>
+                                                                <td>LV01</td>
+                                                                <td>Đồ án - khóa Luận</td>
+                                                                <td>Kinh doanh và Quản lý</td>
+                                                                <td>Thạc sĩ</td>
+                                                                <td>Học phần đã đăng ký</td>
+                                                                <td>Đề tài đồ án tốt nghiệp 2022</td>
+                                                                <td>QĐ01-2020, QĐ111-2024</td>
+                                                                <td></td>
+                                                                <td class="text-center">
+
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                            <input type="checkbox">
+                                                                            <span class="checkmark">
+                                                                                <i class="fa-solid fa-check"></i>
+                                                                            </span>
+                                                                        </label>
+
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="my-paging mt-20">
+                                                    <div class="my-paging_static">
+                                                        1 đến 10 trong 1210 dữ liệu
+                                                    </div>
+                                                    <div class="my-paging_quantity">
+                                                        <span>Hiển thị</span>
+                                                        <div class="input-wrap">
+                                                            <select name="" id="" class="form-select">
+                                                                <option value="">10</option>
+                                                                <option value="">10</option>
+                                                                <option value="">10</option>
+                                                                <option value="">10</option>
+                                                            </select>
+                                                            <i class="fa-light fa-chevron-down icon-end"></i>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="my-paging_wrap">
+                                                        <li><a href=""><i class="fa-light fa-chevron-left"></i></a></li>
+                                                        <li><a class="active" href="">1</a></li>
+                                                        <li><a href="">2</a></li>
+                                                        <li><a href="">3</a></li>
+                                                        <li><a href="">4</a></li>
+                                                        <li><a href="">5</a></li>
+                                                        <li><a href="">...</a></li>
+                                                        <li><a href="">101</a></li>
+                                                        <li><a href="">102</a></li>
+                                                        <li><a href="">103</a></li>
+                                                        <li><a href="">104</a></li>
+                                                        <li><a href="">105</a></li>
+                                                        <li><a href=""><i class="fa-light fa-chevron-right"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -964,7 +1619,7 @@
                 </div>
             </div>
 
-
+            <!-- Duyệt giao đề tài -->
             <div class="swiper-slide">
                 3
             </div>
@@ -973,6 +1628,81 @@
             </div>
             <div class="swiper-slide">
                 5
+            </div>
+        </div>
+    </div>
+
+    <!-- modal thêm Kế hoạch -->
+    <div class="modal fade" id="themMoiKeHoach">
+        <div class="modal-dialog modal-dialog-centered modal-680">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header-wrap">
+                        <div class="title">Thêm mới kế hoạch</div>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="form p-md-30">
+                        <div class="input-label-left mb-16">
+                            <label class="mt-7 min-w-70p">Tên</label>
+                            <div class="input">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="input-label-left mb-16">
+                            <label class="mt-7 min-w-70p">Phân loại</label>
+                            <div class="input">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="input-label-left mb-16">
+                            <label class="mt-7 min-w-70p">Thời gian</label>
+                            <div class="input">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="input-label-left mb-16">
+                                    <label class="mt-7 min-w-70p">Từ ngày</label>
+                                    <div class="input input-icon-right">
+                                        <input type="text" class="form-control">
+                                        <i class="fa-light fa-calendar-day calendar-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="input-label-left mb-16">
+                                    <label class="mt-7 min-w-70p">Đến ngày</label>
+                                    <div class="input input-icon-right">
+                                        <input type="text" class="form-control">
+                                        <i class="fa-light fa-calendar-day calendar-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-label-left">
+                            <label class="mt-7 min-w-70p">Thời gian</label>
+                            <div class="input">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-save">
+                            <i class="fal fa-save"></i>
+                            <span>Lưu</span>
+                        </button>
+                        <button class="btn btn-outline-secondary ms-20">
+                            <i class="fal fa-times"></i>
+                            <span>Hủy</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1111,76 +1841,138 @@
             </div>
         </div>
     </div>
-    <!-- modal thêm Kế hoạch -->
-    <div class="modal fade" id="themMoiKeHoach">
-        <div class="modal-dialog modal-dialog-centered modal-680">
+
+    <!-- modal thêm cán bộ quản lý -->
+    <div class="modal fade" id="themCanBoQuanLy">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-header-wrap">
-                        <div class="title">Thêm mới kế hoạch</div>
+                        <div class="title">Thêm cán bộ quản lý</div>
 
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                 </div>
                 <div class="modal-body">
-                    <div class="form p-md-30">
-                        <div class="input-label-left mb-16">
-                            <label class="mt-7 min-w-70p">Tên</label>
-                            <div class="input">
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="input-label-left mb-16">
-                            <label class="mt-7 min-w-70p">Phân loại</label>
-                            <div class="input">
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="input-label-left mb-16">
-                            <label class="mt-7 min-w-70p">Thời gian</label>
-                            <div class="input">
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="input-label-left mb-16">
-                                    <label class="mt-7 min-w-70p">Từ ngày</label>
-                                    <div class="input input-icon-right">
-                                        <input type="text" class="form-control">
-                                        <i class="fa-light fa-calendar-day calendar-icon"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="input-label-left mb-16">
-                                    <label class="mt-7 min-w-70p">Đến ngày</label>
-                                    <div class="input input-icon-right">
-                                        <input type="text" class="form-control">
-                                        <i class="fa-light fa-calendar-day calendar-icon"></i>
-                                    </div>
+                    <div class="filter-sm mb-20">
+                        <div class="filter-item w-lg-50 w-md-60">
+                            <div class="input-label-left">
+                                <label class="mt-7">Đơn vị</label>
+                                <div class="input">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Danh sách đơn vị</option>
+                                        <option value="">Chọn thời gian</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                        <div class="input-label-left">
-                            <label class="mt-7 min-w-70p">Thời gian</label>
-                            <div class="input">
-                                <input type="text" class="form-control">
-                            </div>
+                        <div class="filter-item">
+                            <div class="btn btn-view ">Xem danh sách</div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="d-flex justify-content-end">
+                    <div class="table-responsive fs-14 no-swiper">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="text-center border-top-1" scope="col">STT</th>
+                                    <th class="min-w-110p border-top-1" scope="col">Mã số</th>
+                                    <th class="min-w-130p border-top-1" scope="col">Họ đệm</th>
+                                    <th class="min-w-85p border-top-1 py-11" scope="col">Tên</th>
+                                    <th class="w-80p text-center border-top-1  py-11" scope="col">
+                                        <div class="  d-flex align-items-center">
+                                            <span>Chọn</span>
+                                            <label class="checkbox checkbox-green ms-5">
+                                                <input type="checkbox" >
+                                                <span class="checkmark">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn</td>
+                                    <td>Quỳnh</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn</td>
+                                    <td>Quỳnh</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn</td>
+                                    <td>Quỳnh</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn</td>
+                                    <td>Quỳnh</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn</td>
+                                    <td>Quỳnh</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex justify-content-end pb-20">
                         <button class="btn btn-save">
                             <i class="fal fa-save"></i>
                             <span>Lưu</span>
                         </button>
-                        <button class="btn btn-outline-secondary ms-20">
-                            <i class="fal fa-times"></i>
-                            <span>Hủy</span>
-                        </button>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -1386,6 +2178,326 @@
                             <span>Hủy</span>
                         </button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal thêm học phần -->
+    <div class="modal fade" id="themHocPhan">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header-wrap">
+                        <div class="title">Thêm học phần</div>
+                        <!-- <button class="btn btn-modal-close" data-bs-dismiss="modal"><i class="fa-light fa-circle-xmark"></i></button> -->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="filter-sm mb-20">
+                        <div class="filter-item w-lg-50 w-md-60">
+                            <div class="input-label-left">
+                                <label class="mt-7">Đơn vị</label>
+                                <div class="input">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Danh sách đơn vị</option>
+                                        <option value="">Chọn thời gian</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <div class="btn btn-view ">Xem danh sách</div>
+                        </div>
+                    </div>
+                    <div class="table-responsive fs-14 no-swiper">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="text-center border-top-1" scope="col">STT</th>
+                                    <th class="min-w-110p border-top-1" scope="col">Mã số</th>
+                                    <th class="min-w-130p border-top-1" scope="col">Tên</th>
+                                    <th class="text-center min-w-85p border-top-1" scope="col">Số tín</th>
+                                    <th class="w-80p text-center border-top-1  py-11" scope="col">
+                                        <div class="  d-flex align-items-center">
+                                            <span>Chọn</span>
+                                            <label class="checkbox checkbox-green ms-5">
+                                                <input type="checkbox" >
+                                                <span class="checkmark">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn Quỳnh</td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn Quỳnh</td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn Quỳnh</td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn Quỳnh</td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn Quỳnh</td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex justify-content-end pb-20">
+                        <button class="btn btn-save">
+                            <i class="fal fa-save"></i>
+                            <span>Lưu</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal thêm nguoi hoc -->
+    <div class="modal fade" id="themNguoiHoc">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header-wrap">
+                        <div class="title">Thêm người học</div>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="filter-sm mb-20">
+                        <div class="filter-item w-lg-45 flex-grow-1">
+                            <div class="input-label-left">
+                                <label class="mt-7 min-w-85p">Khoa quản lý</label>
+                                <div class="input">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Chọn khoa quản lý</option>
+                                        <option value="">Chọn thời gian</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item w-lg-45 flex-grow-1">
+                            <div class="input-label-left">
+                                <label class="mt-7 min-w-85p">Hệ đào tạo</label>
+                                <div class="input">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Chọn hệ đào tạo</option>
+                                        <option value="">Chọn thời gian</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item w-lg-45 flex-grow-1">
+                            <div class="input-label-left">
+                                <label class="mt-7 min-w-85p">Khóa đào tạo</label>
+                                <div class="input">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Chọn khóa đào tạo</option>
+                                        <option value="">Chọn chương trình</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item w-lg-45 flex-grow-1">
+                            <div class="input-label-left">
+                                <label class="mt-7 min-w-85p">Chương trình</label>
+                                <div class="input">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Chọn chương trình</option>
+                                        <option value="">Chọn thời gian</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item w-lg-45 flex-grow-1">
+                            <div class="input-label-left">
+                                <label class="mt-7 min-w-85p">Lớp</label>
+                                <div class="input">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Chọn lớp</option>
+                                        <option value="">Chọn thời gian</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item w-lg-49 w-100 d-flex justify-content-end">
+                            <div class="btn btn-view ">Xem danh sách</div>
+                        </div>
+                    </div>
+                    <div class="table-responsive fs-14 no-swiper">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="text-center border-top-1" scope="col">STT</th>
+                                    <th class="min-w-110p border-top-1" scope="col">Mã số</th>
+                                    <th class="min-w-130p border-top-1" scope="col">Họ đệm</th>
+                                    <th class="min-w-110p border-top-1" scope="col">Tên</th>
+                                    <th class="min-w-85p border-top-1" scope="col">Lớp</th>
+                                    <th class="w-80p text-center border-top-1  py-11" scope="col">
+                                        <div class="  d-flex align-items-center">
+                                            <span>Chọn</span>
+                                            <label class="checkbox checkbox-green ms-5">
+                                                <input type="checkbox" >
+                                                <span class="checkmark">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn</td>
+                                    <td>Quỳnh</td>
+                                    <td>TK5-k7</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn</td>
+                                    <td>Quỳnh</td>
+                                    <td>TK5-k7</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn</td>
+                                    <td>Quỳnh</td>
+                                    <td>TK5-k7</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn</td>
+                                    <td>Quỳnh</td>
+                                    <td>TK5-k7</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>Maso_123456</td>
+                                    <td>Trần Văn</td>
+                                    <td>Quỳnh</td>
+                                    <td>TK5-k7</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox" >
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex justify-content-end pb-20">
+                        <button class="btn btn-save">
+                            <i class="fal fa-save"></i>
+                            <span>Lưu</span>
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>
