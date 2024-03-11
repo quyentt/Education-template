@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chức năng</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+
+<body>
+    <div class="header fixed-top">
+        <div class="top-nav ">
+            <div class="head-logo">
+                <a href="index.html">
+                    <img class="logo-icon" src="../assets/images/logo/logo-icon.png">
+                    <img class="logo-text" src="../assets/images/logo/logo-text.png">
+                </a>
+            </div>
+            <div class="head-search-form">
+                <div class="head-search-toggle">
+                    <i class="fal fa-search"></i>
+                </div>
+                <div class="head-search-box">
+                    <div class="form">
+                        <input type="text" class="search-imput" placeholder="Tìm kiếm thông tin">
+                        <button class="search-btn">
+                            <i class="fal fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-menu">
+                <ul class="list-unstyled">
+                    <li class="item ">
+                        <a class="menu-link" href="../index.html">
+                            <i class="fal fa-home"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../dashboard.html">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../modul.html">
+                            <span>Modul</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../chucnang-cuaban.html">
+                            <span>Chức năng của bạn</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../tintuc.html">
+                            <span>Tin tức</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fal fa-bars"></i>
+                </div>
+            </div>
+            <div class="account-group">
+                <div class="dropdown ">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <i class="fal fa-circle-check"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item message" data-bs-toggle="dropdown">
+                        <i class="fal fa-messages"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item noti" data-bs-toggle="dropdown">
+                        <i class="fal fa-bell"></i>
+                        <span>9+</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <img src="../assets/images/avatar.jpg" class="avatar">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="function mt-50">
+        <div class="function-nav">
+            <div class="action-function">
+                <a href="chart.html" class="btn btn-view">
+                    <i class="fa-light fa-chart-bar"></i>
+                    <span>Chart</span>
+                </a>
+                <a href="table.html" class="btn btn-view">
+                    <i class="fa-light fa-table"></i>
+                    <span>Table</span>
+                </a>
+                <a href="forms.html" class="btn btn-view">
+                    <i class="fa-light fa-input-text"></i>
+                    <span>form</span>
+                </a>
+                <a href="pagingnation.html" class="btn btn-view">
+                    <i class="fa-light fa-table"></i>
+                    <span>Pagination</span>
+                </a>
+                <a href="filter.html" class="btn btn-view">
+                    <i class="fa-light fa-filter-list"></i>
+                    <span>Filter</span>
+                </a>
+            </div>
+        </div>
+        <div class="function-content">
+            <div class="fs-18 fw-bold mb-10 text-main">Table responsive</div>
+            <div class="table-responsive fs-14 no-swiper">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-center border-top-1" scope="col">STT</th>
+                            <th class="min-w-150p border-top-1" scope="col">Tên</th>
+                            <th class="min-w-100p border-top-1" scope="col">Thời gian</th>
+                            <th class="min-w-150p border-top-1 py-11" scope="col">Phân loại</th>
+                            <th class="min-w-110p border-top-1  py-11" scope="col">Ngày bắt đầu </th>
+                            <th class="min-w-110p border-top-1  py-11" scope="col">Ngày kết thúc </th>
+                            <th class="min-w-185p border-top-1  py-11" scope="col">Khoa phụ trách </th>
+                            <th class="min-w-150p border-top-1  py-11" scope="col">Cán bộ quản lý </th>
+                            <th class="min-w-150p border-top-1  py-11" scope="col">Đề tài </th>
+                            <th class="min-w-110p border-top-1  py-11" scope="col">Học phần </th>
+                            <th class="min-w-110p border-top-1  py-11" scope="col">Người học</th>
+                            <th class="text-center border-top-1  py-11" scope="col">
+                                <div class="d-flex align-items-center">
+                                    <span>Chọn</span>
+                                    <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox">
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                </div>
+                            </th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                            <td>Kế hoạch 2023</td>
+                            <td>20/04/2023</td>
+                            <td>Đồ án - khóa luận</td>
+                            <td>20/04/2023</td>
+                            <td>20/04/2023</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>Nguyễn Văn B</td>
+                            <td></td>
+                            <td></td>
+                            <td>Hoàng Văn A</td>
+                            <td class="text-center">
+                                <label class="checkbox checkbox-green ms-5">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                            </label>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                            <td>Kế hoạch 2023</td>
+                            <td>20/04/2023</td>
+                            <td>Đồ án - khóa luận</td>
+                            <td>20/04/2023</td>
+                            <td>20/04/2023</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>Nguyễn Văn B</td>
+                            <td></td>
+                            <td></td>
+                            <td>Hoàng Văn A</td>
+                            <td class="text-center">
+                                <label class="checkbox checkbox-green ms-5">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                            </label>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                            <td>Kế hoạch 2023</td>
+                            <td>20/04/2023</td>
+                            <td>Đồ án - khóa luận</td>
+                            <td>20/04/2023</td>
+                            <td>20/04/2023</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>Nguyễn Văn B</td>
+                            <td></td>
+                            <td></td>
+                            <td>Hoàng Văn A</td>
+                            <td class="text-center">
+                                <label class="checkbox checkbox-green ms-5">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                            </label>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                            <td>Kế hoạch 2023</td>
+                            <td>20/04/2023</td>
+                            <td>Đồ án - khóa luận</td>
+                            <td>20/04/2023</td>
+                            <td>20/04/2023</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>Nguyễn Văn B</td>
+                            <td></td>
+                            <td></td>
+                            <td>Hoàng Văn A</td>
+                            <td class="text-center">
+                                <label class="checkbox checkbox-green ms-5">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                            </label>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                            <td>Kế hoạch 2023</td>
+                            <td>20/04/2023</td>
+                            <td>Đồ án - khóa luận</td>
+                            <td>20/04/2023</td>
+                            <td>20/04/2023</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>Nguyễn Văn B</td>
+                            <td></td>
+                            <td></td>
+                            <td>Hoàng Văn A</td>
+                            <td class="text-center">
+                                <label class="checkbox checkbox-green ms-5">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                            </label>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                            <td>Kế hoạch 2023</td>
+                            <td>20/04/2023</td>
+                            <td>Đồ án - khóa luận</td>
+                            <td>20/04/2023</td>
+                            <td>20/04/2023</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>Nguyễn Văn B</td>
+                            <td></td>
+                            <td></td>
+                            <td>Hoàng Văn A</td>
+                            <td class="text-center">
+                                <label class="checkbox checkbox-green ms-5">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                            </label>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                            <td>Kế hoạch 2023</td>
+                            <td>20/04/2023</td>
+                            <td>Đồ án - khóa luận</td>
+                            <td>20/04/2023</td>
+                            <td>20/04/2023</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>Nguyễn Văn B</td>
+                            <td></td>
+                            <td></td>
+                            <td>Hoàng Văn A</td>
+                            <td class="text-center">
+                                <label class="checkbox checkbox-green ms-5">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                            </label>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                            <td>Kế hoạch 2023</td>
+                            <td>20/04/2023</td>
+                            <td>Đồ án - khóa luận</td>
+                            <td>20/04/2023</td>
+                            <td>20/04/2023</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>Nguyễn Văn B</td>
+                            <td></td>
+                            <td></td>
+                            <td>Hoàng Văn A</td>
+                            <td class="text-center">
+                                <label class="checkbox checkbox-green ms-5">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                            </label>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                            <td>Kế hoạch 2023</td>
+                            <td>20/04/2023</td>
+                            <td>Đồ án - khóa luận</td>
+                            <td>20/04/2023</td>
+                            <td>20/04/2023</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>Nguyễn Văn B</td>
+                            <td></td>
+                            <td></td>
+                            <td>Hoàng Văn A</td>
+                            <td class="text-center">
+                                <label class="checkbox checkbox-green ms-5">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                            </label>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                            <td>Kế hoạch 2023</td>
+                            <td>20/04/2023</td>
+                            <td>Đồ án - khóa luận</td>
+                            <td>20/04/2023</td>
+                            <td>20/04/2023</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>Nguyễn Văn B</td>
+                            <td></td>
+                            <td></td>
+                            <td>Hoàng Văn A</td>
+                            <td class="text-center">
+                                <label class="checkbox checkbox-green ms-5">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                            </label>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
+    <script src="../assets/swiper-slide/swiper-bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/js/customs.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

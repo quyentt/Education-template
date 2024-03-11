@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chức năng</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
 
 </head>
 
@@ -14,8 +14,8 @@
         <div class="top-nav ">
             <div class="head-logo">
                 <a href="index.html">
-                    <img class="logo-icon" src="assets/images/logo/logo-icon.png">
-                    <img class="logo-text" src="assets/images/logo/logo-text.png">
+                    <img class="logo-icon" src="../assets/images/logo/logo-icon.png">
+                    <img class="logo-text" src="../assets/images/logo/logo-text.png">
                 </a>
             </div>
             <div class="head-search-form">
@@ -35,28 +35,28 @@
             <div class="main-menu">
                 <ul class="list-unstyled">
                     <li class="item ">
-                        <a class="menu-link" href="index.html">
+                        <a class="menu-link" href="../index.html">
                             <i class="fal fa-home"></i>
                             <span>Trang chủ</span>
                         </a>
                     </li>
                     <li class="item">
-                        <a class="menu-link" href="dashboard.html">
+                        <a class="menu-link" href="../dashboard.html">
                             <span>Dashboard</span>
                         </a>
                     </li>
                     <li class="item">
-                        <a class="menu-link" href="modul.html">
+                        <a class="menu-link" href="../modul.html">
                             <span>Modul</span>
                         </a>
                     </li>
                     <li class="item">
-                        <a class="menu-link" href="chucnang-cuaban.html">
+                        <a class="menu-link" href="../chucnang-cuaban.html">
                             <span>Chức năng của bạn</span>
                         </a>
                     </li>
                     <li class="item">
-                        <a class="menu-link" href="tintuc.html">
+                        <a class="menu-link" href="../tintuc.html">
                             <span>Tin tức</span>
                         </a>
                     </li>
@@ -101,7 +101,7 @@
                 </div>
                 <div class="dropdown">
                     <div class="item" data-bs-toggle="dropdown">
-                        <img src="assets/images/avatar.jpg" class="avatar">
+                        <img src="../assets/images/avatar.jpg" class="avatar">
                     </div>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -112,32 +112,61 @@
             </div>
         </div>
     </div>
-    <div class="Chart mt-100 mb-100 bg-white pb-100">
-        <div class="container">
-            <div>
+    <div class="function mt-50">
+        <div class="function-nav">
+            <div class="action-function">
+                <a href="chart.html" class="btn btn-view">
+                    <i class="fa-light fa-chart-bar"></i>
+                    <span>Chart</span>
+                </a>
+                <a href="table.html" class="btn btn-view">
+                    <i class="fa-light fa-table"></i>
+                    <span>Table</span>
+                </a>
+                <a href="forms.html" class="btn btn-view">
+                    <i class="fa-light fa-input-text"></i>
+                    <span>form</span>
+                </a>
+                <a href="pagingnation.html" class="btn btn-view">
+                    <i class="fa-light fa-table"></i>
+                    <span>Pagination</span>
+                </a>
+                <a href="filter.html" class="btn btn-view">
+                    <i class="fa-light fa-filter-list"></i>
+                    <span>Filter</span>
+                </a>
+            </div>
+        </div>
+        <div class="function-content">
+            <div class="Chart mt-100 mb-100 bg-white pb-100">
+                <div class="container">
+                    <div>
 
-                <canvas id="QuymoLophanhchinh" width="800" height="400"></canvas>
-                <canvas class="mt-100" id="QuymoSV" width="800" height="400"></canvas>
-                <div style="width: 400px;">
-                    <canvas class="mt-100" id="dotuoi" width="400" height="400"></canvas>
-                </div>
-                <div style="width: 400px;">
-                    <canvas class="mt-100" id="tile_hocham" width="400" height="400"></canvas>
-                </div>
-                <canvas id="tile_giangvien" width="800" height="400"></canvas>
-                <div class="my-100">
-                    <canvas id="other" width="800" height="400"></canvas>
+                        <canvas id="QuymoLophanhchinh" width="800" height="400"></canvas>
+                        <canvas class="mt-100" id="QuymoSV" width="800" height="400"></canvas>
+                        <div style="width: 400px;">
+                            <canvas class="mt-100" id="dotuoi" width="400" height="400"></canvas>
+                        </div>
+                        <div style="width: 400px;">
+                            <canvas class="mt-100" id="tile_hocham" width="400" height="400"></canvas>
+                        </div>
+                        <canvas id="tile_giangvien" width="800" height="400"></canvas>
+                        <div class="my-100">
+                            <canvas id="other" width="800" height="400"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- JS -->
-    <script src="assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
-    <script src="assets/swiper-slide/swiper-bundle.min.js"></script>
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
+    <script src="../assets/swiper-slide/swiper-bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/js/customs.js"></script>
+    <script src="../assets/js/customs.js"></script>
 
     <script>
         const QuymoLophanhchinh = document.getElementById('QuymoLophanhchinh');

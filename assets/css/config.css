@@ -54,7 +54,7 @@ a.btn {
 .btn-white {
   background: #fff;
   border: 1px solid #e1e1e1;
-  color: var(--color-daskblue);
+  color: var(--color-main);
 }
 
 .btn-opacity {
@@ -63,7 +63,7 @@ a.btn {
 
 .btn:hover,
 .btn:focus-visible {
-  background: var(--color-primary);
+  background: var(--color-link);
   color: #fff;
 }
 
@@ -74,12 +74,8 @@ a.btn {
   border-radius: 4px;
 }
 
-.text-daskblue {
-  color: var(--color-daskblue);
-}
-
-.text-sky {
-  color: var(--color-sky);
+.text-main {
+  color: var(--color-main);
 }
 
 .text-green {
@@ -281,7 +277,7 @@ a.btn {
 }
 
 .checkbox input:checked ~ .checkmark {
-  background: var(--color-primary);
+  background: var(--color-link);
   border: none;
 }
 
@@ -479,7 +475,7 @@ a.btn {
 .modal-header-wrap .title {
   font-size: 18px;
   font-weight: 700;
-  color: var(--color-daskblue);
+  color: var(--color-main);
 }
 
 .modal-header-wrap .btn {
@@ -512,4 +508,8 @@ a.btn {
 
 .modal-1200 {
   max-width: 1200px !important;
+}
+
+.link-base {
+  color: var(--color-link);
 }
