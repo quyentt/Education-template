@@ -378,6 +378,7 @@ textarea.form-control {
   padding: 0 10px;
   background-color: #fff;
   width: 100%;
+  white-space: nowrap;
 }
 
 .select-items div {
@@ -413,6 +414,11 @@ textarea.form-control {
 .select-items .same-as-selected:hover {
   background-color: var(--color-main);
   color: #fff;
+}
+
+.custom-select.custom-select-sm .select-selected,
+.custom-select.custom-select-sm .select-items div {
+  height: 28px;
 }
 
 /* feature box */
@@ -515,12 +521,24 @@ textarea.form-control {
   width: 100px;
 }
 
+.w-105p {
+  width: 105px;
+}
+
+.w-110p {
+  width: 110px;
+}
+
 .w-200p {
   width: 200px;
 }
 
 .max-w-200p {
   max-width: 200px;
+}
+
+.max-w-300p {
+  max-width: 300px;
 }
 
 .w-135p {
