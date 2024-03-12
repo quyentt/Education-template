@@ -7,6 +7,12 @@
   }
 }
 
+@media (min-width: 769px) {
+  .w-md-25 {
+    width: 25% !important;
+  }
+}
+
 @media (min-width: 1081px) {
   .w-lg-40 {
     width: 40% !important;

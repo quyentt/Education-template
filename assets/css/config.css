@@ -21,6 +21,13 @@ a.btn {
   margin-right: 8px;
 }
 
+.btn-link {
+  border: 1px solid var(--color-link);
+  background: var(--color-link);
+  color: #fff;
+  text-decoration: none;
+}
+
 .btn-view {
   border: 1px solid var(--color-view);
   background: var(--color-view);
@@ -513,6 +520,10 @@ textarea.form-control {
   min-width: 185px;
 }
 
+.min-w-300p {
+  min-width: 300px;
+}
+
 .w-80p {
   width: 80px;
 }
@@ -531,6 +542,10 @@ textarea.form-control {
 
 .w-200p {
   width: 200px;
+}
+
+.w-450p {
+  width: 450px;
 }
 
 .max-w-200p {
@@ -614,6 +629,14 @@ textarea.form-control {
 
 .modal-1400 {
   max-width: 1400px !important;
+}
+
+.modal-1800 {
+  max-width: 1800px !important;
+}
+
+.modal-dialog {
+  padding: 0 8px;
 }
 
 .link-base {
