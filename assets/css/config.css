@@ -51,6 +51,12 @@ a.btn {
   color: #fff;
 }
 
+.btn-upload {
+  border: 1px solid var(--color-upload);
+  background: var(--color-upload);
+  color: #fff;
+}
+
 .btn-white {
   background: #fff;
   border: 1px solid #e1e1e1;
@@ -59,6 +65,11 @@ a.btn {
 
 .btn-opacity {
   opacity: 0.5;
+}
+
+.btn-outline-link {
+  border-color: var(--color-link);
+  color: var(--color-link);
 }
 
 .btn:hover,
@@ -74,12 +85,15 @@ a.btn {
   border-radius: 4px;
 }
 
-.text-main {
-  color: var(--color-main);
+.btn-h30 {
+  height: 30px;
+  font-size: 14px;
+  padding: 0 15px;
+  border-radius: 4px;
 }
 
-.text-green {
-  color: var(--color-green);
+.text-main {
+  color: var(--color-main);
 }
 
 .text-orange {
@@ -100,6 +114,14 @@ a.btn {
 
 .text-66 {
   color: #666666;
+}
+
+.text-gray {
+  color: var(--color-text-gray);
+}
+
+.text-link {
+  color: var(--color-link);
 }
 
 .fs-10 {
@@ -243,6 +265,11 @@ a.btn {
   height: 38px;
   border-radius: 4px;
   border-color: var(--color-border);
+  font-size: 14px;
+}
+
+textarea.form-control {
+  height: auto;
 }
 
 .form-control:focus {
@@ -265,6 +292,10 @@ a.btn {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.checkbox.checkbox-circle .checkmark {
+  border-radius: 100%;
 }
 
 .checkbox .checkmark i {
@@ -432,12 +463,24 @@ a.btn {
   min-width: 60px;
 }
 
+.min-w-65p {
+  min-width: 65px;
+}
+
 .min-w-70p {
   min-width: 70px;
 }
 
 .min-w-85p {
   min-width: 85px;
+}
+
+.min-w-90p {
+  min-width: 90px;
+}
+
+.min-w-95p {
+  min-width: 95px;
 }
 
 .min-w-100p {
@@ -466,6 +509,22 @@ a.btn {
 
 .w-80p {
   width: 80px;
+}
+
+.w-100p {
+  width: 100px;
+}
+
+.w-200p {
+  width: 200px;
+}
+
+.max-w-200p {
+  max-width: 200px;
+}
+
+.w-135p {
+  width: 135px;
 }
 
 /* height */
@@ -523,12 +582,20 @@ a.btn {
   max-width: 680px !important;
 }
 
+.modal-800 {
+  max-width: 800px !important;
+}
+
 .modal-1140 {
   max-width: 1140px !important;
 }
 
 .modal-1200 {
   max-width: 1200px !important;
+}
+
+.modal-1400 {
+  max-width: 1400px !important;
 }
 
 .link-base {
