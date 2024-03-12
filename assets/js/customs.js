@@ -384,6 +384,6 @@ $(document).ready(function () {
 
   //modal show test
   $(window).on("load", function () {
-    $("#duyetGiaoDeTai_chitiet_duyet_dongy").modal("show");
+    // $("#duyetGiaoDeTai_chitiet_duyet_dongy").modal("show");
   });
 });
