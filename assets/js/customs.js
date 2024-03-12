@@ -384,6 +384,6 @@ $(document).ready(function () {
 
   //modal show test
   $(window).on("load", function () {
-    $("#deXuatHoiDongBaoVe_chitiet_lapHDmoi").modal("show");
+    // $("#deXuatHoiDongBaoVe_chitiet_lapHDmoi").modal("show");
   });
 });
