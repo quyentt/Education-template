@@ -385,7 +385,7 @@ textarea.form-control {
   padding: 0 10px;
   background-color: #fff;
   width: 100%;
-  white-space: nowrap;
+  line-height: 15px;
 }
 
 .select-items div {
