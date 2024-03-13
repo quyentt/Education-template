@@ -635,10 +635,10 @@ textarea.form-control {
   max-width: 1800px !important;
 }
 
-.modal-dialog {
-  padding: 0 8px;
-}
-
 .link-base {
   color: var(--color-link);
+}
+
+.bg-main {
+  background: var(--color-bg-main);
 }

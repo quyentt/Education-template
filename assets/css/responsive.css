@@ -279,6 +279,9 @@
 }
 
 @media (max-width: 768px) {
+  .modal-body-scroll-y {
+    padding: 0;
+  }
   .modal .feature-item {
     width: 20%;
   }
