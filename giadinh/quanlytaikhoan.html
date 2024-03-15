@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chức năng</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+
+<body>
+    <div class="header fixed-top">
+        <div class="top-nav ">
+            <div class="head-logo">
+                <a href="../index.html">
+                    <img class="logo-icon" src="../assets/images/logo/logo-icon.png">
+                    <img class="logo-text" src="../assets/images/logo/logo-text.png">
+                </a>
+            </div>
+            <div class="head-search-form">
+                <div class="head-search-toggle">
+                    <i class="fal fa-search"></i>
+                </div>
+                <div class="head-search-box">
+                    <div class="form">
+                        <input type="text" class="search-imput" placeholder="Tìm kiếm thông tin">
+                        <button class="search-btn">
+                            <i class="fal fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-menu">
+                <ul class="list-unstyled">
+                    <li class="item ">
+                        <a class="menu-link" href="../index.html">
+                            <i class="fal fa-home"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../dashboard.html">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../modul.html">
+                            <span>Modul</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../chucnang-cuaban.html">
+                            <span>Chức năng của bạn</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../tintuc.html">
+                            <span>Tin tức</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fal fa-bars"></i>
+                </div>
+            </div>
+            <div class="account-group">
+                <div class="dropdown ">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <i class="fal fa-circle-check"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item message" data-bs-toggle="dropdown">
+                        <i class="fal fa-messages"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item noti" data-bs-toggle="dropdown">
+                        <i class="fal fa-bell"></i>
+                        <span>9+</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <img src="../assets/images/avatar.jpg" class="avatar">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quick-action tabs-slider">
+        <div class="tab-title">
+            Quản lý tài khoản
+        </div>
+        <div class="tab-list swiper label-slider auto-width-slider">
+            <div class="swiper-wrapper">
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <i class="fas fa-family"></i>
+                        <p>Tài khoản phụ huynh</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <div class="icon" style="mask-image: url('icon-qltk/tk-sinhvien.svg')"></div>
+                        <p>Tài khoản sinh viên</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <div class="icon" style="mask-image: url('icon-qltk/tk-nhatruong.svg')"></div>
+                        <p>Tài khoản nhà trường</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="swiper content-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="function">
+                    <div class="function-nav">
+                        <div class="action-function">
+                            <button class="btn btn-save">
+                                <i class="fal fa-check"></i>
+                                <span>Duyệt</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="function-content">
+                        <div class="feature-content has-tabs">
+                            <div class="card today-card today-card-1 mb-40">
+                                <div class="card-header">
+                                    <div class="myTab-header">
+                                        <div class="myTab-header-item">
+                                            <a href="#" class="myTab-header-link  active" data-mytab="giaodetai">
+                                                Tài khoản phụ huynh
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+
+                                    <div class="myTab-content">
+
+                                        <div class="myTab-item show" id="giaodetai">
+                                            <div class="filter-sm mb-20">
+                                                <div class="filter-item">
+                                                    <div class="input-label-left">
+                                                        <div class="input">
+                                                            <input type="text" class="form-control" placeholder="Thông tin tìm kiếm">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <div class="input-label-left">
+                                                        <label class="mt-5">Tình trạng xử lý</label>
+                                                        <div class="custom-select">
+                                                            <select name="" id="" class="form-select">
+                                                                <option value="">Chọn tình trạng xử lý</option>
+                                                                <option value="">Chọn thời gian</option>
+                                                                <option value="">Chọn thời gian</option>
+                                                                <option value="">Chọn thời gian</option>
+                                                            </select>
+                                                            <i class="fa-light fa-chevron-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <div class="btn btn-view">Xem danh sách</div>
+                                                </div>
+                                            </div>
+                                            <div class="table-wrap">
+                                                <div class="table-responsive fs-14 no-swiper">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="text-center border-top-1" scope="col">STT</th>
+                                                                <th class="min-w-110p border-top-1" scope="col">Họ đệm</th>
+                                                                <th class="min-w-85p border-top-1" scope="col">Tên</th>
+                                                                <th class="min-w-120p border-top-1 py-11" scope="col">Số điện thoại</th>
+                                                                <th class="min-w-110p border-top-1  py-11" scope="col">Email </th>
+                                                                <th class="min-w-85p border-top-1  py-11" scope="col">Quan hệ </th>
+                                                                <th class="min-w-185p border-top-1  py-11" scope="col">Người học cần quản lý - nhận tin</th>
+                                                                <th class="min-w-100p border-top-1  py-11" scope="col">Tài khoản </th>
+                                                                <th class="w-75p text-center border-top-1  py-11" scope="col">
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span>Chọn</span>
+                                                                        <label class="checkbox checkbox-green ms-5">
+                                                                            <input type="checkbox">
+                                                                            <span class="checkmark">
+                                                                                <i class="fa-solid fa-check"></i>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+
+                                                            </tr>
+
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+
+                                                                <td>Nguyễn Văn</td>
+                                                                <td>Khánh</td>
+                                                                <td>097474xxxx</td>
+                                                                <td>email123@gmail.com</td>
+                                                                <td>Bố</td>
+                                                                <td>Nguyễn Đình Bắc, Nguyễn Thị Loan</td>
+                                                                <td>acc_parent-01</td>
+                                                                <td class="text-center">
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                        <input type="checkbox">
+                                                                        <span class="checkmark">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                        </span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+
+                                                                <td>Nguyễn Văn</td>
+                                                                <td>Khánh</td>
+                                                                <td>097474xxxx</td>
+                                                                <td>email123@gmail.com</td>
+                                                                <td>Bố</td>
+                                                                <td>Nguyễn Đình Bắc, Nguyễn Thị Loan</td>
+                                                                <td>acc_parent-01</td>
+                                                                <td class="text-center">
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                        <input type="checkbox" checked>
+                                                                        <span class="checkmark">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                        </span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+
+                                                                <td>Nguyễn Văn</td>
+                                                                <td>Khánh</td>
+                                                                <td>097474xxxx</td>
+                                                                <td>email123@gmail.com</td>
+                                                                <td>Bố</td>
+                                                                <td>Nguyễn Đình Bắc, Nguyễn Thị Loan</td>
+                                                                <td>acc_parent-01</td>
+                                                                <td class="text-center">
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                        <input type="checkbox">
+                                                                        <span class="checkmark">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                        </span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+
+                                                                <td>Nguyễn Văn</td>
+                                                                <td>Khánh</td>
+                                                                <td>097474xxxx</td>
+                                                                <td>email123@gmail.com</td>
+                                                                <td>Bố</td>
+                                                                <td>Nguyễn Đình Bắc, Nguyễn Thị Loan</td>
+                                                                <td>acc_parent-01</td>
+                                                                <td class="text-center">
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                        <input type="checkbox" checked>
+                                                                        <span class="checkmark">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                        </span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+
+                                                                <td>Nguyễn Văn</td>
+                                                                <td>Khánh</td>
+                                                                <td>097474xxxx</td>
+                                                                <td>email123@gmail.com</td>
+                                                                <td>Bố</td>
+                                                                <td>Nguyễn Đình Bắc, Nguyễn Thị Loan</td>
+                                                                <td>acc_parent-01</td>
+                                                                <td class="text-center">
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                        <input type="checkbox">
+                                                                        <span class="checkmark">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                        </span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+
+                                                                <td>Nguyễn Văn</td>
+                                                                <td>Khánh</td>
+                                                                <td>097474xxxx</td>
+                                                                <td>email123@gmail.com</td>
+                                                                <td>Bố</td>
+                                                                <td>Nguyễn Đình Bắc, Nguyễn Thị Loan</td>
+                                                                <td>acc_parent-01</td>
+                                                                <td class="text-center">
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                        <input type="checkbox" checked>
+                                                                        <span class="checkmark">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                        </span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+
+                                                                <td>Nguyễn Văn</td>
+                                                                <td>Khánh</td>
+                                                                <td>097474xxxx</td>
+                                                                <td>email123@gmail.com</td>
+                                                                <td>Bố</td>
+                                                                <td>Nguyễn Đình Bắc, Nguyễn Thị Loan</td>
+                                                                <td>acc_parent-01</td>
+                                                                <td class="text-center">
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                        <input type="checkbox">
+                                                                        <span class="checkmark">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                        </span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+
+                                                                <td>Nguyễn Văn</td>
+                                                                <td>Khánh</td>
+                                                                <td>097474xxxx</td>
+                                                                <td>email123@gmail.com</td>
+                                                                <td>Bố</td>
+                                                                <td>Nguyễn Đình Bắc, Nguyễn Thị Loan</td>
+                                                                <td>acc_parent-01</td>
+                                                                <td class="text-center">
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                        <input type="checkbox" checked>
+                                                                        <span class="checkmark">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                        </span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+
+                                                                <td>Nguyễn Văn</td>
+                                                                <td>Khánh</td>
+                                                                <td>097474xxxx</td>
+                                                                <td>email123@gmail.com</td>
+                                                                <td>Bố</td>
+                                                                <td>Nguyễn Đình Bắc, Nguyễn Thị Loan</td>
+                                                                <td>acc_parent-01</td>
+                                                                <td class="text-center">
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                        <input type="checkbox">
+                                                                        <span class="checkmark">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                        </span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+
+                                                                <td>Nguyễn Văn</td>
+                                                                <td>Khánh</td>
+                                                                <td>097474xxxx</td>
+                                                                <td>email123@gmail.com</td>
+                                                                <td>Bố</td>
+                                                                <td>Nguyễn Đình Bắc, Nguyễn Thị Loan</td>
+                                                                <td>acc_parent-01</td>
+                                                                <td class="text-center">
+                                                                    <label class="checkbox checkbox-green ms-5">
+                                                                        <input type="checkbox" checked>
+                                                                        <span class="checkmark">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                        </span>
+                                                                    </label>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="my-paging mt-20">
+                                                    <div class="my-paging_static">
+                                                        1 đến 10 trong 1210 dữ liệu
+                                                    </div>
+                                                    <div class="my-paging_quantity">
+                                                        <span>Hiển thị</span>
+                                                        <div class="input-wrap">
+                                                            <select name="" id="" class="form-select">
+                                                                <option value="">10</option>
+                                                                <option value="">10</option>
+                                                                <option value="">10</option>
+                                                                <option value="">10</option>
+                                                            </select>
+                                                            <i class="fa-light fa-chevron-down icon-end"></i>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="my-paging_wrap">
+                                                        <li><a href=""><i class="fa-light fa-chevron-left"></i></a></li>
+                                                        <li><a class="active" href="">1</a></li>
+                                                        <li><a href="">2</a></li>
+                                                        <li><a href="">3</a></li>
+                                                        <li><a href="">4</a></li>
+                                                        <li><a href="">5</a></li>
+                                                        <li><a href="">...</a></li>
+                                                        <li><a href="">101</a></li>
+                                                        <li><a href="">102</a></li>
+                                                        <li><a href="">103</a></li>
+                                                        <li><a href="">104</a></li>
+                                                        <li><a href="">105</a></li>
+                                                        <li><a href=""><i class="fa-light fa-chevron-right"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                Tài khoản sinh viên - đang cập nhật
+            </div>
+
+
+            <div class="swiper-slide">
+                Tài khoản giảng viên - đang cập nhật
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
+    <script src="../assets/swiper-slide/swiper-bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../assets/js/customs.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phụ huynh đăng ký</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+
+<body>
+    <div class="page-parent-register">
+        <form class="parent-register-content">
+            <div class="parent-title mt-30 mt-lg-55 px-15 px-lg-55">
+                Đề nghị xin cấp tài khoản cho phụ huynh
+            </div>
+            <div class="fs-20 fw-bold mt-22 mb-30 px-15 px-lg-55">Nhập thông tin cá nhân phụ huynh</div>
+            <div class="parent-resgiter-form px-15 px-lg-40">
+                <div class="row">
+                    <div class="col-12 col-md-6 px-md-15 px-lg-35">
+                        <div class="input-label-left mb-16">
+                            <label class="mt-7 min-w-70p">Họ đệm</label>
+                            <span class="mx-5 mt-7 text-red">*</span>
+                            <div class="input">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 px-md-15 px-lg-35">
+                        <div class="input-label-left mb-16">
+                            <label class="mt-7 min-w-70p">Tên</label>
+                            <span class="mx-5 mt-7 text-red">*</span>
+                            <div class="input">
+                                <input type="text" class="form-control has-alert">
+                                <div class="position-absolute top-100 text-red fs-10 fw-bold">Bạn chưa nhập email</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 px-md-15 px-lg-35">
+                        <div class="input-label-left mb-16">
+                            <label class="mt-7 min-w-70p">Số điện thoại</label>
+                            <span class="mx-5 mt-7 text-red">*</span>
+                            <div class="input">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 px-md-15 px-lg-35">
+                        <div class="input-label-left mb-16">
+                            <label class="mt-7 min-w-70p">Email cá nhân</label>
+                            <span class="mx-5 mt-7 text-red">*</span>
+                            <div class="input">
+                                <input type="text" class="form-control has-alert">
+                                <div class="position-absolute top-100 text-red fs-10 fw-bold">Bạn chưa nhập email</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 px-md-15 px-lg-35">
+                        <div class="input-label-left mb-16">
+                            <label class="mt-7 min-w-70p">Mối quan hệ gia đình</label>
+                            <div class="d-flex flex-grow-1">
+                                <span class="mx-5 mt-7 text-red">*</span>
+                                <div class="custom-select position-relative">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Chọn mối quan hệ</option>
+                                        <option value="">Chọn thời gian</option>
+                                        <option value="">Chọn thời gian</option>
+                                        <option value="">Chọn thời gian</option>
+                                    </select>
+                                    <i class="fa-light fa-chevron-down"></i>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 px-md-15 px-lg-35 d-none d-md-block">
+                        <div class="opacity-50 fs-14 mt-7" style="margin-left: -65px;">(Người học đang học tai trường)</div>
+                    </div>
+                    <div class="col-12 px-md-15 px-lg-35">
+
+                        <div class="input-label-left mb-16">
+                            <label class="mt-7 min-w-70p">Có thể nêu thêm các đề xuất, mong muốn khác với trường (nếu có)</label>
+                            <span class="mx-5 mt-7 opacity-0">*</span>
+                            <textarea name="" id="" rows="4" class="form-control"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="fs-20 fw-bold mt-22 mb-20 px-15 px-lg-55">Nhập thông tin sinh viên</div>
+            <div class="px-15 px-lg-55">
+                <div class="table-responsive fs-14 ">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="text-center border-top-1" scope="col">STT</th>
+                                <th class="min-w-85p border-top-1" scope="col">Mã sinh viên</th>
+                                <th class="min-w-110p border-top-1" scope="col">Họ đệm</th>
+                                <th class="min-w-100p border-top-1" scope="col">Tên</th>
+                                <th class="min-w-180p border-top-1 py-11" scope="col">Ngành học</th>
+                                <th class="min-w-100p border-top-1  py-11" scope="col">Khóa học</th>
+                                <th class="text-center border-top-1  py-11" scope="col">Sửa </th>
+                                <th class="text-center border-top-1  py-11" scope="col">Xóa</th>
+
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                <td>MSV0001</td>
+                                <td>Nguyễn Thị</td>
+                                <td>Bích</td>
+                                <td>Khoa học máy tính</td>
+                                <td>T5K6</td>
+                                <td class="text-center">
+                                    <a href="" class="link-base">
+                                        <i class="fa-light fa-pen-line"></i>
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="" class="link-delete text-muted">
+                                        <i class="fa-light fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- khi click vào icon sửa -->
+                            <tr>
+                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                <td>
+                                    <div class="input" style="width: 100px;">
+                                        <input type="text" class="form-control form-control-sm" value="MSS-V01">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input">
+                                        <input type="text" class="form-control form-control-sm" value=" Trần Công">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input">
+                                        <input type="text" class="form-control form-control-sm" value="Đài">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input" style="width: 150px;">
+                                        <div class="custom-select custom-select-sm  max-w-200p">
+                                            <select name="" id="" class="form-select">
+                                                    <option value="">Ngành học</option>
+                                                    <option value="">Cao</option>
+                                                    <option value="">Chọn thời gian</option>
+                                                    <option value="">Chọn thời gian</option>
+                                                </select>
+                                            <i class="fa-light fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="custom-select custom-select-sm  max-w-200p">
+                                        <select name="" id="" class="form-select">
+                                                <option value="">Khóa học</option>
+                                                <option value="" selected>T5K4</option>
+                                                <option value="">Chọn thời gian</option>
+                                                <option value="">Chọn thời gian</option>
+                                            </select>
+                                        <i class="fa-light fa-chevron-down"></i>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                </td>
+                                <td class="text-center">
+                                    <a href="" class="link-delete text-muted">
+                                        <i class="fa-light fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <!-- khi click vào nút thêm đề tài -->
+                            <tr>
+                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                <td>
+                                    <div class="input" style="width: 100px;">
+                                        <input type="text" class="form-control form-control-sm" value="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input">
+                                        <input type="text" class="form-control form-control-sm" value="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class=" input ">
+                                        <input type="text " class="form-control form-control-sm " value=" ">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input " style="width: 150px; ">
+                                        <div class="custom-select custom-select-sm max-w-200p ">
+                                            <select name=" " id=" " class="form-select ">
+                                                    <option value=" ">Ngành học</option>
+                                                    <option  value=" ">ngành</option>
+                                                    <option value=" ">Chọn thời gian</option>
+                                                    <option value=" ">Chọn thời gian</option>
+                                                </select>
+                                            <i class="fa-light fa-chevron-down "></i>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="custom-select custom-select-sm max-w-200p ">
+                                        <select name=" " id=" " class="form-select ">
+                                                <option value=" ">Khóa học</option>
+                                                <option value=" ">Cao</option>
+                                                <option value=" ">Chọn thời gian</option>
+                                                <option value=" ">Chọn thời gian</option>
+                                            </select>
+                                        <i class="fa-light fa-chevron-down "></i>
+                                    </div>
+                                </td>
+                                <td colspan="2 " class="pe-0 ">
+                                    <div class="d-flex justify-content-end ">
+                                        <button class="btn btn-add btn-sm ">
+                                                <i class="fal fa-plus "></i>
+                                                <span>Thêm Mới</span>
+                                            </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end px-15 px-lg-55 mt-20 mb-50">
+                <a href="quanlytaikhoan.html" class="btn-btn-parent-send gradient-1">
+                    <span>Gửi thông tin</span>
+                    <i class="fa-solid fa-paper-plane-top ms-10"></i>
+                </a>
+            </div>
+        </form>
+        <div class="parent-register-logo ">
+            <a href="# " class=" ">
+                <img src="../assets/images/logo/logo-full.png " alt=" ">
+            </a>
+
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../assets/bootstrap-5.3.2/js/bootstrap.bundle.js "></script>
+    <script src="../assets/swiper-slide/swiper-bundle.min.js "></script>
+    <script src="../assets/js/jquery-3.7.1.min.js "></script>
+    <script src="../assets/js/customs.js "></script>
+</body>
+
+</html>

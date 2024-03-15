@@ -123,6 +123,10 @@ a.btn {
   color: #666666;
 }
 
+.text-text {
+  color: var(--color-text) !important;
+}
+
 .text-gray {
   color: var(--color-text-gray);
 }
@@ -520,8 +524,20 @@ textarea.form-control {
   min-width: 185px;
 }
 
+.min-w-250p {
+  min-width: 250px;
+}
+
 .min-w-300p {
   min-width: 300px;
+}
+
+.w-20p {
+  width: 20px;
+}
+
+.w-75p {
+  width: 75px;
 }
 
 .w-80p {
@@ -641,4 +657,39 @@ textarea.form-control {
 
 .bg-main {
   background: var(--color-bg-main);
+}
+
+.bg-green {
+  background: var(--color-green) !important;
+}
+
+.bg-light-sky {
+  background: var(--color-bg-light-sky) !important;
+}
+
+.gradient-1 {
+  background-image: linear-gradient(to top right, #d4145a, #fbb03b);
+}
+
+.bottom-radius-none {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.top-radius-none {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.truncate-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }

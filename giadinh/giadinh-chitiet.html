@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chức năng gia đình</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+
+<body>
+    <div class="header fixed-top">
+        <div class="top-nav ">
+            <div class="head-logo">
+                <a href="../index.html">
+                    <img class="logo-icon" src="../assets/images/logo/logo-icon.png">
+                    <img class="logo-text" src="../assets/images/logo/logo-text.png">
+                </a>
+            </div>
+            <div class="head-search-form">
+                <div class="head-search-toggle">
+                    <i class="fal fa-search"></i>
+                </div>
+                <div class="head-search-box">
+                    <div class="form">
+                        <input type="text" class="search-imput" placeholder="Tìm kiếm thông tin">
+                        <button class="search-btn">
+                            <i class="fal fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-menu">
+                <ul class="list-unstyled">
+                    <li class="item ">
+                        <a class="menu-link" href="../index.html">
+                            <i class="fal fa-home"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../dashboard.html">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../modul.html">
+                            <span>Modul</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../chucnang-cuaban.html">
+                            <span>Chức năng của bạn</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../tintuc.html">
+                            <span>Tin tức</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fal fa-bars"></i>
+                </div>
+            </div>
+            <div class="account-group">
+                <div class="dropdown ">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <i class="fal fa-circle-check"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item message" data-bs-toggle="dropdown">
+                        <i class="fal fa-messages"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item noti" data-bs-toggle="dropdown">
+                        <i class="fal fa-bell"></i>
+                        <span>9+</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <img src="../assets/images/avatar.jpg" class="avatar">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quick-action tabs-slider">
+        <div class="tab-title">
+            Gia đình
+        </div>
+        <div class="tab-list swiper label-slider auto-width-slider">
+            <div class="swiper-wrapper">
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                        <p>Kết quả học tập</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <i class="fa-solid fa-calendar-circle-user"></i>
+                        <p>Lịch học</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <i class="fa-solid fa-calendar-lines-pen"></i>
+                        <p>Lịch thi</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        <p>Học phí</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <p>Tin tức</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <i class="fa-solid fa-address-book"></i>
+                        <p>Chuyên cần</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="swiper content-slider">
+        <div class="swiper-wrapper">
+            <!-- CHỨC NĂNG KẾT QUẢ HỌC TẬP -->
+            <div class="swiper-slide">
+                <div class="function function-2 pb-50">
+                    <div class="function-nav">
+                        <div class=" w-100 ms-15">
+                            <div class="box-shadow mt-30 p-10">
+                                <div class="custom-select">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Công nghệ thông tin</option>
+                                        <option value="">Chọn thời gian</option>
+                                        <option value="">Chọn thời gian</option>
+                                        <option value="">Chọn thời gian</option>
+                                    </select>
+                                    <i class="fa-light fa-chevron-down"></i>
+                                </div>
+                                <ul class="sspace-profile list-unstyled fs-14 mt-10">
+                                    <li class="d-flex align-items-center py-5">
+                                        <i class="w-20p fal fa-user-alt"></i>
+                                        <span class="label min-w-70p d-inline-block">Họ tên:</span>
+                                        <b>Trần Thế Quyền</b>
+                                    </li>
+                                    <li class="d-flex align-items-center py-5">
+                                        <i class="w-20p fal fa-id-card"></i>
+                                        <span class="label min-w-70p d-inline-block">Mã số:</span>
+                                        <b>0</b>
+                                    </li>
+                                    <li class="d-flex align-items-center py-5">
+                                        <i class="w-20p fal fa-calendar-alt"></i>
+                                        <span class="label min-w-70p d-inline-block">Ngày sinh:</span>
+                                        <b>15/01/2005</b>
+                                    </li>
+                                    <li class="d-flex align-items-center py-5">
+                                        <i class="w-20p fal fa-restroom"></i>
+                                        <span class="label min-w-70p d-inline-block">Giới tính:</span>
+                                        <b>Nam</b>
+                                    </li>
+                                    <li class="d-flex align-items-center py-5">
+                                        <i class="w-20p fal fa-file-upload"></i>
+                                        <span class="label min-w-70p d-inline-block">Trạng thái:</span>
+                                        <b>0</b>
+                                    </li>
+                                    <li class="d-flex align-items-center py-5">
+                                        <i class="w-20p fal fa-users-class"></i>
+                                        <span class="label min-w-70p d-inline-block">Lớp:</span>
+                                        <b>CNTT 06</b>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-20 p-0 border-solid border-white border-3 box-shadow box-scores bottom-radius-none">
+                                <div class="block-label">
+                                    <i class="fas fa-file-signature"></i>
+                                    <span>Điểm mới</span>
+                                </div>
+                                <ul class="list-unstyled mb-0 fs-14 py-4">
+                                    <li class="d-flex align-items-center justify-content-between py-8 px-10">
+                                        <span class="truncate-1">Kỹ năng mềm và khởi sự doanh nghiệp</span>
+                                        <span class="fw-bold">null</span>
+                                    </li>
+                                    <div class="line-1"></div>
+                                    <li class="d-flex align-items-center justify-content-between py-8 px-10">
+                                        <span class="truncate-1">Toán Cap cấp</span>
+                                        <span class="text-main fw-bold">9.0</span>
+                                    </li>
+                                    <div class="line-1"></div>
+                                    <li class="d-flex align-items-center justify-content-between py-8 px-10">
+                                        <span class="truncate-1">Kỹ thuật thủy khí</span>
+                                        <span class="text-yellow fw-bold">4.2</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-8 p-0 border-solid border-white border-3 box-shadow box-scores top-radius-none">
+                                <div class="block-label text-text bg-light-sky">
+                                    <i class="fas fa-file-signature"></i>
+                                    <span>Tổng điểm</span>
+                                </div>
+                                <ul class="list-unstyled mb-0 fs-14 py-4">
+                                    <li class="d-flex align-items-center justify-content-between py-8 px-10">
+                                        <span class="truncate-1 text-66">Tổng số tín chỉ </span>
+                                        <span>50</span>
+                                    </li>
+                                    <div class="line-1"></div>
+                                    <li class="d-flex align-items-center justify-content-between py-8 px-10">
+                                        <span class="truncate-1 text-66">Điểm trung bình trung hệ 10</span>
+                                        <span>6.4</span>
+                                    </li>
+                                    <div class="line-1"></div>
+                                    <li class="d-flex align-items-center justify-content-between py-8 px-10">
+                                        <span class="truncate-1 text-66">Điểm trung bình trung hệ 4 </span>
+                                        <span>2.25</span>
+                                    </li>
+                                    <div class="line-1"></div>
+                                    <li class="d-flex align-items-center justify-content-between py-8 px-10">
+                                        <span class="truncate-1 text-66">Tổng số tín chỉ tích lũy</span>
+                                        <span>50</span>
+                                    </li>
+                                    <div class="line-1"></div>
+                                    <li class="d-flex align-items-center justify-content-between py-8 px-10">
+                                        <span class="truncate-1 text-66">Điểm trung bình trung tích lũy hệ 10</span>
+                                        <span>6.6</span>
+                                    </li>
+                                    <div class="line-1"></div>
+                                    <li class="d-flex align-items-center justify-content-between py-8 px-10">
+                                        <span class="truncate-1 text-66">Điểm trung bình trung tích lũy hệ 4 </span>
+                                        <span>2.26</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="function-content">
+                        <div class="feature-content has-tabs">
+                            <div class="card today-card today-card-1 mb-40">
+                                <div class="card-header">
+                                    <div class="myTab-header">
+                                        <div class="myTab-header-item">
+                                            <a href="#" class="myTab-header-link  active" data-myTab="bangdiem">
+                                                Bảng điểm
+                                            </a>
+                                        </div>
+                                        <div class="myTab-header-item">
+                                            <a href="#" class="myTab-header-link" data-myTab="hocphanchuaqua">
+                                                Học phần chưa qua
+                                            </a>
+                                        </div>
+                                        <div class="myTab-header-item">
+                                            <a href="#" class="myTab-header-link" data-myTab="hienthikhoikienthuc">
+                                                Hiển thị khối kiến thức
+                                            </a>
+                                        </div>
+                                        <div class="myTab-header-item">
+                                            <a href="#" class="myTab-header-link" data-myTab="ketquadangkyhoc">
+                                                Kết quả đăng ký học
+                                            </a>
+                                        </div>
+                                        <div class="myTab-header-item">
+                                            <a href="#" class="myTab-header-link" data-myTab="thongtinxulyketqua">
+                                                Thông tin xử lý kết quả
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="myTab-content">
+                                        <!-- Bảng điểm -->
+                                        <div class="myTab-item show" id="bangdiem">
+
+
+                                            <div class="collapse-group" id="collapse_bangdiem">
+                                                <div class="collapse-item">
+                                                    <a href="#bangdiem_1" class="collapse-head" data-bs-toggle="collapse">
+                                                        <i class="fa-light fa-circle-chevron-right"></i>
+                                                        <span>Năm học 2021_2022 - Học kỳ 2</span>
+                                                    </a>
+                                                    <div class="collapse show" id="bangdiem_1" data-bs-parent="#collapse_bangdiem">
+                                                        <div class="table-responsive fs-14 no-swiper">
+                                                            <table class="table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="text-center " scope="col">STT</th>
+                                                                        <th class="min-w-110p " scope="col">Mã học phần</th>
+                                                                        <th class="min-w-185p " scope="col">Tên học phần</th>
+                                                                        <th class="min-w-85p text-center  py-11" scope="col">Số tin chỉ</th>
+                                                                        <th class="min-w-70p text-center   py-11" scope="col">lần học </th>
+                                                                        <th class="min-w-70p text-center   py-11" scope="col">Lần thi </th>
+                                                                        <th class="min-w-100p text-center   py-11" scope="col">Điểm hệ 10</th>
+                                                                        <th class="min-w-100p text-center   py-11" scope="col">Điểm hệ 4</th>
+                                                                        <th class="min-w-100p text-center   py-11" scope="col">Điểm chữ</th>
+                                                                        <th class="min-w-100p text-center   py-11" scope="col">Đánh giá</th>
+                                                                        <th class="min-w-70p text-center   py-11" scope="col">Chi tiết</th>
+
+                                                                    </tr>
+
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="row mb-20">
+
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Tổng tín chỉ</span>
+                                                                    <span class="text-text fw-bold"> 50</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Tổng số tín chỉ tích lũy</span>
+                                                                    <span class="text-text fw-bold"> 50</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Điểm trung bình trung hệ 10</span>
+                                                                    <span class="text-text fw-bold"> 6.4</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Điểm trung bình trung tích lũy hệ 10 </span>
+                                                                    <span class="text-text fw-bold"> 6.4</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Điểm trung bình trung hệ 4</span>
+                                                                    <span class="text-text fw-bold"> 3</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Điểm trung bình trung tích lũy hệ 4 </span>
+                                                                    <span class="text-text fw-bold"> 2</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="collapse-item">
+                                                    <a href="#bangdiem_2" class="collapse-head collapsed" data-bs-toggle="collapse">
+                                                        <i class="fa-light fa-circle-chevron-right"></i>
+                                                        <span>Năm học 2021_2022 - Học kỳ 2</span>
+                                                    </a>
+                                                    <div class="collapse " id="bangdiem_2" data-bs-parent="#collapse_bangdiem">
+                                                        <div class="table-responsive fs-14 no-swiper">
+                                                            <table class="table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="text-center " scope="col">STT</th>
+                                                                        <th class="min-w-110p " scope="col">Mã học phần</th>
+                                                                        <th class="min-w-185p " scope="col">Tên học phần</th>
+                                                                        <th class="min-w-85p text-center  py-11" scope="col">Số tin chỉ</th>
+                                                                        <th class="min-w-70p text-center   py-11" scope="col">lần học </th>
+                                                                        <th class="min-w-70p text-center   py-11" scope="col">Lần thi </th>
+                                                                        <th class="min-w-100p text-center   py-11" scope="col">Điểm hệ 10</th>
+                                                                        <th class="min-w-100p text-center   py-11" scope="col">Điểm hệ 4</th>
+                                                                        <th class="min-w-100p text-center   py-11" scope="col">Điểm chữ</th>
+                                                                        <th class="min-w-100p text-center   py-11" scope="col">Đánh giá</th>
+                                                                        <th class="min-w-70p text-center   py-11" scope="col">Chi tiết</th>
+
+                                                                    </tr>
+
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="row mb-20">
+
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Tổng tín chỉ</span>
+                                                                    <span class="text-text fw-bold"> 50</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Tổng số tín chỉ tích lũy</span>
+                                                                    <span class="text-text fw-bold"> 50</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Điểm trung bình trung hệ 10</span>
+                                                                    <span class="text-text fw-bold"> 6.4</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Điểm trung bình trung tích lũy hệ 10 </span>
+                                                                    <span class="text-text fw-bold"> 6.4</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Điểm trung bình trung hệ 4</span>
+                                                                    <span class="text-text fw-bold"> 3</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Điểm trung bình trung tích lũy hệ 4 </span>
+                                                                    <span class="text-text fw-bold"> 2</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="collapse-item">
+                                                    <a href="#bangdiem_3" class="collapse-head collapsed" data-bs-toggle="collapse">
+                                                        <i class="fa-light fa-circle-chevron-right"></i>
+                                                        <span>Năm học 2021_2022 - Học kỳ 2</span>
+                                                    </a>
+                                                    <div class="collapse" id="bangdiem_3" data-bs-parent="#collapse_bangdiem">
+                                                        <div class="table-responsive fs-14 no-swiper">
+                                                            <table class="table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="text-center " scope="col">STT</th>
+                                                                        <th class="min-w-110p " scope="col">Mã học phần</th>
+                                                                        <th class="min-w-185p " scope="col">Tên học phần</th>
+                                                                        <th class="min-w-85p text-center  py-11" scope="col">Số tin chỉ</th>
+                                                                        <th class="min-w-70p text-center   py-11" scope="col">lần học </th>
+                                                                        <th class="min-w-70p text-center   py-11" scope="col">Lần thi </th>
+                                                                        <th class="min-w-100p text-center   py-11" scope="col">Điểm hệ 10</th>
+                                                                        <th class="min-w-100p text-center   py-11" scope="col">Điểm hệ 4</th>
+                                                                        <th class="min-w-100p text-center   py-11" scope="col">Điểm chữ</th>
+                                                                        <th class="min-w-100p text-center   py-11" scope="col">Đánh giá</th>
+                                                                        <th class="min-w-70p text-center   py-11" scope="col">Chi tiết</th>
+
+                                                                    </tr>
+
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                        <td>450820989</td>
+                                                                        <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                        <td class="text-center">4</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">1</td>
+                                                                        <td class="text-center">6.2</td>
+                                                                        <td class="text-center">2</td>
+                                                                        <td class="text-center">C</td>
+                                                                        <td class="text-center">Đạt</td>
+                                                                        <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="row mb-20">
+
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Tổng tín chỉ</span>
+                                                                    <span class="text-text fw-bold"> 50</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Tổng số tín chỉ tích lũy</span>
+                                                                    <span class="text-text fw-bold"> 50</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Điểm trung bình trung hệ 10</span>
+                                                                    <span class="text-text fw-bold"> 6.4</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Điểm trung bình trung tích lũy hệ 10 </span>
+                                                                    <span class="text-text fw-bold"> 6.4</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Điểm trung bình trung hệ 4</span>
+                                                                    <span class="text-text fw-bold"> 3</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="d-flex align-items-center fs-14 px-15 py-5">
+                                                                    <span class="text-66 min-w-250p">Điểm trung bình trung tích lũy hệ 4 </span>
+                                                                    <span class="text-text fw-bold"> 2</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Học phần chưa qua-->
+                                        <div class="myTab-item" id="hocphanchuaqua">
+                                            <div class="table-responsive fs-14 no-swiper">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="border-top-1 text-center " scope="col">STT</th>
+                                                            <th class="border-top-1 min-w-110p " scope="col">Mã học phần</th>
+                                                            <th class="border-top-1 min-w-185p " scope="col">Tên học phần</th>
+                                                            <th class="border-top-1 min-w-85p text-center  py-11" scope="col">Số tin chỉ</th>
+                                                            <th class="border-top-1 min-w-70p text-center   py-11" scope="col">lần học </th>
+                                                            <th class="border-top-1 min-w-70p text-center   py-11" scope="col">Lần thi </th>
+                                                            <th class="border-top-1 min-w-100p text-center   py-11" scope="col">Điểm hệ 10</th>
+                                                            <th class="border-top-1 min-w-100p text-center   py-11" scope="col">Điểm hệ 4</th>
+                                                            <th class="border-top-1 min-w-100p text-center   py-11" scope="col">Điểm chữ</th>
+                                                            <th class="border-top-1 min-w-100p text-center   py-11" scope="col">Đánh giá</th>
+                                                            <th class="border-top-1 min-w-70p text-center   py-11" scope="col">Chi tiết</th>
+
+                                                        </tr>
+
+                                                    </thead>
+                                                    <tbody>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="no-result d-flex justify-content-center flex-column align-items-center">
+                                                <img src="../assets/images/search-file.png" alt="">
+                                                <p class="fs-14 opacity-50">Không có dữ liệu</p>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- Hiển thị khối kiến thức -->
+                                        <div class="myTab-item" id="hienthikhoikienthuc">
+                                            <div class="collapse-group collapse-block" id="collapse_block">
+                                                <div class="collapse-item">
+                                                    <a href="#block_1" class="collapse-head " data-bs-toggle="collapse">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                        <i class="fa-solid fa-minus"></i>
+                                                        <span>Block 1</span>
+                                                    </a>
+                                                    <div class="collapse show" id="block_1" data-bs-parent="#collapse_block">
+                                                        <div class="block-content ps-33 pb-10">
+                                                            <div class="fs-14 fw-bold text-orange mb-10">
+                                                                <i class="fa-solid fa-chevron-right me-5"></i>
+                                                                <span>Block 1.1</span>
+                                                            </div>
+                                                            <div class="table-responsive fs-14 no-swiper ms-18">
+                                                                <table class="table border">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="text-center " scope="col">STT</th>
+                                                                            <th class="min-w-110p " scope="col">Mã học phần</th>
+                                                                            <th class="min-w-185p " scope="col">Tên học phần</th>
+                                                                            <th class="min-w-85p text-center  py-11" scope="col">Số tin chỉ</th>
+                                                                            <th class="min-w-70p text-center   py-11" scope="col">lần học </th>
+                                                                            <th class="min-w-70p text-center   py-11" scope="col">Lần thi </th>
+                                                                            <th class="min-w-100p text-center   py-11" scope="col">Điểm hệ 10</th>
+                                                                            <th class="min-w-100p text-center   py-11" scope="col">Điểm hệ 4</th>
+                                                                            <th class="min-w-100p text-center   py-11" scope="col">Điểm chữ</th>
+                                                                            <th class="min-w-100p text-center   py-11" scope="col">Đánh giá</th>
+                                                                            <th class="min-w-70p text-center   py-11" scope="col">Chi tiết</th>
+
+                                                                        </tr>
+
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="collapse-item">
+                                                    <a href="#block_2" class="collapse-head collapsed" data-bs-toggle="collapse">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                        <i class="fa-solid fa-minus"></i>
+                                                        <span>Block 2</span>
+                                                    </a>
+                                                    <div class="collapse " id="block_2" data-bs-parent="#collapse_block">
+                                                        <div class="block-content ps-33 pb-10">
+                                                            <div class="fs-14 fw-bold text-orange mb-10">
+                                                                <i class="fa-solid fa-chevron-right me-5"></i>
+                                                                <span>Block 2.1</span>
+                                                            </div>
+                                                            <div class="table-responsive fs-14 no-swiper ms-18">
+                                                                <table class="table border">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="text-center " scope="col">STT</th>
+                                                                            <th class="min-w-110p " scope="col">Mã học phần</th>
+                                                                            <th class="min-w-185p " scope="col">Tên học phần</th>
+                                                                            <th class="min-w-85p text-center  py-11" scope="col">Số tin chỉ</th>
+                                                                            <th class="min-w-70p text-center   py-11" scope="col">lần học </th>
+                                                                            <th class="min-w-70p text-center   py-11" scope="col">Lần thi </th>
+                                                                            <th class="min-w-100p text-center   py-11" scope="col">Điểm hệ 10</th>
+                                                                            <th class="min-w-100p text-center   py-11" scope="col">Điểm hệ 4</th>
+                                                                            <th class="min-w-100p text-center   py-11" scope="col">Điểm chữ</th>
+                                                                            <th class="min-w-100p text-center   py-11" scope="col">Đánh giá</th>
+                                                                            <th class="min-w-70p text-center   py-11" scope="col">Chi tiết</th>
+
+                                                                        </tr>
+
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="collapse-item">
+                                                    <a href="#block_3" class="collapse-head collapsed" data-bs-toggle="collapse">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                        <i class="fa-solid fa-minus"></i>
+                                                        <span>Block 3</span>
+                                                    </a>
+                                                    <div class="collapse " id="block_3" data-bs-parent="#collapse_block">
+                                                        <div class="block-content ps-33 pb-10">
+                                                            <div class="fs-14 fw-bold text-orange mb-10">
+                                                                <i class="fa-solid fa-chevron-right me-5"></i>
+                                                                <span>Block 3.1</span>
+                                                            </div>
+                                                            <div class="table-responsive fs-14 no-swiper ms-18">
+                                                                <table class="table border">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="text-center " scope="col">STT</th>
+                                                                            <th class="min-w-110p " scope="col">Mã học phần</th>
+                                                                            <th class="min-w-185p " scope="col">Tên học phần</th>
+                                                                            <th class="min-w-85p text-center  py-11" scope="col">Số tin chỉ</th>
+                                                                            <th class="min-w-70p text-center   py-11" scope="col">lần học </th>
+                                                                            <th class="min-w-70p text-center   py-11" scope="col">Lần thi </th>
+                                                                            <th class="min-w-100p text-center   py-11" scope="col">Điểm hệ 10</th>
+                                                                            <th class="min-w-100p text-center   py-11" scope="col">Điểm hệ 4</th>
+                                                                            <th class="min-w-100p text-center   py-11" scope="col">Điểm chữ</th>
+                                                                            <th class="min-w-100p text-center   py-11" scope="col">Đánh giá</th>
+                                                                            <th class="min-w-70p text-center   py-11" scope="col">Chi tiết</th>
+
+                                                                        </tr>
+
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                            <td>450820989</td>
+                                                                            <td>Bảo dưỡng sửa chữa hệ thống truyền lực</td>
+                                                                            <td class="text-center">4</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center">6.2</td>
+                                                                            <td class="text-center">2</td>
+                                                                            <td class="text-center">C</td>
+                                                                            <td class="text-center">Đạt</td>
+                                                                            <td class="text-center"><a href="#" class="link-base">Chi tiết</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- Kết quả đăng ký học-->
+                                        <div class="myTab-item" id="ketquadangkyhoc">
+                                            Đang cập nhật
+                                        </div>
+                                        <!-- Thông tin xu ly kết qua -->
+                                        <div class="myTab-item" id="thongtinxulyketqua">
+                                            <div class="fw-bold text-main mb-20">Quá trình quyết định - Nguyễn Thị Mai anh - 22010959</div>
+                                            <div class="table-responsive fs-14 no-swiper">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="border-top-1 text-center " scope="col">STT</th>
+                                                            <th class="border-top-1 min-w-110p " scope="col">Số quyết định</th>
+                                                            <th class="border-top-1 min-w-130p " scope="col">Ngày quyết định</th>
+                                                            <th class="border-top-1 min-w-120p py-11" scope="col">Ngày hiệu lực</th>
+                                                            <th class="border-top-1 min-w-185p  py-11" scope="col">Nguyên nhân - lý do</th>
+                                                            <th class="border-top-1 min-w-185p py-11" scope="col">Loại quyết định</th>
+
+                                                        </tr>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>450820989</td>
+                                                            <td>07/10/2022</td>
+                                                            <td>07/10/2022</td>
+                                                            <td>Công nhận danh sách 4598 sinh viên đã chúng tuyển và hoàn thành nhập học đại học hệ chính quy K16 năm 2022</td>
+                                                            <td>Quyết định nhập trường</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>450820989</td>
+                                                            <td>07/10/2022</td>
+                                                            <td>07/10/2022</td>
+                                                            <td>Công nhận danh sách 4598 sinh viên đã chúng tuyển và hoàn thành nhập học đại học hệ chính quy K16 năm 2022</td>
+                                                            <td>Quyết định nhập trường</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LỊCH HỌC -->
+            <div class="swiper-slide">
+                <div class="function function-2 pb-50">
+                    <div class="function-nav">
+                        <div class=" w-100 ms-15">
+                            <div class=" box-shadow  p-0 block-calendar mt-4 mt-30">
+                                <div class="block-label ">
+
+
+                                    <span>Tháng 5 - 2022</span>
+                                    <div class="next-prev-month">
+                                        <i class="fal fa-chevron-left me-4"></i>
+                                        <i class="fal fa-chevron-right "></i>
+                                    </div>
+                                </div>
+                                <div class="calendar-block-cover">
+                                    <ul class="weekdays">
+                                        <li>T2</li>
+                                        <li>T3</li>
+                                        <li>T4</li>
+                                        <li>T5</li>
+                                        <li>T6</li>
+                                        <li>T7</li>
+                                        <li>Cn</li>
+                                    </ul>
+
+                                    <ul class="days">
+                                        <li class="day-of-other-month">28</li>
+                                        <li class="day-of-other-month">29</li>
+                                        <li class="day-of-other-month">30</li>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li class="has-calendar"><span>10</span></li>
+                                        <li>11</li>
+                                        <li>12</li>
+                                        <li>13</li>
+                                        <li>14</li>
+                                        <li class="active"><span>15</span></li>
+                                        <li>16</li>
+                                        <li>17</li>
+                                        <li>18</li>
+                                        <li>19</li>
+                                        <li>20</li>
+                                        <li>21</li>
+                                        <li>22</li>
+                                        <li>23</li>
+                                        <li>24</li>
+                                        <li>25</li>
+                                        <li>26</li>
+                                        <li>27</li>
+                                        <li>28</li>
+                                        <li>29</li>
+                                        <li>30</li>
+                                        <li>31</li>
+                                        <li class="day-of-other-month">1</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="function-content">
+                        <div class="feature-content has-tabs">
+                            <div class="card today-card today-card-1 mb-40">
+                                <div class="card-header">
+                                    <div class="myTab-header">
+                                        <div class="myTab-header-item">
+                                            <a href="#" class="myTab-header-link  active" data-myTab="lichhoc">
+                                                Lịch cá nhân
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body ps-0">
+                                    <div class="myTab-content">
+                                        <!-- Bảng điểm -->
+                                        <div class="myTab-item show" id="lichhoc">
+
+                                            <div class="">
+                                                <div class="calendar-week-table">
+                                                    <div class="date-header">
+                                                        <div class="date">
+                                                            <i class="fal fa-clock day color-66"></i>
+                                                            <p class="m-0 text">GMT+7</p>
+                                                        </div>
+                                                        <div class="day-of-week">
+                                                            <div class="day">9</div>
+                                                            <div class="text">Mon</div>
+                                                        </div>
+                                                        <div class="day-of-week">
+                                                            <div class="day">10</div>
+                                                            <div class="text">Tue</div>
+                                                        </div>
+                                                        <div class="day-of-week">
+                                                            <div class="day">11</div>
+                                                            <div class="text">Wed</div>
+                                                        </div>
+                                                        <div class="day-of-week">
+                                                            <div class="day">12</div>
+                                                            <div class="text">Thu</div>
+                                                        </div>
+                                                        <div class="day-of-week">
+                                                            <div class="day">13</div>
+                                                            <div class="text">Fri</div>
+                                                        </div>
+                                                        <div class="day-of-week">
+                                                            <div class="day">14</div>
+                                                            <div class="text">Sat</div>
+                                                        </div>
+                                                        <div class="day-of-week">
+                                                            <div class="day">15</div>
+                                                            <div class="text">Sun</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="date-body">
+                                                        <div class="date">
+                                                            <div class="hour-row">
+                                                                01:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                02:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                03:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                04:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                05:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                06:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                07:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                08:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                09:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                10:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                11:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                12:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                13:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                14:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                15:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                16:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                17:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                18:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                19:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                20:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                21:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                22:00
+                                                            </div>
+                                                            <div class="hour-row">
+                                                                23:00
+                                                            </div>
+                                                        </div>
+                                                        <!-- mối 15 phút có chiều cao 12.5px -->
+                                                        <!-- Mối 1 giờ có chiều cao 50px -->
+                                                        <div class="day-of-week">
+                                                            <div class="hour-row">
+                                                                <div class="task task-1" style="top:25px; height: 100px; background-color: #d93625;" data-bs-toggle="modal" data-bs-target="#my_calendar">
+                                                                    <div class="task-header">
+                                                                        <div class="text">
+                                                                            <div class="title">American Studies</div>
+                                                                            <div class="task-date">01:00 - 03:00</div>
+                                                                        </div>
+                                                                        <!-- <div class="student-num" style="color: #d93625;">
+                                                                            30
+                                                                        </div> -->
+                                                                    </div>
+                                                                    <div class="task-description">
+                                                                        American studies english VGG
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+
+                                                        </div>
+                                                        <div class="day-of-week">
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row">
+                                                                <div class="task task-1" style="top:25px; height: 125px; background-color: #3e8d68;" data-bs-toggle="modal" data-bs-target="#my_calendar">
+                                                                    <div class="task-header">
+                                                                        <div class="text">
+                                                                            <div class="title">Chủ nghĩa Mac - Lê nin </div>
+                                                                            <div class="task-date">02:00 - 04:00</div>
+                                                                        </div>
+                                                                        <!-- <div class="student-num" style="color: #3e8d68;">
+                                                                            <i class="fas fa-user-edit"></i>
+                                                                        </div> -->
+                                                                    </div>
+                                                                    <div class="task-description">
+                                                                        American studies
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+
+                                                        </div>
+                                                        <div class="day-of-week">
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+
+                                                        </div>
+                                                        <div class="day-of-week">
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+
+                                                        </div>
+                                                        <div class="day-of-week">
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+
+                                                        </div>
+                                                        <div class="day-of-week">
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+
+                                                        </div>
+                                                        <div class="day-of-week">
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+                                                            <div class="hour-row"></div>
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LỊCH THI -->
+            <div class="swiper-slide">
+                <div class="function function-2 pb-50">
+                    <div class="function-nav">
+                        <div class=" w-100 ms-15">
+                            <div class=" box-shadow  p-0 block-calendar mt-4 mt-30">
+                                <div class="block-label ">
+
+
+                                    <span>Tháng 5 - 2022</span>
+                                    <div class="next-prev-month">
+                                        <i class="fal fa-chevron-left me-4"></i>
+                                        <i class="fal fa-chevron-right "></i>
+                                    </div>
+                                </div>
+                                <div class="calendar-block-cover">
+                                    <ul class="weekdays">
+                                        <li>T2</li>
+                                        <li>T3</li>
+                                        <li>T4</li>
+                                        <li>T5</li>
+                                        <li>T6</li>
+                                        <li>T7</li>
+                                        <li>Cn</li>
+                                    </ul>
+
+                                    <ul class="days">
+                                        <li class="day-of-other-month">28</li>
+                                        <li class="day-of-other-month">29</li>
+                                        <li class="day-of-other-month">30</li>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li class="has-calendar"><span>10</span></li>
+                                        <li>11</li>
+                                        <li>12</li>
+                                        <li>13</li>
+                                        <li>14</li>
+                                        <li class="active"><span>15</span></li>
+                                        <li>16</li>
+                                        <li>17</li>
+                                        <li>18</li>
+                                        <li>19</li>
+                                        <li>20</li>
+                                        <li>21</li>
+                                        <li>22</li>
+                                        <li>23</li>
+                                        <li>24</li>
+                                        <li>25</li>
+                                        <li>26</li>
+                                        <li>27</li>
+                                        <li>28</li>
+                                        <li>29</li>
+                                        <li>30</li>
+                                        <li>31</li>
+                                        <li class="day-of-other-month">1</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="function-content">
+                        <div class="feature-content has-tabs">
+                            <div class="card today-card today-card-1 mb-40">
+                                <div class="card-header">
+                                    <div class="myTab-header">
+                                        <div class="myTab-header-item">
+                                            <a href="#" class="myTab-header-link  active" data-myTab="lichthi">
+                                                Lịch thi
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="myTab-content">
+                                        <!-- Lịch thi -->
+                                        <div class="myTab-item show" id="lichthi">
+                                            <div class="filter-sm mb-20">
+                                                <div class="filter-item">
+                                                    <div class="input-label-left">
+                                                        <label class="mt-5">Học kỳ</label>
+                                                        <div class="custom-select">
+                                                            <select name="" id="" class="form-select">
+                                                                <option value="">Chọn học kỳ</option>
+                                                                <option value="">Chọn thời gian</option>
+                                                                <option value="">Chọn thời gian</option>
+                                                                <option value="">Chọn thời gian</option>
+                                                            </select>
+                                                            <i class="fa-light fa-chevron-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <div class="input-label-left">
+                                                        <label class="mt-5">Học phần</label>
+                                                        <div class="custom-select">
+                                                            <select name="" id="" class="form-select">
+                                                                <option value="">Chọn học phần</option>
+                                                                <option value="">Chọn thời gian</option>
+                                                                <option value="">Chọn thời gian</option>
+                                                                <option value="">Chọn thời gian</option>
+                                                            </select>
+                                                            <i class="fa-light fa-chevron-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <div class="btn btn-view">Xem lịch</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-main fw-bold mb-10 mt-30">Lịch thi cá nhân</div>
+                                            <div class="table-responsive fs-14 no-swiper">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="border-top-1 text-center " scope="col">STT</th>
+                                                            <th class="border-top-1 min-w-110p " scope="col">Mã học phần</th>
+                                                            <th class="border-top-1 min-w-185p " scope="col">Tên học phần</th>
+                                                            <th class="border-top-1 min-w-85p py-11" scope="col">Ngày thi</th>
+                                                            <th class="border-top-1 min-w-110p  py-11" scope="col">Thời gian thi</th>
+                                                            <th class="border-top-1 min-w-85p  py-11" scope="col">Hình thức</th>
+                                                            <th class="border-top-1 min-w-85p  py-11" scope="col">Phòng thi</th>
+                                                            <th class="border-top-1 min-w-130p  py-11" scope="col">Ghi chú</th>
+                                                            <th class="border-top-1 min-w-150p py-11" scope="col">Thông tin sinh viên ( Họ tên, mã số)</th>
+
+                                                        </tr>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>450820989</td>
+                                                            <td>Nhập môn Khoa học dữ liệu và trí tuệ nhân tạo</td>
+                                                            <td>07/10/2022</td>
+                                                            <td>45 phút</td>
+                                                            <td>Tự luận</td>
+                                                            <td>A2 206</td>
+                                                            <td>...</td>
+                                                            <td>Nguyễn Thị Bích - 1234</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>450820989</td>
+                                                            <td>Nhập môn Khoa học dữ liệu và trí tuệ nhân tạo</td>
+                                                            <td>07/10/2022</td>
+                                                            <td>45 phút</td>
+                                                            <td>Tự luận</td>
+                                                            <td>A2 206</td>
+                                                            <td>...</td>
+                                                            <td>Nguyễn Thị Bích - 1234</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>450820989</td>
+                                                            <td>Nhập môn Khoa học dữ liệu và trí tuệ nhân tạo</td>
+                                                            <td>07/10/2022</td>
+                                                            <td>45 phút</td>
+                                                            <td>Tự luận</td>
+                                                            <td>A2 206</td>
+                                                            <td>...</td>
+                                                            <td>Nguyễn Thị Bích - 1234</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="text-main fw-bold mb-10 mt-30">Kế hoạch thi chung</div>
+                                            <div class="table-responsive fs-14 no-swiper">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="border-top-1 text-center " scope="col">STT</th>
+                                                            <th class="border-top-1 min-w-110p " scope="col">Mã học phần</th>
+                                                            <th class="border-top-1 min-w-185p " scope="col">Tên học phần</th>
+                                                            <th class="border-top-1 min-w-85p py-11" scope="col">Ngày thi</th>
+                                                            <th class="border-top-1 min-w-110p  py-11" scope="col">Thời gian thi</th>
+                                                            <th class="border-top-1 min-w-85p  py-11" scope="col">Hình thức</th>
+                                                            <th class="border-top-1 min-w-85p  py-11" scope="col">Phòng thi</th>
+                                                            <th class="border-top-1 min-w-130p  py-11" scope="col">Ghi chú</th>
+                                                        </tr>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>450820989</td>
+                                                            <td>Nhập môn Khoa học dữ liệu và trí tuệ nhân tạo</td>
+                                                            <td>07/10/2022</td>
+                                                            <td>45 phút</td>
+                                                            <td>Tự luận</td>
+                                                            <td>A2 206</td>
+                                                            <td>...</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>450820989</td>
+                                                            <td>Nhập môn Khoa học dữ liệu và trí tuệ nhân tạo</td>
+                                                            <td>07/10/2022</td>
+                                                            <td>45 phút</td>
+                                                            <td>Tự luận</td>
+                                                            <td>A2 206</td>
+                                                            <td>...</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                            <td>450820989</td>
+                                                            <td>Nhập môn Khoa học dữ liệu và trí tuệ nhân tạo</td>
+                                                            <td>07/10/2022</td>
+                                                            <td>45 phút</td>
+                                                            <td>Tự luận</td>
+                                                            <td>A2 206</td>
+                                                            <td>...</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                4
+            </div>
+            <div class="swiper-slide">
+                5
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
+    <script src="../assets/swiper-slide/swiper-bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../assets/js/customs.js"></script>
+
+
+</body>
+
+</html>

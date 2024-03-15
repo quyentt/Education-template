@@ -235,13 +235,17 @@
   .modul-list .modul-item {
     width: 33.3333333%;
   }
-  .function-nav {
+  .function-nav,
+  .function-2 .function-nav {
     width: 100%;
     min-height: auto;
     justify-content: end;
     padding-right: 15px;
     padding-top: 18px;
     background: transparent;
+  }
+  .function-content {
+    padding: 15px;
   }
   .tab-list .tab-item a {
     height: 90px;

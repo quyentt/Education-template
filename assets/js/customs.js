@@ -179,6 +179,80 @@ $(document).ready(function () {
       handleSetColours(picker, text);
     });
   });
+  //Tự động thay đổi màu sắc box chức năng-------------------------------------
+  const featureEle = document.querySelectorAll(" .feature-box");
+
+  for (let i = 0; i < featureEle.length; i++) {
+    let randomNum = Math.floor(Math.random() * 10 + 1);
+
+    featureEle[i].setAttribute("data-bg", randomNum);
+  }
+
+  // show quantity modul on page responsive!------------------------------------
+  const modulList = document.querySelector(".modul-v2 .modul-list");
+  const modulItem = document.querySelectorAll(".modul-v2 .modul-item");
+  if (modulList) {
+    /*Lấy chiều rộng list modul*/
+    const modulListW = modulList.offsetWidth;
+    /*Số lượng modul có thể hiển thị trên 1 dòng*/
+    const modulItemPerRow = Math.floor((modulListW - 41) / 220);
+
+    /*Lấy số lượng modul*/
+    const modulItemQuantity = modulItem.length;
+    /*Hiển thị modul trên 1 dòng, ẩn phần còn lại*/
+    for (let i = 0; i < modulItemPerRow; i++) {
+      modulItem[i].classList.add("modul-show");
+    }
+    const modulViewMore = document.querySelector(".modul-view-more");
+    if (modulItemQuantity > modulItemPerRow) {
+      modulViewMore.classList.add("show");
+    }
+    modulViewMore.addEventListener("click", () => {
+      modulViewMore.classList.remove("show");
+      for (let i = 0; i <= modulItemQuantity; i++) {
+        modulItem[i].classList.add("modul-show");
+      }
+    });
+  }
+  // myTab-------------------------------------------------------------------------------
+
+  const myFunctionWrap = document.querySelectorAll(".function");
+  myFunctionWrap.forEach((funcEle) => {
+    const myTabLink = funcEle.querySelectorAll(".myTab-header-link");
+    const myTabItem = funcEle.querySelectorAll(".myTab-item");
+    const leftNav = funcEle.querySelector(".function-nav");
+    const featureActionActive = funcEle.querySelector(
+      ".feature-action-group-first"
+    );
+    if (featureActionActive) {
+      leftNav.innerHTML = featureActionActive.innerHTML;
+    }
+
+    myTabLink.forEach((el) => {
+      el.addEventListener("click", showMyTab);
+    });
+
+    function showMyTab(el) {
+      const btn = el.currentTarget;
+      const dataTarget = btn.getAttribute("data-myTab");
+      myTabItem.forEach((el) => {
+        el.classList.remove("show");
+      });
+      myTabLink.forEach((el) => {
+        el.classList.remove("active");
+      });
+      const myTabItemshow = document.querySelector("#" + dataTarget);
+      myTabItemshow.classList.add("show");
+      btn.classList.add("active");
+
+      const featureAction = myTabItemshow.querySelector(
+        ".feature-action-group "
+      ).innerHTML;
+
+      leftNav.innerHTML = featureAction;
+    }
+  });
+
   // select custom -----------------------------------------------------------
   var x, i, j, l, ll, selElmnt, a, b, c;
   /*Tìm class "custom-select":*/
@@ -267,80 +341,6 @@ $(document).ready(function () {
     let it = document.querySelector(".icon-toggle");
     if (it) {
       it.classList.remove("icon-toggle");
-    }
-  });
-
-  //Tự động thay đổi màu sắc box chức năng-------------------------------------
-  const featureEle = document.querySelectorAll(" .feature-box");
-
-  for (let i = 0; i < featureEle.length; i++) {
-    let randomNum = Math.floor(Math.random() * 10 + 1);
-
-    featureEle[i].setAttribute("data-bg", randomNum);
-  }
-
-  // show quantity modul on page responsive!------------------------------------
-  const modulList = document.querySelector(".modul-v2 .modul-list");
-  const modulItem = document.querySelectorAll(".modul-v2 .modul-item");
-  if (modulList) {
-    /*Lấy chiều rộng list modul*/
-    const modulListW = modulList.offsetWidth;
-    /*Số lượng modul có thể hiển thị trên 1 dòng*/
-    const modulItemPerRow = Math.floor((modulListW - 41) / 220);
-
-    /*Lấy số lượng modul*/
-    const modulItemQuantity = modulItem.length;
-    /*Hiển thị modul trên 1 dòng, ẩn phần còn lại*/
-    for (let i = 0; i < modulItemPerRow; i++) {
-      modulItem[i].classList.add("modul-show");
-    }
-    const modulViewMore = document.querySelector(".modul-view-more");
-    if (modulItemQuantity > modulItemPerRow) {
-      modulViewMore.classList.add("show");
-    }
-    modulViewMore.addEventListener("click", () => {
-      modulViewMore.classList.remove("show");
-      for (let i = 0; i <= modulItemQuantity; i++) {
-        modulItem[i].classList.add("modul-show");
-      }
-    });
-  }
-  // myTab-------------------------------------------------------------------------------
-
-  const myFunctionWrap = document.querySelectorAll(".function");
-  myFunctionWrap.forEach((funcEle) => {
-    const myTabLink = funcEle.querySelectorAll(".myTab-header-link");
-    const myTabItem = funcEle.querySelectorAll(".myTab-item");
-    const leftNav = funcEle.querySelector(".function-nav");
-    const featureActionActive = funcEle.querySelector(
-      ".feature-action-group-first"
-    );
-    if (featureActionActive) {
-      leftNav.innerHTML = featureActionActive.innerHTML;
-    }
-
-    myTabLink.forEach((el) => {
-      el.addEventListener("click", showMyTab);
-    });
-
-    function showMyTab(el) {
-      const btn = el.currentTarget;
-      const dataTarget = btn.getAttribute("data-myTab");
-      myTabItem.forEach((el) => {
-        el.classList.remove("show");
-      });
-      myTabLink.forEach((el) => {
-        el.classList.remove("active");
-      });
-      const myTabItemshow = document.querySelector("#" + dataTarget);
-      myTabItemshow.classList.add("show");
-      btn.classList.add("active");
-
-      const featureAction = myTabItemshow.querySelector(
-        ".feature-action-group "
-      ).innerHTML;
-
-      leftNav.innerHTML = featureAction;
     }
   });
 
