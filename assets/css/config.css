@@ -524,8 +524,20 @@ textarea.form-control {
   min-width: 185px;
 }
 
+.min-w-200p {
+  min-width: 200px;
+}
+
+.min-w-210p {
+  min-width: 210px;
+}
+
 .min-w-250p {
   min-width: 250px;
+}
+
+.min-w-270p {
+  min-width: 270px;
 }
 
 .min-w-300p {
@@ -663,6 +675,10 @@ textarea.form-control {
   background: var(--color-green) !important;
 }
 
+.bg-link {
+  background: var(--color-link) !important;
+}
+
 .bg-light-sky {
   background: var(--color-bg-light-sky) !important;
 }
@@ -692,4 +708,17 @@ textarea.form-control {
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 500;
+}
+
+.sticky-right {
+  position: sticky;
+  right: 0;
 }

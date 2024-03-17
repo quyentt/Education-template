@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chức năng</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+
+<body>
+    <div class="header fixed-top">
+        <div class="top-nav ">
+            <div class="head-logo">
+                <a href="../index.html">
+                    <img class="logo-icon" src="../assets/images/logo/logo-icon.png">
+                    <img class="logo-text" src="../assets/images/logo/logo-text.png">
+                </a>
+            </div>
+            <div class="head-search-form">
+                <div class="head-search-toggle">
+                    <i class="fal fa-search"></i>
+                </div>
+                <div class="head-search-box">
+                    <div class="form">
+                        <input type="text" class="search-imput" placeholder="Tìm kiếm thông tin">
+                        <button class="search-btn">
+                            <i class="fal fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-menu">
+                <ul class="list-unstyled">
+                    <li class="item ">
+                        <a class="menu-link" href="../index.html">
+                            <i class="fal fa-home"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../dashboard.html">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../modul.html">
+                            <span>Modul</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../chucnang-cuaban.html">
+                            <span>Chức năng của bạn</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../tintuc.html">
+                            <span>Tin tức</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fal fa-bars"></i>
+                </div>
+            </div>
+            <div class="account-group">
+                <div class="dropdown ">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <i class="fal fa-circle-check"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item message" data-bs-toggle="dropdown">
+                        <i class="fal fa-messages"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item noti" data-bs-toggle="dropdown">
+                        <i class="fal fa-bell"></i>
+                        <span>9+</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <img src="../assets/images/avatar.jpg" class="avatar">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quick-action tabs-slider">
+        <div class="tab-title">
+            Kế hoạch khóa học
+        </div>
+        <div class="tab-list swiper label-slider auto-width-slider">
+            <div class="swiper-wrapper">
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+
+                        <div class="icon" style="mask-image: url('icon/CSDL-hocphan.svg')"></div>
+                        <p>Cơ sở dữ liệu học phần</p>
+                    </a>
+                </div>
+
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <div class="icon" style="mask-image: url('icon/daotao-dukien.svg')"></div>
+                        <p>Đào tạo dự kiến học phần</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <div class="icon" style="mask-image: url('icon/khoaphanhoi.svg')"></div>
+                        <p>Khoa phản hồi dự kiến học phần</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <div class="icon" style="mask-image: url('icon/daotaoxacnhan.svg')"></div>
+                        <p>Đào tạo xác nhận mở lớp</p>
+                    </a>
+                </div>
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <div class="icon" style="mask-image: url('icon/khoaphanconggiangvien.svg')"></div>
+                        <p>Khoa phân công giảng viên</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="swiper content-slider">
+        <div class="swiper-wrapper">
+            <!-- CƠ SỞ DỮ LIỆU HỌC PHẦN -->
+            <div class="swiper-slide">
+                <div class="function">
+                    <div class="function-nav">
+
+                        <!-- Vị trí inner nhóm button -->
+                    </div>
+                    <div class="function-content">
+                        <div class="feature-content has-tabs">
+                            <div class="card today-card today-card-1 mb-40">
+                                <div class="card-header">
+                                    <div class="myTab-header">
+                                        <div class="myTab-header-item">
+                                            <a href="#" class="myTab-header-link  active" data-myTab="csdl_hocphan">
+                                                Cơ sở dữ liệu học phần
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="myTab-content">
+                                        <!-- Cơ sở dữ liệu học phần -->
+                                        <div class="myTab-item show" id="csdl_hocphan">
+                                            <div class="fs-15 text-gray fw-500 mb-10">Lọc theo đơn vị</div>
+                                            <div class="d-flex align-items-end flex-wrap flex-md-nowrap col-12 filter-2-item">
+                                                <div class="flex-grow-1">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6 mb-15">
+                                                            <div class="input-label-left">
+                                                                <label class="mt-5">Đơn vị</label>
+                                                                <div class="custom-select">
+                                                                    <select name="" id="" class="form-select">
+                                                                        <option value="">Chọn đơn vị</option>
+                                                                        <option value="">Chọn thời gian</option>
+                                                                        <option value="">Chọn thời gian</option>
+                                                                        <option value="">Chọn thời gian</option>
+                                                                    </select>
+                                                                    <i class="fa-light fa-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-15">
+                                                            <div class="input-label-left">
+                                                                <label class="mt-5">Thông tin</label>
+                                                                <input type="text" class="form-control" placeholder="Thông tin">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="flex-shrink-0">
+                                                    <div class="btn btn-view ms-20 mb-15">Xem danh sách</div>
+                                                </div>
+                                            </div>
+                                            <div class="fs-15 text-gray fw-500 mb-10 mt-5">Lọc theo chương trình đào tạo</div>
+                                            <div class="d-flex align-items-end flex-wrap flex-md-nowrap mb-10">
+                                                <div class="flex-grow-1">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6 col-xxl-3 mb-15">
+                                                            <div class="input-label-left">
+                                                                <label class="mt-5">Hệ đào tạo</label>
+                                                                <div class="custom-select">
+                                                                    <select name="" id="" class="form-select">
+                                                                        <option value="">Hệ đào tạo</option>
+                                                                        <option value="">Chọn thời gian</option>
+                                                                        <option value="">Chọn thời gian</option>
+                                                                        <option value="">Chọn thời gian</option>
+                                                                    </select>
+                                                                    <i class="fa-light fa-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 col-xxl-3 mb-15">
+                                                            <div class="input-label-left">
+                                                                <label class="mt-5">Thời gian</label>
+                                                                <div class="custom-select">
+                                                                    <select name="" id="" class="form-select">
+                                                                        <option value="">Chọn thời gian</option>
+                                                                        <option value="">Chọn thời gian</option>
+                                                                        <option value="">Chọn thời gian</option>
+                                                                        <option value="">Chọn thời gian</option>
+                                                                    </select>
+                                                                    <i class="fa-light fa-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 col-xxl-3 mb-15">
+                                                            <div class="input-label-left">
+                                                                <label class="mt-5">Khóa học</label>
+                                                                <div class="custom-select">
+                                                                    <select name="" id="" class="form-select">
+                                                                        <option value="">Chọn Khóa học</option>
+                                                                        <option value="">Chọn thời gian</option>
+                                                                        <option value="">Chọn thời gian</option>
+                                                                        <option value="">Chọn thời gian</option>
+                                                                    </select>
+                                                                    <i class="fa-light fa-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 col-xxl-3 mb-15">
+                                                            <div class="input-label-left">
+                                                                <label class="mt-5">Thông tin</label>
+                                                                <input type="text" class="form-control" placeholder="Thông tin">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="flex-shrink-0">
+                                                    <div class="btn btn-view ms-20 mb-15">Xem danh sách</div>
+                                                </div>
+                                            </div>
+
+                                            <!--Nhóm button xử lý tác vụ sẽ được inner sang trái -->
+                                            <div class="feature-action-group d-none feature-action-group-first">
+                                                <div class="action-function">
+                                                    <button class="btn btn-save" data-bs-toggle="modal" data-bs-target="#themMoiKeHoach">
+                                                        <i class="fal fa-check-circle"></i>
+                                                        <span>Đồng ý </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="table-wrap">
+                                                <div class="table-responsive fs-14 no-swiper">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="5" class="text-center border-top-1 py-11">Thông tin học phần</th>
+                                                                <th colspan="2" class="text-center border-top-1 border-left-1 py-11">Quy mô theo loại lớp</th>
+                                                                <th colspan="3" class="text-center border-top-1 border-left-1 py-11">Phân loại theo nhóm</th>
+                                                                <th colspan="2" class="text-center border-top-1 border-left-1 py-11">Phân loại lớp</th>
+                                                                <th class="text-center border-top-1 border-left-1 py-11"></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="text-center border-top-1" scope="col">STT</th>
+                                                                <th class="min-w-60p border-top-1" scope="col">Mã</th>
+                                                                <th class="min-w-130p border-top-1" scope="col">Tên</th>
+                                                                <th class="min-w-85p border-top-1 py-11 text-center" scope="col">Số tín chỉ</th>
+                                                                <th class="min-w-130p border-top-1  py-11" scope="col">Đơn vị</th>
+                                                                <th class="min-w-120p border-top-1 border-left-1  py-11" scope="col">Lớp chính</th>
+                                                                <th class="min-w-120p border-top-1  py-11" scope="col">Lớp phụ </th>
+                                                                <th class="min-w-150p border-top-1  py-11 border-left-1" scope="col">Phân loại lớp chính</th>
+                                                                <th class="min-w-270p border-top-1  py-11" scope="col">Phân loại học phần để tính khối lượng</th>
+                                                                <th class="min-w-150p border-top-1  py-11" scope="col">Dạy bằng tiếng anh </th>
+                                                                <th class="min-w-185p border-top-1  py-11 border-left-1" scope="col">Để sử dụng giảng đường</th>
+                                                                <th class="min-w-130p border-top-1  py-11" scope="col">Để dự trù vật tư</th>
+                                                                <th class="text-center border-top-1 border-left-1  py-11 sticky-right bg-link text-white" scope="col">
+                                                                    <div class="d-flex align-items-center">
+                                                                        <span>Chọn</span>
+                                                                        <label class="checkbox checkbox-green ms-5">
+                                                                            <input type="checkbox" >
+                                                                            <span class="checkmark">
+                                                                                <i class="fa-solid fa-check"></i>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                <td>123456789</td>
+                                                                <td>Công nghệ thông tin</td>
+                                                                <td class="text-center">1</td>
+                                                                <td>Tên Đơn vị</td>
+                                                                <td class="border-left-1">Tên lớp chính</td>
+                                                                <td>Tên lớp phụ</td>
+                                                                <td class="border-left-1"> Phân loại lớp chính</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td>Thân Loại để sử dụng giảng đường</td>
+                                                                <td> Để sử dụng vật tư</td>
+                                                                <td class="text-center border-left-1 sticky-right bg-link">
+                                                                    <label class="checkbox checkbox-green ms-5 ">
+                                                                    <input type="checkbox" >
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                <td>123456789</td>
+                                                                <td>Công nghệ thông tin</td>
+                                                                <td class="text-center">1</td>
+                                                                <td>Tên Đơn vị</td>
+                                                                <td class="border-left-1">Tên lớp chính</td>
+                                                                <td>Tên lớp phụ</td>
+                                                                <td class="border-left-1"> Phân loại lớp chính</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td>Thân Loại để sử dụng giảng đường</td>
+                                                                <td> Để sử dụng vật tư</td>
+                                                                <td class="text-center border-left-1 sticky-right bg-link">
+                                                                    <label class="checkbox checkbox-green ms-5 ">
+                                                                    <input type="checkbox" >
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                                                <td>123456789</td>
+                                                                <td>Công nghệ thông tin</td>
+                                                                <td class="text-center">1</td>
+                                                                <td>Tên Đơn vị</td>
+                                                                <td class="border-left-1">Tên lớp chính</td>
+                                                                <td>Tên lớp phụ</td>
+                                                                <td class="border-left-1"> Phân loại lớp chính</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td>Thân Loại để sử dụng giảng đường</td>
+                                                                <td> Để sử dụng vật tư</td>
+                                                                <td class="text-center border-left-1 sticky-right bg-link">
+                                                                    <label class="checkbox checkbox-green ms-5 ">
+                                                                    <input type="checkbox" >
+                                                                    <span class="checkmark">
+                                                                        <i class="fa-solid fa-check"></i>
+                                                                    </span>
+                                                                </label>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="my-paging mt-20">
+                                                    <div class="my-paging_static">
+                                                        1 đến 10 trong 1210 dữ liệu
+                                                    </div>
+                                                    <div class="my-paging_quantity">
+                                                        <span>Hiển thị</span>
+                                                        <div class="input-wrap">
+                                                            <select name="" id="" class="form-select">
+                                                                <option value="">10</option>
+                                                                <option value="">10</option>
+                                                                <option value="">10</option>
+                                                                <option value="">10</option>
+                                                            </select>
+                                                            <i class="fa-light fa-chevron-down icon-end"></i>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="my-paging_wrap">
+                                                        <li><a href=""><i class="fa-light fa-chevron-left"></i></a></li>
+                                                        <li><a class="active" href="">1</a></li>
+                                                        <li><a href="">2</a></li>
+                                                        <li><a href="">3</a></li>
+                                                        <li><a href="">4</a></li>
+                                                        <li><a href="">5</a></li>
+                                                        <li><a href="">...</a></li>
+                                                        <li><a href="">101</a></li>
+                                                        <li><a href="">102</a></li>
+                                                        <li><a href="">103</a></li>
+                                                        <li><a href="">104</a></li>
+                                                        <li><a href="">105</a></li>
+                                                        <li><a href=""><i class="fa-light fa-chevron-right"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ĐÀO TẠO DỰ KIẾN HỌC PHẦN -->
+            <div class="swiper-slide">
+                <div class="function">
+                    <div class="function-nav">
+
+                        <!-- Vị trí inner nhóm button -->
+                    </div>
+                    <div class="function-content">
+                        <div class="feature-content has-tabs">
+                            <div class="card today-card today-card-1 mb-40">
+                                <div class="card-header">
+                                    <div class="myTab-header">
+                                        <div class="myTab-header-item">
+                                            <a href="#" class="myTab-header-link  active" data-myTab="daotaodukien_hocphan">
+                                                Đào tạo dự kiến học phần
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body ">
+                                    <div class="myTab-content ">
+                                        <!--  Đào tạo dự kiến học phần -->
+                                        <div class="myTab-item show " id="daotaodukien_hocphan ">
+                                            <div class="d-flex align-items-end flex-wrap flex-md-nowrap col-12 filter-2-item mb-10 ">
+                                                <div class="flex-grow-1 ">
+                                                    <div class="row ">
+                                                        <div class="col-12 col-md-6 mb-15 ">
+                                                            <div class="input-label-left ">
+                                                                <label class="mt-5 ">Thời gian</label>
+                                                                <div class="custom-select ">
+                                                                    <select name=" " id=" " class="form-select ">
+                                                                        <option value=" ">Chọn thời gian</option>
+                                                                        <option value=" ">Chọn thời gian</option>
+                                                                        <option value=" ">Chọn thời gian</option>
+                                                                        <option value=" ">Chọn thời gian</option>
+                                                                    </select>
+                                                                    <i class="fa-light fa-chevron-down "></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-15 ">
+                                                            <div class="input-label-left ">
+                                                                <label class="mt-5 ">Hệ đào tạo</label>
+                                                                <div class="custom-select ">
+                                                                    <select name=" " id=" " class="form-select ">
+                                                                        <option value=" ">Chọn hệ đào tạo</option>
+                                                                        <option value=" ">Chọn thời gian</option>
+                                                                        <option value=" ">Chọn thời gian</option>
+                                                                        <option value=" ">Chọn thời gian</option>
+                                                                    </select>
+                                                                    <i class="fa-light fa-chevron-down "></i>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="flex-shrink-0 ">
+                                                    <div class="btn btn-view ms-20 mb-15 ">Xem danh sách</div>
+                                                </div>
+                                            </div>
+                                            <!--Nhóm button xử lý tác vụ sẽ được inner sang trái -->
+                                            <div class="feature-action-group d-none feature-action-group-first ">
+                                                <div class="action-function ">
+                                                    <button class="btn btn-save " title="Phản hồi kết quả của đào tạo ">
+                                                        <i class="fal fa-reply-all "></i>
+                                                        <span>Phản hồi</span>
+                                                    </button>
+                                                    <button class="btn btn-delete " title="Xóa các mục đã chọn ">
+                                                        <i class="fal fa-trash-alt "></i>
+                                                        <span>Xóa</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="fw-bold text-main mb-10 ">Danh sách học phần dự kiến của đào tạo</div>
+                                            <div class="table-wrap ">
+                                                <div class="table-responsive fs-14 no-swiper ">
+                                                    <table class="table ">
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="11 " class="text-center border-top-1 py-11 ">Thông tin học phần dự kiến</th>
+                                                                <th colspan="4 " class="text-center border-top-1 border-left-1 py-11 ">Số lượng theo tính chất</th>
+                                                                <th rowspan="2 " class="text-center border-top-1 border-left-1 py-11 min-w-130p ">Số lượng nhu cầu</th>
+                                                                <th rowspan="2 " class="text-center border-top-1 py-11 min-w-130p ">Số điều chỉnh(tăng/giảm)</th>
+                                                                <th rowspan="2 " class="text-center border-top-1 py-11 min-w-130p ">Tổng số dự kiến</th>
+                                                                <th rowspan="2 " class=" border-top-1 py-11 min-w-130p ">Người tạo</th>
+                                                                <th rowspan="2 " class="text-center border-top-1 py-11 min-w-130p ">Ngày tạo</th>
+                                                                <th rowspan="2 " class="text-center border-top-1 py-11 min-w-130p ">Khoa phản hồi</th>
+                                                                <th rowspan="2 " class="text-center border-top-1 py-11 min-w-150p ">Đào tạo phản hồi</th>
+                                                                <th class="text-center border-top-1 border-left-1 py-11 "></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="text-center border-top-1 " scope="col ">STT</th>
+                                                                <th class="min-w-60p border-top-1 " scope="col ">Mã</th>
+                                                                <th class="min-w-130p border-top-1 " scope="col ">Tên</th>
+                                                                <th class="min-w-85p border-top-1 py-11 text-center " scope="col ">Số tín chỉ</th>
+                                                                <th class="min-w-130p border-top-1 py-11 " scope="col ">Đơn vị</th>
+                                                                <th class="min-w-130p border-top-1 py-11 " scope="col ">Chương trình</th>
+                                                                <th class="min-w-100p border-top-1 py-11 " scope="col ">Khóa học</th>
+                                                                <th class="min-w-100p border-top-1 py-11 text-center " scope="col ">Hệ đào tạo</th>
+                                                                <th class="min-w-130p border-top-1 py-11 " scope="col ">Khối kiến thức</th>
+                                                                <th class="min-w-100p border-top-1 py-11 " scope="col ">Định hướng</th>
+                                                                <th class="min-w-210p border-top-1 py-11 " scope="col ">Thời gian trong chương trình</th>
+                                                                <th class="min-w-100p text-center border-top-1 border-left-1 py-11 " scope="col ">Số chưa học</th>
+                                                                <th class="min-w-100p text-center border-top-1 py-11 " scope="col ">Số đã đạt</th>
+                                                                <th class="min-w-120p text-center border-top-1 py-11 " scope="col ">Số đã đăng ký</th>
+                                                                <th class="min-w-210p text-center border-top-1 py-11 " scope="col ">Số đã học nhưng không đạt</th>
+                                                                <th class="text-center border-top-1 border-left-1 py-11 sticky-right bg-link text-white " scope="col ">
+                                                                    <div class="d-flex align-items-center ">
+                                                                        <span>Chọn</span>
+                                                                        <label class="checkbox checkbox-green ms-5 ">
+                                                                            <input type="checkbox " >
+                                                                            <span class="checkmark ">
+                                                                                <i class="fa-solid fa-check "></i>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-center "><span class="d-flex align-items-center min-h-28p justify-content-center ">1</span></td>
+                                                                <td>123456789</td>
+                                                                <td>Công nghệ thông tin</td>
+                                                                <td class="text-center ">1</td>
+                                                                <td>Tên Đơn vị</td>
+                                                                <td>Tên chương trình</td>
+                                                                <td>2022 - 2026</td>
+                                                                <td class="text-center ">Đại học</td>
+                                                                <td>Tên khối kiến thức</td>
+                                                                <td>Định hướng</td>
+                                                                <td>Thời gian trong chương trình</td>
+                                                                <td class="text-center border-left-1 ">4</td>
+                                                                <td class="text-center ">4</td>
+                                                                <td class="text-center ">4</td>
+                                                                <td class="text-center ">4</td>
+                                                                <td class="text-center border-left-1 ">5</td>
+                                                                <td class="text-center ">
+                                                                    <input type="text " class="form-control-sm form-control ">
+                                                                </td>
+                                                                <td class="text-center ">4</td>
+                                                                <td>Trần Bảo An</td>
+                                                                <td class="text-center ">20/12/2024</td>
+                                                                <td class="text-center ">Đạt</td>
+                                                                <td class="text-center ">Không đạt</td>
+                                                                <td class="text-center border-left-1 sticky-right bg-link ">
+                                                                    <label class="checkbox checkbox-green ms-5 ">
+                                                                    <input type="checkbox " >
+                                                                    <span class="checkmark ">
+                                                                        <i class="fa-solid fa-check "></i>
+                                                                    </span>
+                                                                </label>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-40 flex-wrap ">
+                                                <div class="fw-bold text-main mb-10 mt-5 ">Danh sách học khoa đề xuất</div>
+                                                <div class="d-flex align-items-center justify-content-end flex-wrap ">
+                                                    <button class="btn btn-add mb-10 " data-bs-toggle="modal " data-bs-target="#duyetHoiDongBaoVe_chitiet_duyet ">
+                                                    Thêm học phần theo chương trình đào tạo
+                                                </button>
+                                                    <button class="btn btn-upload ms-15 mb-10 " data-bs-toggle="modal " data-bs-target="#themhocphantheokkhoahoc ">
+                                                    Thêm học phần theo đơn vị
+                                                </button>
+                                                </div>
+                                            </div>
+                                            <div class="table-wrap ">
+
+                                                <div class="table-responsive fs-14 no-swiper ">
+                                                    <table class="table ">
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="11 " class="text-center border-top-1 py-11 ">Thông tin học phần dự kiến</th>
+                                                                <th colspan="4 " class="text-center border-top-1 border-left-1 py-11 ">Số lượng theo tính chất</th>
+                                                                <th rowspan="2 " class="text-center border-top-1 border-left-1 py-11 min-w-130p ">Số lượng nhu cầu</th>
+                                                                <th rowspan="2 " class="text-center border-top-1 py-11 min-w-130p ">Số điều chỉnh(tăng/giảm)</th>
+                                                                <th rowspan="2 " class="text-center border-top-1 py-11 min-w-130p ">Tổng số dự kiến</th>
+                                                                <th rowspan="2 " class=" border-top-1 py-11 min-w-130p ">Người tạo</th>
+                                                                <th rowspan="2 " class="text-center border-top-1 py-11 min-w-130p ">Ngày tạo</th>
+                                                                <th rowspan="2 " class="text-center border-top-1 py-11 min-w-130p ">Khoa phản hồi</th>
+                                                                <th rowspan="2 " class="text-center border-top-1 py-11 min-w-150p ">Đào tạo phản hồi</th>
+                                                                <th class="text-center border-top-1 border-left-1 py-11 "></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="text-center border-top-1 " scope="col ">STT</th>
+                                                                <th class="min-w-60p border-top-1 " scope="col ">Mã</th>
+                                                                <th class="min-w-130p border-top-1 " scope="col ">Tên</th>
+                                                                <th class="min-w-85p border-top-1 py-11 text-center " scope="col ">Số tín chỉ</th>
+                                                                <th class="min-w-130p border-top-1 py-11 " scope="col ">Đơn vị</th>
+                                                                <th class="min-w-130p border-top-1 py-11 " scope="col ">Chương trình</th>
+                                                                <th class="min-w-100p border-top-1 py-11 " scope="col ">Khóa học</th>
+                                                                <th class="min-w-100p border-top-1 py-11 text-center " scope="col ">Hệ đào tạo</th>
+                                                                <th class="min-w-130p border-top-1 py-11 " scope="col ">Khối kiến thức</th>
+                                                                <th class="min-w-100p border-top-1 py-11 " scope="col ">Định hướng</th>
+                                                                <th class="min-w-210p border-top-1 py-11 " scope="col ">Thời gian trong chương trình</th>
+                                                                <th class="min-w-100p text-center border-top-1 border-left-1 py-11 " scope="col ">Số chưa học</th>
+                                                                <th class="min-w-100p text-center border-top-1 py-11 " scope="col ">Số đã đạt</th>
+                                                                <th class="min-w-120p text-center border-top-1 py-11 " scope="col ">Số đã đăng ký</th>
+                                                                <th class="min-w-210p text-center border-top-1 py-11 " scope="col ">Số đã học nhưng không đạt</th>
+                                                                <th class="text-center border-top-1 border-left-1 py-11 sticky-right bg-link text-white " scope="col ">
+                                                                    <div class="d-flex align-items-center ">
+                                                                        <span>Chọn</span>
+                                                                        <label class="checkbox checkbox-green ms-5 ">
+                                                                            <input type="checkbox " >
+                                                                            <span class="checkmark ">
+                                                                                <i class="fa-solid fa-check "></i>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-center "><span class="d-flex align-items-center min-h-28p justify-content-center ">1</span></td>
+                                                                <td>123456789</td>
+                                                                <td>Công nghệ thông tin</td>
+                                                                <td class="text-center ">1</td>
+                                                                <td>Tên Đơn vị</td>
+                                                                <td>Tên chương trình</td>
+                                                                <td>2022 - 2026</td>
+                                                                <td class="text-center ">Đại học</td>
+                                                                <td>Tên khối kiến thức</td>
+                                                                <td>Định hướng</td>
+                                                                <td>Thời gian trong chương trình</td>
+                                                                <td class="text-center border-left-1 ">4</td>
+                                                                <td class="text-center ">4</td>
+                                                                <td class="text-center ">4</td>
+                                                                <td class="text-center ">4</td>
+                                                                <td class="text-center border-left-1 ">5</td>
+                                                                <td class="text-center ">6 </td>
+                                                                <td class="text-center ">4</td>
+                                                                <td>Trần Bảo An</td>
+                                                                <td class="text-center ">20/12/2024</td>
+                                                                <td class="text-center ">Đạt</td>
+                                                                <td class="text-center ">Không đạt</td>
+                                                                <td class="text-center border-left-1 sticky-right bg-link ">
+                                                                    <label class="checkbox checkbox-green ms-5 ">
+                                                                    <input type="checkbox " >
+                                                                    <span class="checkmark ">
+                                                                        <i class="fa-solid fa-check "></i>
+                                                                    </span>
+                                                                </label>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal Thêm học phần theo chương trình đào tạo -->
+    <div class="modal fade " id="themhocphantheochuongtrinhdaotao ">
+        <div class="modal-dialog modal-dialog-centered modal-1800 ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <div class="modal-header-wrap ">
+                        <div class="title ">Chi tiết</div>
+
+                        <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                    </div>
+                </div>
+                <div class="modal-body ">
+                    fdfd
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal duỵet hội đồng bảo vệ - duyệt(chitiet)-->
+    <div class="modal fade " id="duyetHoiDongBaoVe_chitiet_duyet ">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <div class="modal-header-wrap ">
+                        <div class="title ">Nhập quyết định thành lập hội đồng</div>
+
+                        <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                    </div>
+                </div>
+                <div class="modal-body ">
+                    <div class="form ">
+                        <div class="input-label-left mb-16 flex-wrap ">
+                            <div class="col-12 col-md-4 ">
+                                <label class="mt-7 ">Số quyết định</label>
+                            </div>
+                            <div class="col-12 col-md-8 ">
+                                <div class="input ">
+                                    <input type="text " class="form-control ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-label-left mb-16 flex-wrap ">
+                            <div class="col-12 col-md-4 ">
+                                <label class="mt-7 ">Ngày quyết định</label>
+                            </div>
+                            <div class="col-12 col-md-8 ">
+                                <div class="input ">
+                                    <input type="text " class="form-control ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-label-left mb-16 flex-wrap ">
+                            <div class="col-12 col-md-4 ">
+                                <label class="mt-7 ">Ngày hoàn thành</label>
+                            </div>
+                            <div class="col-12 col-md-8 ">
+                                <div class="input ">
+                                    <input type="text " class="form-control ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-label-left mb-16 flex-wrap ">
+                            <div class="col-12 col-sm-4 ">
+                                <label class="mt-7 ">Nội dung</label>
+                            </div>
+                            <div class="col-12 col-sm-8 ">
+                                <div class="input ">
+                                    <textarea name=" " id=" " rows="4 " class="form-control "></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-label-left mb-16 flex-wrap ">
+                            <div class="col-4 ">
+                                <label class="mt-7 ">File</label>
+                            </div>
+                            <div class="col-8 pt-5 ">
+                                <a href="# " class="text-link fs-14 ">Chọn file upload</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer ">
+                    <div class="d-flex justify-content-end ">
+                        <button class="btn btn-save ">
+                            <i class="fal fa-save "></i>
+                            <span>Lưu</span>
+                        </button>
+                        <button class="btn btn-outline-secondary ms-20 " data-bs-toggle="modal " data-bs-target="#duyetHoiDongBaoVe_chitiet ">
+                            <i class="fal fa-times "></i>
+                            <span>Hủy</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+    <button type="button " class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal ">
+    Launch demo modal
+  </button>
+
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal" tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h1 class="modal-title fs-5 " id="exampleModalLabel ">Modal title</h1>
+                    <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                </div>
+                <div class="modal-body ">
+                    ...
+                </div>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Close</button>
+                    <button type="button " class="btn btn-primary ">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="../assets/bootstrap-5.3.2/js/bootstrap.bundle.js "></script>
+    <script src="../assets/swiper-slide/swiper-bundle.min.js "></script>
+    <script src="../assets/js/jquery-3.7.1.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js " integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin=" anonymous
+                                                " referrerpolicy="no-referrer "></script>
+
+    <script src="../assets/js/customs.js "></script>
+
+
+</body>
+
+</html>

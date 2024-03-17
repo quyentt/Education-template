@@ -28,6 +28,12 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .filter-2-item {
+    width: calc(50% + 72px);
+  }
+}
+
 /* ---max width--- */
 
 @media (max-width: 1600px) {
@@ -186,6 +192,9 @@
 }
 
 @media (max-width: 1080px) {
+  .block-news .news-item {
+    display: flex;
+  }
   .filter-item {
     width: 40%;
   }
@@ -425,6 +434,9 @@
   .btn-action-group-left .btn {
     min-width: auto;
     flex: 1;
+  }
+  .calendar-week-table .date {
+    width: 60px;
   }
 }
 
