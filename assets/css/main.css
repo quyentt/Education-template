@@ -1982,3 +1982,11 @@ a.other-action_item:hover {
 .collapse-head:not(.collapsed) .fa-plus {
   display: none;
 }
+
+.head-logo .logo-icon {
+  height: 36px;
+}
+
+.head-logo .logo-text {
+  display: none;
+}

@@ -258,6 +258,7 @@ $(document).ready(function () {
   /*Tìm class "custom-select":*/
   x = document.getElementsByClassName("custom-select");
   l = x.length;
+
   for (i = 0; i < l; i++) {
     selElmnt = x[i].getElementsByTagName("select")[0];
     ll = selElmnt.length;
@@ -274,6 +275,9 @@ $(document).ready(function () {
       /*Tạo DIV chứa 1 option*/
       c = document.createElement("DIV");
 
+      if (selElmnt.options[j].defaultSelected) {
+        c.setAttribute("class", "same-as-selected");
+      }
       c.innerHTML = selElmnt.options[j].innerHTML;
       c.addEventListener("click", function (e) {
         /*Cập nhật  "selected" khi click*/
