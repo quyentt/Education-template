@@ -32,6 +32,9 @@
   .filter-2-item {
     width: calc(50% + 72px);
   }
+  .filter-3-item {
+    width: calc(75% + 72px);
+  }
 }
 
 /* ---max width--- */

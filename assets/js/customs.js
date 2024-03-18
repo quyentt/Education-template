@@ -384,6 +384,6 @@ $(document).ready(function () {
 
   //modal show test
   $(window).on("load", function () {
-    // $("#themhocphantheochuongtrinhdaotao").modal("show");
+    $("#khoaphancong_giangvien").modal("show");
   });
 });
