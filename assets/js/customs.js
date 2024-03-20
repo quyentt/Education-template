@@ -359,7 +359,7 @@ $(document).ready(function () {
   });
 
   // swipe table-----------------------------------------------------------
-  const swipeScroll = document.querySelectorAll(".table-responsive");
+  const swipeScroll = document.querySelectorAll(".table-responsive111");
 
   let isDown = false;
   let startX;
