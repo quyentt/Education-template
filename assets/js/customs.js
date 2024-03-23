@@ -388,6 +388,6 @@ $(document).ready(function () {
 
   //modal show test
   $(window).on("load", function () {
-    $("#chinhsua_kehoach").modal("show");
+    $("#timkiem_sinhvien").modal("show");
   });
 });

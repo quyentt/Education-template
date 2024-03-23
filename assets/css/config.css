@@ -52,6 +52,12 @@ a.btn {
   color: var(--color-delete);
 }
 
+.btn-outline-main {
+  border: 1px solid;
+  background: #ffffff;
+  color: var(--color-main);
+}
+
 .btn-add {
   border: 1px solid var(--color-add);
   background: var(--color-add);
@@ -733,4 +739,49 @@ textarea.form-control {
 .sticky-right {
   position: sticky;
   right: 0;
+}
+
+.filter-5-item {
+  display: flex;
+  flex: 1;
+  margin: 0 -8px;
+}
+
+.select2 {
+  width: 100% !important;
+  font-size: 14px;
+}
+
+.select2 button {
+  border: none;
+  background: transparent;
+}
+
+.select2-container--default .select2-selection--multiple {
+  min-height: 38px;
+  border-radius: 4px;
+  border-color: var(--color-border);
+  font-size: 14px;
+}
+
+.select2-container--default.select2-container--focus
+  .select2-selection--multiple {
+  min-height: 38px;
+  border-radius: 4px;
+  border-color: var(--color-link);
+  font-size: 14px;
+}
+
+.select2-dropdown {
+  z-index: 9999;
+}
+
+.select2-search {
+  display: none;
+}
+
+.filter-5-item .filter-item {
+  width: 20%;
+  margin-top: 15px;
+  padding: 0 8px;
 }

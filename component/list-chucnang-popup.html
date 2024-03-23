@@ -135,6 +135,7 @@
                     <img class="max-w-300p" src="images/lichhocphan.jpg" alt="">
                 </div>
                 <div class="col-6 mt-30">
+                    <button class="btn btn-edit" data-bs-toggle="modal" data-bs-target="#chinhsua_kehoach">Chỉnh sửa kế hoạch</button>
                     <img class="max-w-300p" src="images/chinhsua-kehoach.jpg" alt="">
                 </div>
             </div>
@@ -727,17 +728,327 @@
             </div>
         </div>
     </div>
+    <!-- modal chỉnh sửa kế hoạch -->
+    <div class="modal fade" id="timkiem_sinhvien">
+        <div class="modal-dialog modal-dialog-centered modal-1800 modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header-wrap">
+                        <div class="title"><i class="fa-light fa-user-magnifying-glass me-5"></i>Tìm kiếm sinh viên</div>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center justify-content-center flex-wrap">
+                        <div class="filter-5-item">
+                            <div class="filter-item">
+                                <select class="form-select 2234" aria-label="Default select example" name="states[]" multiple="" tabindex="-1" aria-hidden="true">
+                                    <option selected="">Tất cả hệ đào tạo</option>
+                                    <option value="1">T5K6</option>
+                                    <option value="2">T6K6</option>
+                                    <option value="3">T7K6</option>
+                                    <option value="1">T5K6</option>
+                                    <option value="2">T6K6</option>
+                                    <option value="3">T7K6</option>
+                                    <option value="1">T5K6</option>
+                                    <option value="2">T6K6</option>
+                                    <option value="3">T7K6</option>
+                                </select>
+                            </div>
+                            <div class="filter-item">
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                            <div class="filter-item">
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                            <div class="filter-item">
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                            <div class="filter-item">
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                        </div>
+                        <div class="filter-action pt-15 ps-15 d-flex">
+                            <button class="btn btn-view ms-auto">
+                                <i class="fa-light fa-search me-5"></i>
+                                <span>Tìm</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-20 fs-14">
+                        <div class="fw-bold min-w-90p">Thêm nhiều</div>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-sm btn-outline-add ms-15 mb-15">
+                                <i class="fa-light fa-plus me5"></i>
+                                <span>Thêm từng khóa</span>
+                            </button>
+                            <button class="btn btn-sm btn-outline-add ms-15 mb-15">
+                                <i class="fa-light fa-plus me5"></i>
+                                <span>Thêm từng chương trình</span>
+                            </button>
+                            <button class="btn btn-sm btn-outline-add ms-15 mb-15">
+                                <i class="fa-light fa-plus me5"></i>
+                                <span>Thêm từng lớp</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-5 fs-14">
+                        <div class="fw-bold min-w-90p">Trạng thái</div>
+                        <div class="d-flex align-items-center flex-wrap fs-14">
+                            <div class="min-w-185p ms-10 mb-10">
+                                <label class="checkbox checkbox-green ms-5 d-flex align-items-center">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark me-10">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    Tất cả
+                                </label>
+                            </div>
+                            <div class="min-w-185p ms-10 mb-10">
+                                <label class="checkbox checkbox-green ms-5 d-flex align-items-center">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark me-10">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    Buộc thôi học
+                                </label>
+                            </div>
+                            <div class="min-w-185p ms-10 mb-10">
+                                <label class="checkbox checkbox-green ms-5 d-flex align-items-center">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark me-10">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    Đang học
+                                </label>
+                            </div>
+                            <div class="min-w-185p ms-10 mb-10">
+                                <label class="checkbox checkbox-green ms-5 d-flex align-items-center">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark me-10">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    Chuyển trường
+                                </label>
+                            </div>
+                            <div class="min-w-185p ms-10 mb-10">
+                                <label class="checkbox checkbox-green ms-5 d-flex align-items-center">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark me-10">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    Chuyển trường đi
+                                </label>
+                            </div>
+                            <div class="min-w-185p ms-10 mb-10">
+                                <label class="checkbox checkbox-green ms-5 d-flex align-items-center">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark me-10">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    Nghỉ học tạm thời
+                                </label>
+                            </div>
+                            <div class="min-w-185p ms-10 mb-10">
+                                <label class="checkbox checkbox-green ms-5 d-flex align-items-center">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark me-10">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    Tốt nghiệp
+                                </label>
+                            </div>
+                            <div class="min-w-185p ms-10 mb-10">
+                                <label class="checkbox checkbox-green ms-5 d-flex align-items-center">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark me-10">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    Xóa tên
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-25">
+                        <div class="text-main fw-bold">Danh sách</div>
+                        <button class="btn btn-sm btn-outline-link min-w-auto">
+                            <i class="fa-light fa-check-square me-5"></i>
+                            <span>Chọn</span>
+                        </button>
+                    </div>
+                    <div class="table-responsive fs-14 no-swiper mt-10">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="text-center border-top-1" scope="col">STT</th>
+                                    <th class="min-w-100p border-top-1" scope="col">Mã số</th>
+                                    <th class="min-w-150p border-top-1 py-11" scope="col">Họ tên</th>
+                                    <th class="min-w-85p border-top-1  py-11" scope="col">Ngày sinh</th>
+                                    <th class=" border-top-1  py-11" scope="col">Lớp</th>
+                                    <th class="min-w-185p border-top-1 py-11" scope="col">Chương trình</th>
+                                    <th class=" border-top-1 py-11" scope="col">Khóa</th>
+                                    <th class="min-w-100p border-top-1 py-11" scope="col">Trạng thái</th>
+                                    <th class="text-center border-top-1  py-11 w-80p" scope="col">
+                                        <div class="d-flex align-items-center">
+                                            <span>Chọn</span>
+                                            <label class="checkbox checkbox-green ms-5">
+                                                <input type="checkbox">
+                                                <span class="checkmark">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>BIT22000022</td>
+                                    <td>Trần Quốc Chung</td>
+                                    <td>18/10/2004</td>
+                                    <td>TIN5K3</td>
+                                    <td>Cử nhân công nghệ thông tin_k2</td>
+                                    <td>AC2021</td>
+                                    <td>Đang học</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox">
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>BIT22000022</td>
+                                    <td>Trần Quốc Chung</td>
+                                    <td>18/10/2004</td>
+                                    <td>TIN5K3</td>
+                                    <td>Cử nhân công nghệ thông tin_k2</td>
+                                    <td>AC2021</td>
+                                    <td>Đang học</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox">
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>BIT22000022</td>
+                                    <td>Trần Quốc Chung</td>
+                                    <td>18/10/2004</td>
+                                    <td>TIN5K3</td>
+                                    <td>Cử nhân công nghệ thông tin_k2</td>
+                                    <td>AC2021</td>
+                                    <td>Đang học</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox">
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>BIT22000022</td>
+                                    <td>Trần Quốc Chung</td>
+                                    <td>18/10/2004</td>
+                                    <td>TIN5K3</td>
+                                    <td>Cử nhân công nghệ thông tin_k2</td>
+                                    <td>AC2021</td>
+                                    <td>Đang học</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox">
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><span class="d-flex align-items-center min-h-28p justify-content-center">1</span></td>
+                                    <td>BIT22000022</td>
+                                    <td>Trần Quốc Chung</td>
+                                    <td>18/10/2004</td>
+                                    <td>TIN5K3</td>
+                                    <td>Cử nhân công nghệ thông tin_k2</td>
+                                    <td>AC2021</td>
+                                    <td>Đang học</td>
+                                    <td class="text-center">
+                                        <label class="checkbox checkbox-green ms-5">
+                                        <input type="checkbox">
+                                        <span class="checkmark">
+                                            <i class="fa-solid fa-check"></i>
+                                        </span>
+                                    </label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="my-paging mt-10">
+                        <div class="my-paging_static">
+                            1 đến 10 trong 1210 dữ liệu
+                        </div>
+                        <div class="my-paging_quantity">
+                            <span>Hiển thị</span>
+                            <div class="input-wrap">
+                                <select name="" id="" class="form-select">
+                                <option value="">10</option>
+                                <option value="">10</option>
+                                <option value="">10</option>
+                                <option value="">10</option>
+                            </select>
+                                <i class="fa-light fa-chevron-down icon-end"></i>
+                            </div>
+                        </div>
+                        <ul class="my-paging_wrap">
+                            <li><a href=""><i class="fa-light fa-chevron-left"></i></a></li>
+                            <li><a class="active" href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">...</a></li>
+                            <li><a href="">101</a></li>
+                            <li><a href="">102</a></li>
+                            <li><a href="">103</a></li>
+                            <li><a href="">104</a></li>
+                            <li><a href="">105</a></li>
+                            <li><a href=""><i class="fa-light fa-chevron-right"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- JS -->
     <script src="../assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
     <script src="../assets/swiper-slide/swiper-bundle.min.js"></script>
     <script src="../assets/js/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/select2/js/select2.min.js"></script>
+
     <script src="../assets/js/customs.js"></script>
 
 
 
-
+    <script>
+        $(document).ready(function() {
+            $('.2234').select2();
+        });
+    </script>
 
 
 </body>

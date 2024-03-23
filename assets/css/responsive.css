@@ -195,6 +195,17 @@
 }
 
 @media (max-width: 1080px) {
+  .filter-5-item {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .filter-action {
+    width: 100%;
+    margin-top: -55px;
+  }
+  .filter-5-item .filter-item {
+    width: 33.333333% !important;
+  }
   .block-news .news-item {
     display: flex;
   }
@@ -295,6 +306,9 @@
 }
 
 @media (max-width: 768px) {
+  .filter-5-item .filter-item {
+    width: 50% !important;
+  }
   .modal-body-scroll-y {
     padding: 0;
   }
@@ -341,6 +355,13 @@
 }
 
 @media (max-width: 576px) {
+  .filter-5-item .filter-item {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .filter-action {
+    margin-top: 0;
+  }
   .filter-item {
     width: 100%;
     justify-content: end;
