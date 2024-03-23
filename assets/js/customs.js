@@ -388,6 +388,6 @@ $(document).ready(function () {
 
   //modal show test
   $(window).on("load", function () {
-    // $("#khoaphancong_giangvien").modal("show");
+    $("#chinhsua_kehoach").modal("show");
   });
 });

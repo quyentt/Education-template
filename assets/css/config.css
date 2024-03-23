@@ -46,10 +46,22 @@ a.btn {
   color: #fff;
 }
 
+.btn-outline-delete {
+  border: 1px solid;
+  background: #ffffff;
+  color: var(--color-delete);
+}
+
 .btn-add {
   border: 1px solid var(--color-add);
   background: var(--color-add);
   color: #fff;
+}
+
+.btn-outline-add {
+  border: solid 1px;
+  color: var(--color-add);
+  background: #fff;
 }
 
 .btn-save {
