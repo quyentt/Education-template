@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chức năng gia đình</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+
+<body>
+    <div class="header fixed-top">
+        <div class="top-nav ">
+            <div class="head-logo">
+                <a href="../index.html">
+                    <img class="logo-icon" src="../assets/images/logo/logo-icon.png">
+                    <img class="logo-text" src="../assets/images/logo/logo-text.png">
+                </a>
+            </div>
+            <div class="head-search-form">
+                <div class="head-search-toggle">
+                    <i class="fal fa-search"></i>
+                </div>
+                <div class="head-search-box">
+                    <div class="form">
+                        <input type="text" class="search-imput" placeholder="Tìm kiếm thông tin">
+                        <button class="search-btn">
+                            <i class="fal fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-menu">
+                <ul class="list-unstyled">
+                    <li class="item ">
+                        <a class="menu-link" href="../index.html">
+                            <i class="fal fa-home"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../dashboard.html">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../modul.html">
+                            <span>Modul</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../chucnang-cuaban.html">
+                            <span>Chức năng của bạn</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="menu-link" href="../tintuc.html">
+                            <span>Tin tức</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fal fa-bars"></i>
+                </div>
+            </div>
+            <div class="account-group">
+                <div class="dropdown ">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <i class="fal fa-circle-check"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item message" data-bs-toggle="dropdown">
+                        <i class="fal fa-messages"></i>
+                        <span>3</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item noti" data-bs-toggle="dropdown">
+                        <i class="fal fa-bell"></i>
+                        <span>9+</span>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="item" data-bs-toggle="dropdown">
+                        <img src="../assets/images/avatar.jpg" class="avatar">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quick-action tabs-slider">
+        <div class="tab-title">
+            Gia đình
+        </div>
+        <div class="tab-list swiper label-slider auto-width-slider">
+            <div class="swiper-wrapper">
+                <div class="tab-item swiper-slide">
+                    <a href="javascript:void(0)">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <p>Tin tức</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="swiper content-slider">
+        <div class="swiper-wrapper">
+
+            <!--TIN TỨC -->
+            <div class="swiper-slide">
+                <div class="function function-2 pb-50">
+                    <div class="function-nav">
+                        <div class=" w-100 ms-15">
+                            <div class="box-shadow mt-30 p-10">
+                                <div class="search-form">
+                                    <div class="input input-icon-right mb-15">
+                                        <input type="text" class="form-control" value="">
+                                        <i class="fa-light fa-search calendar-icon"></i>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="input input-icon-right">
+                                                <input type="text" class="form-control" value="" placeholder="Từ ngày">
+                                                <i class="fa-light fa-calendar-day calendar-icon"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="input input-icon-right">
+                                                <input type="text" class="form-control" value="" placeholder="Đến ngày">
+                                                <i class="fa-light fa-calendar-day calendar-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-15">
+                                        <button class="btn btn-view mb-0">Tìm kiếm</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-shadow block-news mt-20 p-0">
+                                <div class="dashboad-cate-title">
+                                    <span class="icon"></span>
+                                    <span>Tin đã đánh dấu</span>
+                                </div>
+                                <div class="row news-list">
+
+                                    <div class="col-12 col-md-6 col-lg-12">
+                                        <div class="news-item">
+                                            <a href="#" class="image-z image">
+                                                <img src="../assets/images-demo/news-img.png" alt="">
+                                            </a>
+                                            <div class="news-item-right">
+                                                <a href="Phenikaa-8-tintuc-chitiet.html" class="title" title="">
+                                                    Chương trình đào tạo ngành Kinh doanh quốc tế (các môn chuyên ngành học bằng tiếng Anh)
+                                                </a>
+                                                <div class="meta">
+                                                    <a class="cate-link" href=""><i class="fas fa-caret-right me-5"></i><span>Đào tạo</span></a>
+                                                    <p class="mb-0 ms4"><i class="fal fa-calendar me-5"></i><span>18/04/2022</span></p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12">
+                                        <div class="news-item">
+                                            <a href="#" class="image-z image">
+                                                <img src="../assets/images-demo/news-img.png" alt="">
+                                            </a>
+                                            <div class="news-item-right">
+                                                <a href="Phenikaa-8-tintuc-chitiet.html" class="title" title="">
+                                                    Chương trình đào tạo ngành Kinh doanh quốc tế (các môn chuyên ngành học bằng tiếng Anh)
+                                                </a>
+                                                <div class="meta">
+                                                    <a class="cate-link" href=""><i class="fas fa-caret-right me-5"></i><span>Đào tạo</span></a>
+                                                    <p class="mb-0 ms4"><i class="fal fa-calendar me-5"></i><span>18/04/2022</span></p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12">
+                                        <div class="news-item">
+                                            <a href="#" class="image-z image">
+                                                <img src="../assets/images-demo/news-img.png" alt="">
+                                            </a>
+                                            <div class="news-item-right">
+                                                <a href="Phenikaa-8-tintuc-chitiet.html" class="title" title="">
+                                                    Chương trình đào tạo ngành Kinh doanh quốc tế (các môn chuyên ngành học bằng tiếng Anh)
+                                                </a>
+                                                <div class="meta">
+                                                    <a class="cate-link" href=""><i class="fas fa-caret-right me-5"></i><span>Đào tạo</span></a>
+                                                    <p class="mb-0 ms4"><i class="fal fa-calendar me-5"></i><span>18/04/2022</span></p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="function-content">
+                        <div class="feature-content has-tabs">
+                            <div class="card today-card today-card-1 mb-40">
+                                <div class="card-header">
+                                    <div class="myTab-header">
+                                        <div class="myTab-header-item">
+                                            <a href="#" class="myTab-header-link  active" data-myTab="tintuc">
+                                                Tin tức
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="myTab-content">
+                                        <!-- Tin tức -->
+                                        <div class="myTab-item show" id="tintuc">
+                                            <div class="nav-news">
+                                                <a class="active" href="#">Toàn bộ</a>
+                                                <a href="#" class="nav-new-item">Đào tạo</a>
+                                                <a href="#" class="nav-new-item">Tài chính</a>
+                                                <a href="#" class="nav-new-item">Khoa học công nghệ</a>
+                                                <a href="#" class="nav-new-item">Công tác sinh viên</a>
+                                            </div>
+                                            <!-- chi tiết news -->
+                                            <div class="news-detail">
+                                                <h4 class="title">73% các nhà sản xuất lên kế hoạch đầu tư vào nhà máy thông minh trong năm 2021</h4>
+
+                                                <div class="meta">
+                                                    <a class="cate-link" href=""><i class="fas fa-caret-right me-5"></i><span>Đào tạo</span></a>
+                                                    <p class="mb-0 ms4"><i class="fal fa-calendar me-5"></i><span>18/04/2022</span></p>
+                                                </div>
+                                                <div class="news-content">
+                                                    <p>
+                                                        <b>
+                                                        Tiếp tục các hoạt động kết nối chia sẻ về nghiên cứu phát triển lĩnh vực viễn thông - CNTT - xử lý tín hiệu, hội thảo lần thứ 3 về "Công nghệ tiên tiến - Động lực cho chuyển đổi kỹ thuật số" đã được IEEE SPS Việt Nam (VN) phối hợp cùng trường Đại học
+                                                        (ĐH) Phenikaa và Hội Vô tuyến điện tử Việt Nam (REV) tổ chức.
+                                                       </b>
+                                                    </p>
+                                                    <p class="text-center"><img src="../assets/images-demo/news-detail.png" alt=""></p>
+                                                    <p>
+                                                        <b>
+                                                            Phenikka đẩy mạnh hoạt động nghiên cứu, trao đổi
+                                                        </b>
+                                                    </p>
+                                                    <p>
+                                                        Theo ông Trần Đức Lai, nguyên Thứ trưởng Bộ TT&amp;TT, Chủ tịch REV, hội thảo được tổ chức với mục tiêu tăng cường sự tương tác, kết nối giữa các thành viên IEEE SPS-VN với các thành viên thuộc IEEE SPS trên toàn thế giới.
+                                                    </p>
+                                                    <p>
+                                                        Ông Trần Đức Lai đánh giá cao Phenikaa là một trường mới được thành lập có một chiến lược phát triển đúng đắn trường là xây dựng tầm nhìn phấn đấu đạt được top 100 trường đại học tốt nhất châu Á trong một thời gian rất gần sắp tới. "REV đánh giá cao nỗ
+                                                        lực của Tập đoàn Phenikaa chỉ đạo xây dựng trường ĐH Phenikaa trở thành trường trải nghiệm, đa ngành, chuẩn quốc tế, bám sát nhu cầu của thị trường lao động Việt Nam và khu vực cho tới việc đầu tư
+                                                        khá lớn về cơ sở vật chất, trang thiết bị cho tới thu hút nhân tài".
+                                                    </p>
+                                                    <p class="text-center"><img src="../assets/images-demo/news-detail.png" alt=""></p>
+                                                    <p>
+                                                        Theo ông Trần Đức Lai, nguyên Thứ trưởng Bộ TT&amp;TT, Chủ tịch REV, hội thảo được tổ chức với mục tiêu tăng cường sự tương tác, kết nối giữa các thành viên IEEE SPS-VN với các thành viên thuộc IEEE SPS trên toàn thế giới.
+                                                    </p>
+                                                    <p>
+                                                        Ông Trần Đức Lai đánh giá cao Phenikaa là một trường mới được thành lập có một chiến lược phát triển đúng đắn trường là xây dựng tầm nhìn phấn đấu đạt được top 100 trường đại học tốt nhất châu Á trong một thời gian rất gần sắp tới. "REV đánh giá cao nỗ
+                                                        lực của Tập đoàn Phenikaa chỉ đạo xây dựng trường ĐH Phenikaa trở thành trường trải nghiệm, đa ngành, chuẩn quốc tế, bám sát nhu cầu của thị trường lao động Việt Nam và khu vực cho tới việc đầu tư
+                                                        khá lớn về cơ sở vật chất, trang thiết bị cho tới thu hút nhân tài".
+                                                    </p>
+                                                    <div class="author mb-4">Hoàng Linh (ictvietnam.vn)</div>
+                                                </div>
+                                                <div class="file-list">
+                                                    <a href="" class="file-item" title="Thông báo tiêu đề">
+                                                        <i class="fal fa-file-prescription text-66 fs-26 me-5"></i>
+                                                        <div class="list-meta">
+                                                            <p class="fs-13 fw-bold text-main mb-0">1708202214113</p>
+                                                            <p class="fs-13 text-66 mb-0 truncate-1">Thông báo hóa Thông báo hóa...</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="" class="file-item" title="Thông báo tiêu đề">
+                                                        <i class="fal fa-file-contract text-66 fs-26 me-5"></i>
+                                                        <div class="list-meta">
+                                                            <p class="fs-13 fw-bold text-main mb-0">1708202214113</p>
+                                                            <p class="fs-13 text-66 mb-0 truncate-1">Thông báo hóa Thông báo hóa...</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="" class="file-item" title="Thông báo tiêu đề">
+                                                        <i class="fal fa-file-prescription text-66 fs-26 me-5"></i>
+                                                        <div class="list-meta">
+                                                            <p class="fs-13 fw-bold text-main mb-0">1708202214113</p>
+                                                            <p class="fs-13 text-66 mb-0 truncate-1">Thông báo hóa Thông báo hóa...</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="" class="file-item" title="Thông báo tiêu đề">
+                                                        <i class="fal fa-file-prescription text-66 fs-26 me-5"></i>
+                                                        <div class="list-meta">
+                                                            <p class="fs-13 fw-bold text-main mb-0">1708202214113</p>
+                                                            <p class="fs-13 text-66 mb-0 truncate-1">Thông báo hóa Thông báo hóa...</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="" class="file-item" title="Thông báo tiêu đề">
+                                                        <i class="fal fa-file-prescription text-66 fs-26 me-5"></i>
+                                                        <div class="list-meta">
+                                                            <p class="fs-13 fw-bold text-main mb-0">1708202214113</p>
+                                                            <p class="fs-13 text-66 mb-0 truncate-1">Thông báo hóa Thông báo hóa...</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="group-btn">
+                                                    <a href="#"><i class="fal fa-chevron-left me-5"></i> Quay lại</a>
+                                                    <a class="text-orange" href="#">Lưu đánh giá<i class="fal fa-bookmark ms-10"></i></a>
+                                                </div>
+                                                <div class="comments mt-20">
+                                                    <p class="fs-18 fst-italic fw-bold text-decoration-underline">Ý kiến cá nhân</p>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Bạn nghĩ gì về tin này?"></textarea>
+                                                    <div class="commented">
+                                                        <div class="com-label  position-relative">
+                                                            <div class="group d-flex align-items-center bg-white pe-4">
+                                                                <img src="../assets/images/comment-icon.png">
+                                                                <span class="fs-18 fw-bold ms-10">Bình luận (3)</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment-item">
+                                                            <img src="../assets/images/avatar.jpg">
+                                                            <div class="right">
+                                                                <p>
+                                                                    <b>Nguyễn Văn Tuấn</b> Theo ông Trần Đức Lai, nguyên Thứ trưởng Bộ TT&amp;TT, Chủ tịch REV, hội thảo được tổ chức với mục tiêu tăng cường sự tương tác, kết nối giữa các thành viên IEEE
+                                                                    SPS-VN với các thành viên thuộc IEEE SPS trên toàn thế giới.
+                                                                </p>
+                                                                <div class="meta">
+                                                                    <a class="cate-link" href=""><i class="fal fa-reply me-5"></i><span>Trả lời</span></a>
+                                                                    <p class="mb-0 ms4"><i class="fal fa-calendar me-5"></i><span>18/04/2022</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment-item">
+                                                            <img src="../assets/images/avatar.jpg">
+                                                            <div class="right">
+                                                                <p>
+                                                                    <b>Nguyễn Văn Tuấn</b> Theo ông Trần Đức Lai, nguyên Thứ trưởng Bộ TT&amp;TT, Chủ tịch REV, hội thảo được tổ chức với mục tiêu tăng cường sự tương tác, kết nối giữa các thành viên IEEE
+                                                                    SPS-VN với các thành viên thuộc IEEE SPS trên toàn thế giới.
+                                                                </p>
+                                                                <div class="meta">
+                                                                    <a class="cate-link" href=""><i class="fal fa-reply me-5"></i><span>Trả lời(1)</span></a>
+                                                                    <p class="mb-0 ms4"><i class="fal fa-calendar me-5"></i><span>18/04/2022</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment-sub">
+                                                            <div class="comment-item">
+                                                                <img src="../assets/images/avatar.jpg">
+                                                                <div class="right">
+                                                                    <p>
+                                                                        <b>Nguyễn Văn Tuấn</b> Theo ông Trần Đức Lai, nguyên Thứ trưởng Bộ TT&amp;TT, Chủ tịch REV, hội thảo được tổ chức với mục tiêu tăng cường sự tương tác, kết nối giữa các thành viên
+                                                                        IEEE SPS-VN với các thành viên thuộc IEEE SPS trên toàn thế giới.
+                                                                    </p>
+                                                                    <div class="meta">
+                                                                        <a class="cate-link" href=""><i class="fal fa-reply me-5"></i><span>Trả lời</span></a>
+                                                                        <p class="mb-0 ms4"><i class="fal fa-calendar me-5"></i><span>18/04/2022</span></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
+    <script src="../assets/swiper-slide/swiper-bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../assets/js/customs.js"></script>
+
+
+</body>
+
+</html>
