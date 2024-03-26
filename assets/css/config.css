@@ -88,6 +88,12 @@ a.btn {
   color: var(--color-main);
 }
 
+.btn-main {
+  background: var(--color-main);
+  border: 1px solid var(--color-main);
+  color: #fff;
+}
+
 .btn-opacity {
   opacity: 0.5;
 }
