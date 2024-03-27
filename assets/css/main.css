@@ -1990,3 +1990,28 @@ a.other-action_item:hover {
 .head-logo .logo-text {
   display: none;
 }
+
+.modul-filter {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.modul-filter a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-right: 30px;
+  opacity: 0.5;
+}
+
+.modul-filter a:hover {
+  opacity: 1;
+}
+
+.modul-filter a.active {
+  border-bottom: solid 2px #fff;
+  opacity: 1;
+}

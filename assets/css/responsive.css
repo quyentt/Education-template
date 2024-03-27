@@ -306,6 +306,13 @@
 }
 
 @media (max-width: 768px) {
+  .nav-news {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: auto;
+  }
   .filter-5-item .filter-item {
     width: 50% !important;
   }
@@ -354,7 +361,17 @@
   }
 }
 
+@media (max-width: 680px) {
+  .modul-filter {
+    margin-left: 30px;
+  }
+}
+
 @media (max-width: 576px) {
+  .modul-filter {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
   .filter-5-item .filter-item {
     width: 100% !important;
     margin-left: 0 !important;
