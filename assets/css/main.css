@@ -2015,3 +2015,59 @@ a.other-action_item:hover {
   border-bottom: solid 2px #fff;
   opacity: 1;
 }
+
+.file-upload-group .item {
+  font-size: 16px;
+  border: dashed 1px var(--color-border);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  justify-content: space-between;
+  min-width: 250px;
+}
+
+.file-upload-group .item .file-delete {
+  font-size: 16px;
+  color: var(--color-red);
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.file-upload-group .item img {
+  width: 80px;
+  border-radius: 6px;
+}
+
+.file-upload-group .item .file {
+  display: flex;
+  align-items: center;
+}
+
+.file-upload-group .item.image {
+  width: 80px;
+  min-width: auto;
+  position: relative;
+  padding: 5px;
+}
+
+.file-upload-group .item.image .file-delete {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.file-upload-group .item span {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  margin-left: 5px;
+}
+
+.file-upload-group .item:last-child {
+  margin-bottom: 0;
+}
