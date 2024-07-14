@@ -344,7 +344,7 @@ input:focus-visible {
 .today-card .card-header .title .feature-name {
   font-weight: 700;
   color: var(--color-main);
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 0;
 }
 
@@ -2070,4 +2070,273 @@ a.other-action_item:hover {
 
 .file-upload-group .item:last-child {
   margin-bottom: 0;
+}
+
+.user-new-item {
+  display: flex;
+}
+
+.user-new-item .image {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.user-new-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-tb-list {
+  font-size: 16px;
+}
+
+.user-tb-list .nav-tabs .nav-link {
+  color: var(--color-text-gray);
+  padding: 9px 20px;
+}
+
+.user-tb-list .nav-tabs .nav-link.active {
+  color: var(--color-main);
+  font-weight: 700;
+  border-color: #f1f1f1 #f1f1f1 #fff;
+}
+
+.user-tb-list .nav-tabs {
+  border-color: #f1f1f1;
+}
+
+.user-tab-ct-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.user-tab-ct-list .item {
+  width: 25% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-tab-ct-list .item img {
+  height: 52px;
+}
+
+.user-tab-ct-list .item .lable {
+  font-weight: 500;
+  text-align: center;
+  color: var(--color-main);
+  line-height: 21px;
+  padding: 10px 0;
+}
+
+.user-chat-search {
+  display: flex;
+  flex: 1;
+  margin-left: 30px;
+  position: relative;
+}
+
+.user-chat-search input {
+  flex: 1;
+  height: 34px;
+  padding: 0 12px;
+  border: solid 1px var(--color-border);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.user-chat-search button {
+  position: absolute;
+  height: 35px;
+  border: none;
+  background: transparent;
+  right: 0;
+  color: var(--color-dask-link);
+}
+
+.user-chat-action {
+  font-size: 22px;
+}
+
+.user-chat-action a {
+  margin-left: 20px;
+  color: var(--color-dask-link);
+}
+
+.user-chat-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: solid 1px #f1f1f1;
+}
+
+.user-chat-item:last-child {
+  border: none;
+}
+
+.user-chat-item .avatar {
+  position: relative;
+  width: fit-content;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.user-chat-item .avatar img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.user-chat-meta {
+  flex: 1;
+}
+
+.user-chat-meta .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-chat-name {
+  font-weight: 800;
+}
+
+.user-chat-time {
+  font-size: 14px;
+  font-weight: 500;
+  color: #888888;
+}
+
+.user-chat-status {
+  width: 10px;
+  height: 10px;
+  background: #d1d1d1;
+  position: absolute;
+  border-radius: 100%;
+  border: solid 1px #ffffff;
+  bottom: 0;
+  right: 0;
+}
+
+.user-chat-meta p {
+  font-size: 14px;
+  color: #222;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  font-weight: 500;
+}
+
+.online .user-chat-status {
+  background: #28a745;
+}
+
+.reader .user-chat-name {
+  font-weight: 600;
+}
+
+.reader .user-chat-meta p {
+  color: #888888;
+}
+
+.user-noti-item {
+  display: flex;
+  align-items: start;
+  padding: 20px 0;
+  border-bottom: solid 1px #f1f1f1;
+}
+
+.user-noti-item:last-child {
+  border: none;
+}
+
+.user-noti-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  flex-shrink: 0;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0px 4px 16px 0px rgba(196, 206, 214, 0.25);
+}
+
+.user-noti-meta .label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  color: var(--color-main);
+}
+
+.user-noti-meta p {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #222222;
+}
+
+.user-noti-time {
+  font-size: 14px;
+  color: var(--color-text-gray);
+  margin-top: 7px;
+}
+
+.user-noti-time i {
+  color: #888888;
+}
+
+.user-noti-time span {
+  color: #888888;
+  font-style: italic;
+}
+
+.user-noti-item.nv .label {
+  color: var(--color-nv);
+}
+
+.user-noti-item.nv .label span {
+  background: url("../images/bg-nv.png");
+  width: 39px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.user-noti-item.viewer .user-noti-meta .label {
+  font-weight: 600;
+}
+
+.user-noti-item.viewer .user-noti-meta p {
+  color: #888888;
+}
+
+.user-noti-item.viewer .user-noti-meta .user-noti-time {
+  color: #888888;
+}
+
+.user-noti-item.nv.viewer .user-noti-meta .label {
+  color: var(--color-main);
+}
+
+.user-noti-item.nv.viewer .user-noti-meta .label span {
+  background: url("../images/bg-nv-compl.png");
+  color: #888888;
 }
