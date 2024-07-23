@@ -385,6 +385,8 @@ $(document).ready(function () {
       slider.scrollLeft = scrollLeft - walk;
     });
   });
+  const chattingContent = document.querySelector(".user-chat-body");
+  chattingContent.scrollTop = chattingContent.scrollHeight;
 
   //modal show test
   $(window).on("load", function () {
