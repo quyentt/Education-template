@@ -159,6 +159,10 @@ a.btn {
   color: var(--color-text-gray);
 }
 
+.text-green {
+  color: var(--color-green);
+}
+
 .text-link {
   color: var(--color-link) !important;
 }

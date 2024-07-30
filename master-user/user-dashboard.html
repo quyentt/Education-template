@@ -113,7 +113,13 @@
                         <li>
                             <a class="dropdown-item" href="#">
                                 <i class="fa-light fa-gear text-green"></i>
-                                <span>Cài đặt</span>
+                                <span>Cài đặt chung</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#caidat_hienthi" data-bs-toggle="modal">
+                                <i class="fa-light fa-user-gear text-add"></i>
+                                <span>Cài đặt hiển thị</span>
                             </a>
                         </li>
                         <li>
@@ -862,6 +868,93 @@
             </div>
         </div>
 
+    </div>
+    <!-- modal cài đặt hiển thị-->
+    <div class="modal fade" id="caidat_hienthi">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header-wrap">
+                        <div class="title">Cài đặt hiển thị</div>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p class="fs-12 fst-italic">
+                        Chọn những khối chức năng cho phép hiển thị tại trang cá nhân của bạn.
+                    </p>
+                    <div class="box-function-show-list">
+                        <div class="box-function-show-item">
+                            <label class="checkbox checkbox-green ms-5 d-flex align-items-center fw-500 text-text">
+                                <input type="checkbox" checked>
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class=" ms-15">Thông báo</span>
+                            </label>
+                        </div>
+                        <div class="box-function-show-item">
+                            <label class="checkbox checkbox-green ms-5 d-flex align-items-center fw-500 text-text">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class=" ms-15">Tin tức</span>
+                            </label>
+                        </div>
+                        <div class="box-function-show-item">
+                            <label class="checkbox checkbox-green ms-5 d-flex align-items-center fw-500 text-text">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class=" ms-15">Notify</span>
+                            </label>
+                        </div>
+                        <div class="box-function-show-item">
+                            <label class="checkbox checkbox-green ms-5 d-flex align-items-center fw-500 text-text">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class=" ms-15">Tài liệu - biểu mẫu</span>
+                            </label>
+                        </div>
+                        <div class="box-function-show-item">
+                            <label class="checkbox checkbox-green ms-5 d-flex align-items-center fw-500 text-text">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class=" ms-15">Nhóm chat</span>
+                            </label>
+                        </div>
+                        <div class="box-function-show-item">
+                            <label class="checkbox checkbox-green ms-5 d-flex align-items-center fw-500 text-text">
+                                <input type="checkbox">
+                                <span class="checkmark">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class=" ms-15">Góc chia sẻ</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-save">
+                            <i class="fal fa-check-circle"></i>
+                            <span>Đồng ý</span>
+                        </button>
+                        <button class="btn btn-outline-secondary ms-20" data-bs-dismiss="modal">
+                            <i class="fal fa-times"></i>
+                            <span>Hủy</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- JS -->
