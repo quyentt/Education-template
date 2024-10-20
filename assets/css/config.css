@@ -13,7 +13,7 @@ a.btn {
 .btn {
   height: 38px;
   min-width: 146px;
-  border-radius: 6px;
+  border-radius: 4px;
   font-weight: 500;
 }
 
@@ -74,6 +74,11 @@ a.btn {
   border: 1px solid var(--color-save);
   background: var(--color-save);
   color: #fff;
+}
+.btn-outline-save {
+  border: solid 1px;
+  color: var(--color-save);
+  background: #fff;
 }
 
 .btn-upload {
@@ -169,6 +174,12 @@ a.btn {
 
 .text-add {
   color: var(--color-add) !important;
+}
+.text-save {
+  color: var(--color-save) !important;
+}
+.text-upload {
+  color: var(--color-upload) !important;
 }
 
 .text-dask-link {
@@ -383,7 +394,16 @@ textarea.form-control {
 .checkbox-green input:checked ~ .checkmark {
   background: #28a745;
 }
+.checkbox-outline-white .checkmark{
+  background-color: transparent;
+}
+.checkbox-outline-white input:checked ~ .checkmark {
+  background: #fff;
+}
+.checkbox-outline-white input:checked ~ .checkmark i {
 
+  color: var(--color-link);
+}
 .line-1 {
   height: 1px;
   width: 100%;
@@ -567,9 +587,15 @@ textarea.form-control {
 .min-w-130p {
   min-width: 130px;
 }
+.min-w-135p {
+  min-width: 135px;
+}
 
 .min-w-150p {
   min-width: 150px;
+}
+.min-w-170p {
+  min-width: 170px;
 }
 
 .min-w-185p {
@@ -619,7 +645,12 @@ textarea.form-control {
 .w-110p {
   width: 110px;
 }
-
+.w-170p {
+  width: 170px;
+}
+.w-185p {
+  width: 185px;
+}
 .w-200p {
   width: 200px;
 }
@@ -738,7 +769,9 @@ textarea.form-control {
 .bg-link {
   background: var(--color-link) !important;
 }
-
+.bg-save {
+  background: var(--color-save) !important;
+}
 .bg-light-sky {
   background: var(--color-bg-light-sky) !important;
 }
@@ -775,7 +808,10 @@ textarea.form-control {
 }
 
 .fw-600 {
-  font-weight: 500;
+  font-weight: 600;
+}
+.fw-800 {
+  font-weight: 800;
 }
 
 .sticky-right {
@@ -847,4 +883,13 @@ textarea.form-control {
 
 .bg-f1 {
   background: #f1f1f1;
+}
+.flex-1{
+  flex: 1;
+}
+.h-100p{
+  height: 100px;
+}
+.rounded-full{
+  border-radius: 100%;
 }

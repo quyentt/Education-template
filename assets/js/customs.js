@@ -388,8 +388,9 @@ $(document).ready(function () {
   const chattingContent = document.querySelector(".user-chat-body");
   chattingContent.scrollTop = chattingContent.scrollHeight;
 
+
+});
   //modal show test
   $(window).on("load", function () {
-    // $("#timkiem_sinhvien").modal("show");
+    // $("#kehoachkekhai_chitiet_chitiet").modal("show");
   });
-});
