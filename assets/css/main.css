@@ -3919,3 +3919,43 @@ a.other-action_item:hover {
 .today-card-add .card-header {
   background: var(--color-add);
 }
+
+.family-contact-content {
+  display: flex;
+  gap: 55px;
+  font-size: 15px;
+  color: #222222;
+  padding: 30px 60px;
+}
+.family-contact-content .left {
+  width: 100%;
+  max-width: 460px;
+}
+.family-contact-content .right {
+  flex: 1;
+}
+.family-contact-content .contact-box {
+  display: flex;
+  color: #ffffff;
+  padding: 15px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 0 0 10px 10px;
+  background: var(--color-main);
+}
+.family-contact-content .contact-box .title {
+  color: #fcee21;
+  text-decoration: underline;
+}
+.family-contact-content .contact-box i {
+  color: #fcee21;
+  width: 17px;
+  margin-right: 7px;
+  margin-top: 5px;
+}
+.family-contact-content .contact-box .contact-row {
+  display: flex;
+  align-items: flex-start;
+}

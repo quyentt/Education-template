@@ -152,13 +152,13 @@
 }
 
 @media (max-width: 1360px) {
-  .inputs-3-col .input-label-left{
+  .inputs-3-col .input-label-left {
     flex-wrap: wrap;
   }
-  .inputs-3-col .input-label-left label{
+  .inputs-3-col .input-label-left label {
     width: 100%;
   }
-  .filter-contract .input-gr .item label{
+  .filter-contract .input-gr .item label {
     display: none;
   }
 
@@ -188,10 +188,10 @@
 }
 
 @media (max-width: 1200px) {
-  .list-row-4{
+  .list-row-4 {
     flex-wrap: wrap;
   }
-  .list-row-4 .item{
+  .list-row-4 .item {
     width: calc((100% - 30px) / 2);
   }
 
@@ -225,24 +225,24 @@
 }
 
 @media (max-width: 1080px) {
-  .user-ns{
+  .user-ns {
     width: 100%;
     flex-direction: row;
     padding-left: 15px;
   }
-  .user-ns .line-1{
+  .user-ns .line-1 {
     display: none;
   }
-  .user-ns .btn{
+  .user-ns .btn {
     margin-left: 20px;
   }
-  .user-ns img{
+  .user-ns img {
     width: 68px;
     height: 68px;
     margin-bottom: 0;
     margin-right: 20px;
   }
-  .user-ns .meta p{
+  .user-ns .meta p {
     text-align: left;
   }
   .filter-5-item {
@@ -335,12 +335,21 @@
 }
 
 @media (max-width: 820px) {
-  .inputs-2-col .input-label-left{
+  .family-contact-content {
+    flex-wrap: wrap;
+  }
+  .family-contact-content .left {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputs-2-col .input-label-left {
     flex-wrap: wrap;
   }
   .inputs-2-col .item label {
     width: 100%;
-}
+  }
   .filter-item {
     width: 50%;
   }
@@ -362,15 +371,18 @@
 }
 
 @media (max-width: 768px) {
-  .inputs-3-col .item{
+  .family-contact-content {
+    padding: 0;
+  }
+  .inputs-3-col .item {
     width: calc((100% - 30px) / 2);
   }
   .filter-contract .input-gr .item {
     width: calc((100% - 25px) / 2);
-}
-.filter-contract .input-gr .item-custom {
-  width: 100%;
-}
+  }
+  .filter-contract .input-gr .item-custom {
+    width: 100%;
+  }
   .user-tt-detail {
     flex-wrap: wrap;
   }
@@ -453,21 +465,20 @@
 }
 
 @media (max-width: 576px) {
-
-  .list-row-4 .item{
+  .list-row-4 .item {
     width: 100%;
   }
   .inputs-2-col .item {
     width: 100%;
-}
-  .filter-contract{
+  }
+  .filter-contract {
     flex-wrap: wrap;
   }
-  .filter-contract .input-gr{
+  .filter-contract .input-gr {
     width: 100%;
     flex: auto;
   }
-  .filter-contract .btn{
+  .filter-contract .btn {
     margin-left: auto;
   }
 
@@ -587,7 +598,7 @@
 @media (max-width: 430px) {
   .filter-contract .input-gr .item {
     width: 100%;
-}
+  }
   .user-tt-item {
     width: 100%;
   }
